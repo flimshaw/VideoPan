@@ -22,9 +22,14 @@ public:
 	void update();
 	void draw();
 	void addParticles( int amt );
+	void addParticle( gl::Texture newTexture );
 	void removeParticles( int amt );
 	
 	std::list<Particle>	mParticles;
+	
+	int frameCount;
+	int maxFrames;
+	int startFrame;
 	
 	gl::Texture mTexture;
 };

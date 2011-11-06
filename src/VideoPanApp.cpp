@@ -21,6 +21,9 @@ class VideoPanApp : public AppBasic {
 	gl::Texture mMovieFrame;
 	qtime::MovieGl mMovie;
 	
+	int maxParticles;
+	int particleCount;
+	
 	ParticleController mParticleController;
 	
 };
@@ -38,10 +41,10 @@ void VideoPanApp::setup()
 	string moviePath = getOpenFilePath();
 	if( ! moviePath.empty() )
 		loadMovieFile( moviePath );
-	
+	maxParticles = 10;
+	particleCount = 0;
 	mParticleController = ParticleController( myImage );
 	
-	mParticleController.addParticles( 25 );
 }
 
 void VideoPanApp::loadMovieFile( const string &moviePath )
@@ -58,7 +61,7 @@ void VideoPanApp::loadMovieFile( const string &moviePath )
 		
 		
 		mMovie.setLoop( true, true );
-		mMovie.seekToStart();
+		mMovie.seekToFrame(10000);
 		mMovie.play();
 	}
 	catch( ... ) {
@@ -74,7 +77,10 @@ void VideoPanApp::update()
 {
 	if( mMovie ) {
 		mMovieFrame = gl::Texture(mMovie.getTexture());
-		gl::translate(1, 0);
+		if( particleCount < maxParticles ) {
+			mParticleController.addParticle( gl::Texture(mMovie.getTexture()) );
+			particleCount++;
+		}
 	}
 	mParticleController.update();
 }
@@ -83,14 +89,14 @@ void VideoPanApp::draw()
 {
 	// clear out the window with black
 	
-	//gl::clear( Color( 0, 0, 0 ) ); 
+	gl::clear( Color( 0, 0, 0 ) ); 
 	//gl::draw( myImage, getWindowBounds() );	
 	if ( mMovieFrame ) {
-		gl::draw( mMovieFrame, Rectf( 200, 200, 600, 500 ) );
+		//gl::draw( mMovieFrame, Rectf( 200, 200, 600, 500 ) );
 	}
 	
-	glDisable( GL_TEXTURE_2D );
-	glColor3f( 1, 1, 1 );
+	//glDisable( GL_TEXTURE_2D );
+	//glColor3f( 1, 1, 1 );
 	mParticleController.draw();
 }
 

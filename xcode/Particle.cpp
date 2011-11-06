@@ -19,22 +19,30 @@ Particle::Particle()
 {
 }
 
-Particle::Particle( Vec2f loc, gl::Texture newTexture )
+Particle::Particle( gl::Texture newTexture, int frameNumber )
 {
-	mLoc	= loc;
+	mLoc	= Vec2f(0, 0);
 	mVel	= Rand::randFloat( 5.0f );
 	mRadius	= 3.0f;
 	mTexture = newTexture;
+	mFrameNumber = frameNumber;
+}
+
+void Particle::setup() {
+	
 }
 
 void Particle::update()
 {
-	mLoc += mDir * mVel;
+	mLoc.x = (mFrameNumber * 100) - 400;
+	mLoc.y = 200;
 }
 
 void Particle::draw()
 {
 	//gl::drawSolidCircle( mLoc, mRadius );
-	gl::draw( mTexture, Rectf( 0, 0, Rand::randFloat( 505.0f ), Rand::randFloat( 505.0f ) ) );
+	if( mTexture ) {
+		gl::draw( mTexture, Rectf( mLoc.x, mLoc.y, mLoc.x + 100, mLoc.y + 200 ) );
+	}
 }
 
