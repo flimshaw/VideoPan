@@ -2,6 +2,7 @@
 #include "cinder/ImageIO.h"
 #include "cinder/gl/Texture.h"
 #include "cinder/qtime/QuickTime.h"
+#include "ParticleController.h"
 
 using namespace ci;
 using namespace ci::app;
@@ -20,6 +21,8 @@ class VideoPanApp : public AppBasic {
 	gl::Texture mMovieFrame;
 	qtime::MovieGl mMovie;
 	
+	ParticleController mParticleController;
+	
 };
 
 void VideoPanApp::prepareSettings( Settings *settings ){
@@ -31,9 +34,14 @@ void VideoPanApp::setup()
 {
 	Url url( "http://libcinder.org/media/tutorial/paris.jpg" );
 	myImage = gl::Texture( loadImage( loadUrl( url ) ) );
+	
 	string moviePath = getOpenFilePath();
 	if( ! moviePath.empty() )
 		loadMovieFile( moviePath );
+	
+	mParticleController = ParticleController( myImage );
+	
+	mParticleController.addParticles( 25 );
 }
 
 void VideoPanApp::loadMovieFile( const string &moviePath )
@@ -64,19 +72,26 @@ void VideoPanApp::mouseDown( MouseEvent event )
 
 void VideoPanApp::update()
 {
-	if( mMovie )
+	if( mMovie ) {
 		mMovieFrame = gl::Texture(mMovie.getTexture());
+		gl::translate(1, 0);
+	}
+	mParticleController.update();
 }
 
 void VideoPanApp::draw()
 {
 	// clear out the window with black
 	
-	gl::clear( Color( 0, 0, 0 ) ); 
+	//gl::clear( Color( 0, 0, 0 ) ); 
 	//gl::draw( myImage, getWindowBounds() );	
 	if ( mMovieFrame ) {
-		gl::draw( mMovieFrame, getWindowBounds() );
+		gl::draw( mMovieFrame, Rectf( 200, 200, 600, 500 ) );
 	}
+	
+	glDisable( GL_TEXTURE_2D );
+	glColor3f( 1, 1, 1 );
+	mParticleController.draw();
 }
 
 
