@@ -20,7 +20,7 @@ Particle::Particle()
 {
 }
 
-Particle::Particle( gl::Texture newTexture, int frameNumber )
+Particle::Particle( gl::Texture * newTexture, int frameNumber )
 {
 	mLoc	= Vec2f(0, 0);
 	frameSize = Vec2f(1280, 960);
@@ -37,9 +37,16 @@ void Particle::setup() {
 	
 }
 
-void Particle::updateTexture( gl::Texture newTexture ) 
+void Particle::updateTexture( gl::Texture * newTexture ) 
 {
 	mTexture = newTexture;
+}
+
+void Particle::setWidth( float newWidth )
+{
+	sliceWidth = newWidth;
+	topLeft = Vec2f(0, (frameSize.y / 2) - (sliceWidth / 2));
+	bottomRight = Vec2f(frameSize.x, (frameSize.y / 2) + (sliceWidth / 2) );
 }
 
 void Particle::update()
@@ -51,9 +58,9 @@ void Particle::update()
 
 void Particle::draw()
 {
-	if( mTexture ) {
+	if( *mTexture ) {
 		Area cropArea(topLeft, bottomRight);
-		gl::draw( mTexture, cropArea, Rectf( mLoc.x, mLoc.y, frameSize.x, mLoc.y + sliceWidth ) );
+		gl::draw( *mTexture, cropArea, Rectf( mLoc.x, mLoc.y, frameSize.x, mLoc.y + sliceWidth ) );
 	}
 }
 

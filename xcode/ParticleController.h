@@ -26,6 +26,7 @@ public:
 	void addParticle( gl::Texture newTexture );
 	void updateParticles( gl::Texture newTexture );
 	void removeParticles( int amt );
+	void setWidth( float widthDelta );
 	
 	std::list<Particle>	mParticles;
 	std::deque<gl::Texture> mTextures;
@@ -33,6 +34,7 @@ public:
 	int frameCount;
 	int maxFrames;
 	int startFrame;
+	float sliceWidth;
 	
 	gl::Texture mTexture;
 };

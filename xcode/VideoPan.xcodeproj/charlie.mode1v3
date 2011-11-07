@@ -271,7 +271,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
+									<integer>6</integer>
 									<integer>5</integer>
 									<integer>0</integer>
 								</array>
@@ -314,7 +314,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ParticleController.cpp</string>
+								<string>VideoPanApp.cpp</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,19 +322,19 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ParticleController.cpp</string>
+										<string>VideoPanApp.cpp</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>CBF09CD01467A0C000088D6A</string>
+										<string>CBF09D3F1467ABCF00088D6A</string>
 										<key>history</key>
 										<array>
-											<string>CBF09AC2146716E900088D6A</string>
-											<string>CBF09CBC14679EA600088D6A</string>
-											<string>CBF09CCC1467A08500088D6A</string>
-											<string>CBF09CCD1467A08500088D6A</string>
-											<string>CBF09CCE1467A08500088D6A</string>
-											<string>CBF09CC614679FDC00088D6A</string>
+											<string>CBF09D071467A6B700088D6A</string>
+											<string>CBF09D0F1467A6F600088D6A</string>
+											<string>CBF09D2E1467AAA600088D6A</string>
+											<string>CBF09D3C1467ABCF00088D6A</string>
+											<string>CBF09D3D1467ABCF00088D6A</string>
+											<string>CBF09D3E1467ABCF00088D6A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -532,12 +532,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>CBF09D401467ABCF00088D6A</string>
 		<string>CBF09B3B1467303200088D6A</string>
 		<string>CBF098E81465B64900088D6A</string>
 		<string>CBF098E91465B64900088D6A</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>CBE32C8E14610FD900A7C656</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/charlie/Documents/projects/videopan/VideoPan/xcode/VideoPan.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -889,7 +890,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {690, 541}}</string>
 								<key>RubberWindowFrame</key>
-								<string>194 200 690 582 0 0 1920 1058 </string>
+								<string>157 201 690 582 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -918,11 +919,11 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>194 200 690 582 0 0 1920 1058 </string>
+			<string>157 201 690 582 0 0 1920 1058 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

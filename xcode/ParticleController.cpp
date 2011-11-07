@@ -29,6 +29,7 @@ ParticleController::ParticleController( gl::Texture newTexture )
 {
 	mTexture = newTexture;
 	frameCount = 0;
+	sliceWidth = 10;
 }
 
 void ParticleController::update()
@@ -45,10 +46,19 @@ void ParticleController::draw()
 	}
 }
 
+void ParticleController::setWidth( float widthDelta )
+{
+	sliceWidth += widthDelta;
+	for( list<Particle>::iterator p = mParticles.begin(); p != mParticles.end(); ++p ){
+		p->setWidth( sliceWidth );
+	}
+}
+
 void ParticleController::addParticle( gl::Texture newTexture ) {
 	frameCount++;
-	mParticles.push_back( Particle( newTexture, frameCount ) );
 	mTextures.push_front( newTexture );
+	mParticles.push_back( Particle( &mTextures[0], frameCount ) );
+
 }
 
 
@@ -66,7 +76,7 @@ void ParticleController::updateParticles( gl::Texture newTexture ) {
 	mTextures.push_front(newTexture);
 	int particleCount = 0;
 	for( list<Particle>::iterator p = mParticles.begin(); p != mParticles.end(); ++p ){
-		p->updateTexture( mTextures[particleCount] );
+		p->updateTexture( &mTextures[particleCount] );
 		particleCount++;
 	}
 }

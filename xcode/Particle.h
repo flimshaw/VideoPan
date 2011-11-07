@@ -21,9 +21,10 @@ using namespace ci;
 class Particle {
 public:
 	Particle();
-	Particle( gl::Texture newTexture, int frameNumber );
+	Particle( gl::Texture * newTexture, int frameNumber );
 	void update();
-	void updateTexture( gl::Texture newTexture );
+	void updateTexture( gl::Texture * newTexture );
+	void setWidth( float newWidth );
 	void draw();
 	void setup();
 	
@@ -42,7 +43,7 @@ public:
 	ci::Vec2f	frameSize;
 	float		sliceWidth;
 	
-	gl::Texture mTexture;
+	gl::Texture * mTexture;
 	
 	float		mRadius;
 };

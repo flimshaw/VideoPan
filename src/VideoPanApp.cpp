@@ -13,7 +13,7 @@ class VideoPanApp : public AppBasic {
   public:
 	void setup();
 	void prepareSettings( Settings *settings );
-	void mouseDown( MouseEvent event );
+	void mouseWheel( MouseEvent event );
 	void loadMovieFile( const std::string &path );
 	void update();
 	void draw();
@@ -48,7 +48,7 @@ void VideoPanApp::setup()
 	string moviePath = "/Volumes/SPEEDY/desert_right.mov";
 	if( ! moviePath.empty() )
 		loadMovieFile( moviePath );
-	maxParticles = 38;
+	maxParticles = 50;
 	particleCount = 0;
 	startFrame = 10000;
 	
@@ -69,32 +69,37 @@ void VideoPanApp::loadMovieFile( const string &moviePath )
 		
 		
 		mMovie.setLoop( true, true );
-		mMovie.seekToFrame(10000);
+		mMovie.seekToFrame(12000);
 		mMovie.setVolume(0);
 		mMovie.play();
+		mMovie.stop();
 	}
 	catch( ... ) {
 		console() << "Unable to load the movie." << std::endl;
 	}	
 }
 
-void VideoPanApp::mouseDown( MouseEvent event )
+void VideoPanApp::mouseWheel( MouseEvent event )
 {
+	if( !event.isShiftDown() )
+	{
+		mParticleController.setWidth( event.getWheelIncrement() );
+	} else {
+		mMovie.stepForward();
+	}
 }
 
 void VideoPanApp::update()
 {
-	
-	if( mMovie ) {
+	if( mMovie.checkNewFrame() ) {
 		mMovieFrame = gl::Texture(mMovie.getTexture());
 		if( particleCount < maxParticles ) {
 			mParticleController.addParticle( gl::Texture(mMovie.getTexture()) );
 			particleCount++;
-		} else {
-			mParticleController.updateParticles( gl::Texture(mMovie.getTexture()) );
 		}
+		mParticleController.update();
+		mMovie.stepForward();
 	}
-	mParticleController.update();
 }
 
 void VideoPanApp::draw()
