@@ -15,9 +15,11 @@
 #include "ParticleController.h"
 #include "cinder/gl/gl.h"
 #include "cinder/gl/Texture.h"
+#include <deque>
 
 using namespace ci;
 using std::list;
+using std::vector;
 
 ParticleController::ParticleController() {
 	
@@ -46,6 +48,7 @@ void ParticleController::draw()
 void ParticleController::addParticle( gl::Texture newTexture ) {
 	frameCount++;
 	mParticles.push_back( Particle( newTexture, frameCount ) );
+	mTextures.push_front( newTexture );
 }
 
 
@@ -59,8 +62,12 @@ void ParticleController::addParticles( int amt )
 }
 
 void ParticleController::updateParticles( gl::Texture newTexture ) {
+	mTextures.pop_back();
+	mTextures.push_front(newTexture);
+	int particleCount = 0;
 	for( list<Particle>::iterator p = mParticles.begin(); p != mParticles.end(); ++p ){
-		p->updateTexture( newTexture );
+		p->updateTexture( mTextures[particleCount] );
+		particleCount++;
 	}
 }
 

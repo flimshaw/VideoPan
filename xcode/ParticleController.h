@@ -12,6 +12,7 @@
 #include "cinder/gl/gl.h"
 #include "cinder/gl/Texture.h"
 #include <list>
+#include <deque>
 
 using namespace ci;
 
@@ -27,7 +28,7 @@ public:
 	void removeParticles( int amt );
 	
 	std::list<Particle>	mParticles;
-	std::list<gl::Texture> mTextures;
+	std::deque<gl::Texture> mTextures;
 	
 	int frameCount;
 	int maxFrames;

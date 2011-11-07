@@ -28,10 +28,9 @@ Particle::Particle( gl::Texture newTexture, int frameNumber )
 	mRadius	= 3.0f;
 	mTexture = newTexture;
 	mFrameNumber = frameNumber;
-	sliceWidth = 25;
+	sliceWidth = 10;
 	topLeft = Vec2f(0, (frameSize.y / 2) - (sliceWidth / 2));
 	bottomRight = Vec2f(frameSize.x, (frameSize.y / 2) + (sliceWidth / 2) );
-
 }
 
 void Particle::setup() {

@@ -34,8 +34,8 @@ class VideoPanApp : public AppBasic {
 };
 
 void VideoPanApp::prepareSettings( Settings *settings ){
-    settings->setWindowSize( 800, 600 );
-    settings->setFrameRate( 60.0f );
+    settings->setWindowSize( 800, 960 );
+    settings->setFrameRate( 30.0f );
 	
 }
 
@@ -45,7 +45,7 @@ void VideoPanApp::setup()
 	myImage = gl::Texture( loadImage( loadUrl( url ) ) );
 	mCam.setOrtho(-1, 1, -1, 1, -1, 1);
 	//string moviePath = getOpenFilePath();
-	string moviePath = "/Volumes/320gb to Dover/desert_right.mov";
+	string moviePath = "/Volumes/SPEEDY/desert_right.mov";
 	if( ! moviePath.empty() )
 		loadMovieFile( moviePath );
 	maxParticles = 38;
@@ -112,8 +112,6 @@ void VideoPanApp::draw()
 	//glColor3f( 1, 1, 1 );
 	gl::rotate(90);
 	mParticleController.draw();
-	
-	
 }
 
 
