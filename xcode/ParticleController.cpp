@@ -48,13 +48,19 @@ void ParticleController::addParticle( gl::Texture newTexture ) {
 	mParticles.push_back( Particle( newTexture, frameCount ) );
 }
 
+
 void ParticleController::addParticles( int amt )
 {
 	for( int i=0; i<amt; i++ )
 	{
 		float x = Rand::randFloat( app::getWindowWidth() );
 		float y = Rand::randFloat( app::getWindowHeight() );
-		//mParticles.push_back( Particle( Vec2f( x, y ), mTexture ) );
+	}
+}
+
+void ParticleController::updateParticles( gl::Texture newTexture ) {
+	for( list<Particle>::iterator p = mParticles.begin(); p != mParticles.end(); ++p ){
+		p->updateTexture( newTexture );
 	}
 }
 

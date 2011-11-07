@@ -2,9 +2,9 @@
 {
 	00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {967, 1352}}";
-			sepNavSelRange = "{2139, 0}";
-			sepNavVisRange = "{1153, 1311}";
+			sepNavIntBoundsRect = "{{0, 0}, {967, 1560}}";
+			sepNavSelRange = "{1183, 0}";
+			sepNavVisRange = "{480, 916}";
 			sepNavWindowFrame = "{{83, 249}, {1058, 706}}";
 		};
 	};
@@ -15,11 +15,37 @@
 		addToTargets = (
 			8D1107260486CEB800E47090 /* VideoPan */,
 		);
+		breakpoints = (
+		);
 		codeSenseManager = CBE32C9B14610FD900A7C656 /* Code sense */;
 		executables = (
 			CBE32C6914610FBD00A7C656 /* VideoPan */,
 		);
 		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					198,
+					20,
+					99,
+					99,
+					29,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_IgnoreCountID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
 				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
@@ -236,6 +262,176 @@
 			CBF09B071467219200088D6A /* PBXTextBookmark */ = CBF09B071467219200088D6A /* PBXTextBookmark */;
 			CBF09B081467219200088D6A /* PBXTextBookmark */ = CBF09B081467219200088D6A /* PBXTextBookmark */;
 			CBF09B091467219200088D6A /* PBXTextBookmark */ = CBF09B091467219200088D6A /* PBXTextBookmark */;
+			CBF09B0A1467222300088D6A /* PBXTextBookmark */ = CBF09B0A1467222300088D6A /* PBXTextBookmark */;
+			CBF09B0B1467222300088D6A /* PBXTextBookmark */ = CBF09B0B1467222300088D6A /* PBXTextBookmark */;
+			CBF09B0C1467222300088D6A /* PBXTextBookmark */ = CBF09B0C1467222300088D6A /* PBXTextBookmark */;
+			CBF09B0D1467222300088D6A /* PBXTextBookmark */ = CBF09B0D1467222300088D6A /* PBXTextBookmark */;
+			CBF09B0E1467228500088D6A /* PBXTextBookmark */ = CBF09B0E1467228500088D6A /* PBXTextBookmark */;
+			CBF09B0F1467228500088D6A /* PBXTextBookmark */ = CBF09B0F1467228500088D6A /* PBXTextBookmark */;
+			CBF09B101467228500088D6A /* PBXTextBookmark */ = CBF09B101467228500088D6A /* PBXTextBookmark */;
+			CBF09B1D14672F5400088D6A /* PBXTextBookmark */ = CBF09B1D14672F5400088D6A /* PBXTextBookmark */;
+			CBF09B1E14672F5400088D6A /* PBXTextBookmark */ = CBF09B1E14672F5400088D6A /* PBXTextBookmark */;
+			CBF09B1F14672F5400088D6A /* PBXTextBookmark */ = CBF09B1F14672F5400088D6A /* PBXTextBookmark */;
+			CBF09B2014672F5400088D6A /* PBXTextBookmark */ = CBF09B2014672F5400088D6A /* PBXTextBookmark */;
+			CBF09B2414672F8900088D6A /* PBXTextBookmark */ = CBF09B2414672F8900088D6A /* PBXTextBookmark */;
+			CBF09B2514672F8900088D6A /* PBXTextBookmark */ = CBF09B2514672F8900088D6A /* PBXTextBookmark */;
+			CBF09B2614672F8900088D6A /* PBXTextBookmark */ = CBF09B2614672F8900088D6A /* PBXTextBookmark */;
+			CBF09B2714672F8900088D6A /* PBXTextBookmark */ = CBF09B2714672F8900088D6A /* PBXTextBookmark */;
+			CBF09B2B14672FC900088D6A /* PBXTextBookmark */ = CBF09B2B14672FC900088D6A /* PBXTextBookmark */;
+			CBF09B2C14672FC900088D6A /* PBXTextBookmark */ = CBF09B2C14672FC900088D6A /* PBXTextBookmark */;
+			CBF09B2D14672FC900088D6A /* PBXTextBookmark */ = CBF09B2D14672FC900088D6A /* PBXTextBookmark */;
+			CBF09B3114672FF300088D6A /* PBXTextBookmark */ = CBF09B3114672FF300088D6A /* PBXTextBookmark */;
+			CBF09B351467301700088D6A /* PBXTextBookmark */ = CBF09B351467301700088D6A /* PBXTextBookmark */;
+			CBF09B381467302600088D6A /* PBXTextBookmark */ = CBF09B381467302600088D6A /* PBXTextBookmark */;
+			CBF09B3A1467303200088D6A /* PBXTextBookmark */ = CBF09B3A1467303200088D6A /* PBXTextBookmark */;
+			CBF09B3D1467303A00088D6A /* PBXTextBookmark */ = CBF09B3D1467303A00088D6A /* PBXTextBookmark */;
+			CBF09B401467325600088D6A /* PBXTextBookmark */ = CBF09B401467325600088D6A /* PBXTextBookmark */;
+			CBF09B411467325600088D6A /* PBXTextBookmark */ = CBF09B411467325600088D6A /* PBXTextBookmark */;
+			CBF09B421467325600088D6A /* PBXTextBookmark */ = CBF09B421467325600088D6A /* PBXTextBookmark */;
+			CBF09B431467325600088D6A /* PBXTextBookmark */ = CBF09B431467325600088D6A /* PBXTextBookmark */;
+			CBF09B491467328F00088D6A /* PBXTextBookmark */ = CBF09B491467328F00088D6A /* PBXTextBookmark */;
+			CBF09B4A146732DE00088D6A /* PBXTextBookmark */ = CBF09B4A146732DE00088D6A /* PBXTextBookmark */;
+			CBF09B4F1467335A00088D6A /* PBXTextBookmark */ = CBF09B4F1467335A00088D6A /* PBXTextBookmark */;
+			CBF09B5C146733E200088D6A /* PBXTextBookmark */ = CBF09B5C146733E200088D6A /* PBXTextBookmark */;
+			CBF09B601467340600088D6A /* PBXTextBookmark */ = CBF09B601467340600088D6A /* PBXTextBookmark */;
+			CBF09B611467340600088D6A /* PBXTextBookmark */ = CBF09B611467340600088D6A /* PBXTextBookmark */;
+			CBF09B621467340600088D6A /* PBXTextBookmark */ = CBF09B621467340600088D6A /* PBXTextBookmark */;
+			CBF09B661467347900088D6A /* PBXTextBookmark */ = CBF09B661467347900088D6A /* PBXTextBookmark */;
+			CBF09B671467347900088D6A /* PBXTextBookmark */ = CBF09B671467347900088D6A /* PBXTextBookmark */;
+			CBF09B681467347900088D6A /* PBXTextBookmark */ = CBF09B681467347900088D6A /* PBXTextBookmark */;
+			CBF09B6B146734AD00088D6A /* PBXTextBookmark */ = CBF09B6B146734AD00088D6A /* PBXTextBookmark */;
+			CBF09B6D146734D300088D6A /* PBXTextBookmark */ = CBF09B6D146734D300088D6A /* PBXTextBookmark */;
+			CBF09B70146734FA00088D6A /* PBXTextBookmark */ = CBF09B70146734FA00088D6A /* PBXTextBookmark */;
+			CBF09B79146735C700088D6A /* PBXTextBookmark */ = CBF09B79146735C700088D6A /* PBXTextBookmark */;
+			CBF09B7A146735C700088D6A /* PBXTextBookmark */ = CBF09B7A146735C700088D6A /* PBXTextBookmark */;
+			CBF09B7B146735C700088D6A /* PBXTextBookmark */ = CBF09B7B146735C700088D6A /* PBXTextBookmark */;
+			CBF09B7E1467392E00088D6A /* PBXTextBookmark */ = CBF09B7E1467392E00088D6A /* PBXTextBookmark */;
+			CBF09B7F1467392E00088D6A /* PBXTextBookmark */ = CBF09B7F1467392E00088D6A /* PBXTextBookmark */;
+			CBF09B801467392E00088D6A /* PBXTextBookmark */ = CBF09B801467392E00088D6A /* PBXTextBookmark */;
+			CBF09B8814673A5C00088D6A /* PBXTextBookmark */ = CBF09B8814673A5C00088D6A /* PBXTextBookmark */;
+			CBF09B8914673A5C00088D6A /* PBXTextBookmark */ = CBF09B8914673A5C00088D6A /* PBXTextBookmark */;
+			CBF09B8A14673A5C00088D6A /* PBXTextBookmark */ = CBF09B8A14673A5C00088D6A /* PBXTextBookmark */;
+			CBF09B9314673ABB00088D6A /* PBXTextBookmark */ = CBF09B9314673ABB00088D6A /* PBXTextBookmark */;
+			CBF09B9414673ABB00088D6A /* PBXTextBookmark */ = CBF09B9414673ABB00088D6A /* PBXTextBookmark */;
+			CBF09B9514673ABB00088D6A /* PBXTextBookmark */ = CBF09B9514673ABB00088D6A /* PBXTextBookmark */;
+			CBF09B9614673ABB00088D6A /* PBXTextBookmark */ = CBF09B9614673ABB00088D6A /* PBXTextBookmark */;
+			CBF09B9A14673AEE00088D6A /* PBXTextBookmark */ = CBF09B9A14673AEE00088D6A /* PBXTextBookmark */;
+			CBF09B9E14673B2200088D6A /* PBXTextBookmark */ = CBF09B9E14673B2200088D6A /* PBXTextBookmark */;
+			CBF09B9F14673B2200088D6A /* PBXTextBookmark */ = CBF09B9F14673B2200088D6A /* PBXTextBookmark */;
+			CBF09BA014673B2200088D6A /* PBXTextBookmark */ = CBF09BA014673B2200088D6A /* PBXTextBookmark */;
+			CBF09BA214673BE000088D6A /* PBXTextBookmark */ = CBF09BA214673BE000088D6A /* PBXTextBookmark */;
+			CBF09BA314673BE000088D6A /* PBXTextBookmark */ = CBF09BA314673BE000088D6A /* PBXTextBookmark */;
+			CBF09BA414673BE000088D6A /* PBXTextBookmark */ = CBF09BA414673BE000088D6A /* PBXTextBookmark */;
+			CBF09BA514673BE000088D6A /* PBXTextBookmark */ = CBF09BA514673BE000088D6A /* PBXTextBookmark */;
+			CBF09BA6146742C700088D6A /* PBXTextBookmark */ = CBF09BA6146742C700088D6A /* PBXTextBookmark */;
+			CBF09BA714676B3100088D6A /* PBXTextBookmark */ = CBF09BA714676B3100088D6A /* PBXTextBookmark */;
+			CBF09BA814676B3100088D6A /* PBXTextBookmark */ = CBF09BA814676B3100088D6A /* PBXTextBookmark */;
+			CBF09BA914676B3100088D6A /* PBXTextBookmark */ = CBF09BA914676B3100088D6A /* PBXTextBookmark */;
+			CBF09BAA14676B3100088D6A /* PBXTextBookmark */ = CBF09BAA14676B3100088D6A /* PBXTextBookmark */;
+			CBF09BAD14676B8C00088D6A /* PBXTextBookmark */ = CBF09BAD14676B8C00088D6A /* PBXTextBookmark */;
+			CBF09BB314676BD400088D6A /* PBXTextBookmark */ = CBF09BB314676BD400088D6A /* PBXTextBookmark */;
+			CBF09BB714676C1700088D6A /* PBXTextBookmark */ = CBF09BB714676C1700088D6A /* PBXTextBookmark */;
+			CBF09BB814676C1700088D6A /* PBXTextBookmark */ = CBF09BB814676C1700088D6A /* PBXTextBookmark */;
+			CBF09BB914676C1700088D6A /* PBXTextBookmark */ = CBF09BB914676C1700088D6A /* PBXTextBookmark */;
+			CBF09BBA14676C1700088D6A /* PBXTextBookmark */ = CBF09BBA14676C1700088D6A /* PBXTextBookmark */;
+			CBF09BBD14676C4C00088D6A /* PBXTextBookmark */ = CBF09BBD14676C4C00088D6A /* PBXTextBookmark */;
+			CBF09BC314676D0200088D6A /* PBXTextBookmark */ = CBF09BC314676D0200088D6A /* PBXTextBookmark */;
+			CBF09BC614676DE900088D6A /* PBXTextBookmark */ = CBF09BC614676DE900088D6A /* PBXTextBookmark */;
+			CBF09BC814676E8000088D6A /* PBXTextBookmark */ = CBF09BC814676E8000088D6A /* PBXTextBookmark */;
+			CBF09BC914676E8000088D6A /* PBXTextBookmark */ = CBF09BC914676E8000088D6A /* PBXTextBookmark */;
+			CBF09BCA14676E8000088D6A /* PBXTextBookmark */ = CBF09BCA14676E8000088D6A /* PBXTextBookmark */;
+			CBF09BCB14676E8000088D6A /* PBXTextBookmark */ = CBF09BCB14676E8000088D6A /* PBXTextBookmark */;
+			CBF09BCC14676EAA00088D6A /* PBXTextBookmark */ = CBF09BCC14676EAA00088D6A /* PBXTextBookmark */;
+			CBF09BCD14676EAA00088D6A /* PBXTextBookmark */ = CBF09BCD14676EAA00088D6A /* PBXTextBookmark */;
+			CBF09BCE14676EAA00088D6A /* PBXTextBookmark */ = CBF09BCE14676EAA00088D6A /* PBXTextBookmark */;
+			CBF09BCF14676F1100088D6A /* PBXTextBookmark */ = CBF09BCF14676F1100088D6A /* PBXTextBookmark */;
+			CBF09BD014676F1100088D6A /* PBXTextBookmark */ = CBF09BD014676F1100088D6A /* PBXTextBookmark */;
+			CBF09BD114676F1100088D6A /* PBXTextBookmark */ = CBF09BD114676F1100088D6A /* PBXTextBookmark */;
+			CBF09BD214676F1100088D6A /* PBXTextBookmark */ = CBF09BD214676F1100088D6A /* PBXTextBookmark */;
+			CBF09BD714676F7500088D6A /* PBXTextBookmark */ = CBF09BD714676F7500088D6A /* PBXTextBookmark */;
+			CBF09BD814676F7500088D6A /* PBXTextBookmark */ = CBF09BD814676F7500088D6A /* PBXTextBookmark */;
+			CBF09BD914676F7500088D6A /* PBXTextBookmark */ = CBF09BD914676F7500088D6A /* PBXTextBookmark */;
+			CBF09BDC14676FE600088D6A /* PBXTextBookmark */ = CBF09BDC14676FE600088D6A /* PBXTextBookmark */;
+			CBF09BDD14676FE600088D6A /* PBXTextBookmark */ = CBF09BDD14676FE600088D6A /* PBXTextBookmark */;
+			CBF09BDE14676FE600088D6A /* PBXTextBookmark */ = CBF09BDE14676FE600088D6A /* PBXTextBookmark */;
+			CBF09BDF14676FE600088D6A /* PBXTextBookmark */ = CBF09BDF14676FE600088D6A /* PBXTextBookmark */;
+			CBF09BE014676FE600088D6A /* PBXTextBookmark */ = CBF09BE014676FE600088D6A /* PBXTextBookmark */;
+			CBF09BE31467704F00088D6A /* PBXTextBookmark */ = CBF09BE31467704F00088D6A /* PBXTextBookmark */;
+			CBF09BE6146770F600088D6A /* PBXTextBookmark */ = CBF09BE6146770F600088D6A /* PBXTextBookmark */;
+			CBF09BE7146770F600088D6A /* PBXTextBookmark */ = CBF09BE7146770F600088D6A /* PBXTextBookmark */;
+			CBF09BE8146770F600088D6A /* PBXTextBookmark */ = CBF09BE8146770F600088D6A /* PBXTextBookmark */;
+			CBF09BEC1467711B00088D6A /* PBXTextBookmark */ = CBF09BEC1467711B00088D6A /* PBXTextBookmark */;
+			CBF09BED1467711B00088D6A /* PBXTextBookmark */ = CBF09BED1467711B00088D6A /* PBXTextBookmark */;
+			CBF09BEE1467711B00088D6A /* PBXTextBookmark */ = CBF09BEE1467711B00088D6A /* PBXTextBookmark */;
+			CBF09BF11467717F00088D6A /* PBXTextBookmark */ = CBF09BF11467717F00088D6A /* PBXTextBookmark */;
+			CBF09BF31467732000088D6A /* PBXTextBookmark */ = CBF09BF31467732000088D6A /* PBXTextBookmark */;
+			CBF09BF41467732000088D6A /* PBXTextBookmark */ = CBF09BF41467732000088D6A /* PBXTextBookmark */;
+			CBF09BF51467732000088D6A /* PBXTextBookmark */ = CBF09BF51467732000088D6A /* PBXTextBookmark */;
+			CBF09BF81467738A00088D6A /* PBXTextBookmark */ = CBF09BF81467738A00088D6A /* PBXTextBookmark */;
+			CBF09BF91467738A00088D6A /* PBXTextBookmark */ = CBF09BF91467738A00088D6A /* PBXTextBookmark */;
+			CBF09BFA1467738A00088D6A /* PBXTextBookmark */ = CBF09BFA1467738A00088D6A /* PBXTextBookmark */;
+			CBF09BFB1467738A00088D6A /* PBXTextBookmark */ = CBF09BFB1467738A00088D6A /* PBXTextBookmark */;
+			CBF09BFF146773F400088D6A /* PBXTextBookmark */ = CBF09BFF146773F400088D6A /* PBXTextBookmark */;
+			CBF09C00146773F400088D6A /* PBXTextBookmark */ = CBF09C00146773F400088D6A /* PBXTextBookmark */;
+			CBF09C01146773F400088D6A /* PBXTextBookmark */ = CBF09C01146773F400088D6A /* PBXTextBookmark */;
+			CBF09C02146773F400088D6A /* PBXTextBookmark */ = CBF09C02146773F400088D6A /* PBXTextBookmark */;
+			CBF09C03146773F400088D6A /* PBXTextBookmark */ = CBF09C03146773F400088D6A /* PBXTextBookmark */;
+			CBF09C071467742600088D6A /* PBXTextBookmark */ = CBF09C071467742600088D6A /* PBXTextBookmark */;
+			CBF09C091467744900088D6A /* PBXTextBookmark */ = CBF09C091467744900088D6A /* PBXTextBookmark */;
+			CBF09C0E146774F600088D6A /* PBXTextBookmark */ = CBF09C0E146774F600088D6A /* PBXTextBookmark */;
+			CBF09C121467751C00088D6A /* PBXTextBookmark */ = CBF09C121467751C00088D6A /* PBXTextBookmark */;
+			CBF09C161467778F00088D6A /* PBXTextBookmark */ = CBF09C161467778F00088D6A /* PBXTextBookmark */;
+			CBF09C171467778F00088D6A /* PBXTextBookmark */ = CBF09C171467778F00088D6A /* PBXTextBookmark */;
+			CBF09C181467778F00088D6A /* PBXTextBookmark */ = CBF09C181467778F00088D6A /* PBXTextBookmark */;
+			CBF09C191467778F00088D6A /* PBXTextBookmark */ = CBF09C191467778F00088D6A /* PBXTextBookmark */;
+			CBF09C1C146777EB00088D6A /* PBXTextBookmark */ = CBF09C1C146777EB00088D6A /* PBXTextBookmark */;
+			CBF09C1D146777EB00088D6A /* PBXTextBookmark */ = CBF09C1D146777EB00088D6A /* PBXTextBookmark */;
+			CBF09C1E146777EB00088D6A /* PBXTextBookmark */ = CBF09C1E146777EB00088D6A /* PBXTextBookmark */;
+			CBF09C201467780A00088D6A /* PBXTextBookmark */ = CBF09C201467780A00088D6A /* PBXTextBookmark */;
+			CBF09C2314677CCF00088D6A /* PBXTextBookmark */ = CBF09C2314677CCF00088D6A /* PBXTextBookmark */;
+			CBF09C2414677CCF00088D6A /* PBXTextBookmark */ = CBF09C2414677CCF00088D6A /* PBXTextBookmark */;
+			CBF09C2514677CCF00088D6A /* PBXTextBookmark */ = CBF09C2514677CCF00088D6A /* PBXTextBookmark */;
+			CBF09C2614677CCF00088D6A /* PBXTextBookmark */ = CBF09C2614677CCF00088D6A /* PBXTextBookmark */;
+			CBF09C2714677CCF00088D6A /* PBXTextBookmark */ = CBF09C2714677CCF00088D6A /* PBXTextBookmark */;
+			CBF09C2C14677D6700088D6A /* PBXTextBookmark */ = CBF09C2C14677D6700088D6A /* PBXTextBookmark */;
+			CBF09C2F14677DB000088D6A /* PBXTextBookmark */ = CBF09C2F14677DB000088D6A /* PBXTextBookmark */;
+			CBF09C3014677DB000088D6A /* PBXTextBookmark */ = CBF09C3014677DB000088D6A /* PBXTextBookmark */;
+			CBF09C3114677DB000088D6A /* PBXTextBookmark */ = CBF09C3114677DB000088D6A /* PBXTextBookmark */;
+			CBF09C3314677F4700088D6A /* PBXTextBookmark */ = CBF09C3314677F4700088D6A /* PBXTextBookmark */;
+			CBF09C3A1467816900088D6A /* PBXTextBookmark */ = CBF09C3A1467816900088D6A /* PBXTextBookmark */;
+			CBF09C3B1467816900088D6A /* PBXTextBookmark */ = CBF09C3B1467816900088D6A /* PBXTextBookmark */;
+			CBF09C3C1467816900088D6A /* PBXTextBookmark */ = CBF09C3C1467816900088D6A /* PBXTextBookmark */;
+			CBF09C3D1467816900088D6A /* PBXTextBookmark */ = CBF09C3D1467816900088D6A /* PBXTextBookmark */;
+			CBF09C411467819600088D6A /* PBXTextBookmark */ = CBF09C411467819600088D6A /* PBXTextBookmark */;
+			CBF09C421467819600088D6A /* PBXTextBookmark */ = CBF09C421467819600088D6A /* PBXTextBookmark */;
+			CBF09C431467819600088D6A /* PBXTextBookmark */ = CBF09C431467819600088D6A /* PBXTextBookmark */;
+			CBF09C47146781B800088D6A /* PBXTextBookmark */ = CBF09C47146781B800088D6A /* PBXTextBookmark */;
+			CBF09C48146781B800088D6A /* PBXTextBookmark */ = CBF09C48146781B800088D6A /* PBXTextBookmark */;
+			CBF09C49146781B800088D6A /* PBXTextBookmark */ = CBF09C49146781B800088D6A /* PBXTextBookmark */;
+			CBF09C4D1467820800088D6A /* PBXTextBookmark */ = CBF09C4D1467820800088D6A /* PBXTextBookmark */;
+			CBF09C4E1467820800088D6A /* PBXTextBookmark */ = CBF09C4E1467820800088D6A /* PBXTextBookmark */;
+			CBF09C4F1467820800088D6A /* PBXTextBookmark */ = CBF09C4F1467820800088D6A /* PBXTextBookmark */;
+			CBF09C551467826B00088D6A /* PBXTextBookmark */ = CBF09C551467826B00088D6A /* PBXTextBookmark */;
+			CBF09C561467826B00088D6A /* PBXTextBookmark */ = CBF09C561467826B00088D6A /* PBXTextBookmark */;
+			CBF09C571467826B00088D6A /* PBXTextBookmark */ = CBF09C571467826B00088D6A /* PBXTextBookmark */;
+			CBF09C591467827D00088D6A /* PBXTextBookmark */ = CBF09C591467827D00088D6A /* PBXTextBookmark */;
+			CBF09C5E146786BD00088D6A /* PBXTextBookmark */ = CBF09C5E146786BD00088D6A /* PBXTextBookmark */;
+			CBF09C631467876B00088D6A /* PBXTextBookmark */ = CBF09C631467876B00088D6A /* PBXTextBookmark */;
+			CBF09C641467876B00088D6A /* PBXTextBookmark */ = CBF09C641467876B00088D6A /* PBXTextBookmark */;
+			CBF09C651467876B00088D6A /* PBXTextBookmark */ = CBF09C651467876B00088D6A /* PBXTextBookmark */;
+			CBF09C661467876B00088D6A /* PBXTextBookmark */ = CBF09C661467876B00088D6A /* PBXTextBookmark */;
+			CBF09C6A146787BD00088D6A /* PBXTextBookmark */ = CBF09C6A146787BD00088D6A /* PBXTextBookmark */;
+			CBF09C6B146787BD00088D6A /* PBXTextBookmark */ = CBF09C6B146787BD00088D6A /* PBXTextBookmark */;
+			CBF09C6C146787BD00088D6A /* PBXTextBookmark */ = CBF09C6C146787BD00088D6A /* PBXTextBookmark */;
+			CBF09C6D146787BD00088D6A /* PBXTextBookmark */ = CBF09C6D146787BD00088D6A /* PBXTextBookmark */;
+			CBF09C731467886B00088D6A /* PBXTextBookmark */ = CBF09C731467886B00088D6A /* PBXTextBookmark */;
+			CBF09C741467886B00088D6A /* PBXTextBookmark */ = CBF09C741467886B00088D6A /* PBXTextBookmark */;
+			CBF09C751467886B00088D6A /* PBXTextBookmark */ = CBF09C751467886B00088D6A /* PBXTextBookmark */;
+			CBF09C761467886B00088D6A /* PBXTextBookmark */ = CBF09C761467886B00088D6A /* PBXTextBookmark */;
+			CBF09C771467886B00088D6A /* PBXTextBookmark */ = CBF09C771467886B00088D6A /* PBXTextBookmark */;
+			CBF09C7D146789D500088D6A /* PBXTextBookmark */ = CBF09C7D146789D500088D6A /* PBXTextBookmark */;
+			CBF09C7E146789D500088D6A /* PBXTextBookmark */ = CBF09C7E146789D500088D6A /* PBXTextBookmark */;
+			CBF09C7F146789D500088D6A /* PBXTextBookmark */ = CBF09C7F146789D500088D6A /* PBXTextBookmark */;
 		};
 		sourceControlManager = CBE32C9A14610FD900A7C656 /* Source Control */;
 		userBuildSettings = {
@@ -304,7 +500,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 0;
-		rLoc = 34;
+		rLoc = 40;
 		rType = 1;
 	};
 	CBF098DC1465B64900088D6A /* XCBuildMessageTextBookmark */ = {
@@ -313,7 +509,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 0;
-		rLoc = 34;
+		rLoc = 40;
 		rType = 1;
 	};
 	CBF098DD1465B64900088D6A /* PBXTextBookmark */ = {
@@ -321,7 +517,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 21";
 		rLen = 0;
-		rLoc = 752;
+		rLoc = 821;
 		rType = 0;
 		vrLen = 637;
 		vrLoc = 0;
@@ -331,7 +527,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 18";
 		rLen = 0;
-		rLoc = 712;
+		rLoc = 779;
 		rType = 0;
 		vrLen = 685;
 		vrLoc = 0;
@@ -341,7 +537,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 21";
 		rLen = 0;
-		rLoc = 752;
+		rLoc = 821;
 		rType = 0;
 		vrLen = 588;
 		vrLoc = 0;
@@ -351,7 +547,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 21";
 		rLen = 0;
-		rLoc = 752;
+		rLoc = 821;
 		rType = 0;
 		vrLen = 705;
 		vrLoc = 0;
@@ -362,7 +558,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 0;
-		rLoc = 34;
+		rLoc = 40;
 		rType = 1;
 	};
 	CBF099051465B6D000088D6A /* PBXTextBookmark */ = {
@@ -370,7 +566,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 25";
 		rLen = 0;
-		rLoc = 752;
+		rLoc = 821;
 		rType = 0;
 		vrLen = 290;
 		vrLoc = 124;
@@ -380,7 +576,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 25";
 		rLen = 0;
-		rLoc = 752;
+		rLoc = 821;
 		rType = 0;
 		vrLen = 669;
 		vrLoc = 0;
@@ -390,7 +586,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 25";
 		rLen = 0;
-		rLoc = 752;
+		rLoc = 821;
 		rType = 0;
 		vrLen = 669;
 		vrLoc = 0;
@@ -400,7 +596,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 4";
 		rLen = 0;
-		rLoc = 159;
+		rLoc = 186;
 		rType = 0;
 		vrLen = 813;
 		vrLoc = 0;
@@ -410,7 +606,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 3";
 		rLen = 0;
-		rLoc = 159;
+		rLoc = 186;
 		rType = 0;
 		vrLen = 596;
 		vrLoc = 0;
@@ -420,7 +616,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 3";
 		rLen = 0;
-		rLoc = 159;
+		rLoc = 186;
 		rType = 0;
 		vrLen = 740;
 		vrLoc = 0;
@@ -430,7 +626,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 29";
 		rLen = 0;
-		rLoc = 1091;
+		rLoc = 1282;
 		rType = 0;
 		vrLen = 656;
 		vrLoc = 223;
@@ -440,7 +636,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 3";
 		rLen = 0;
-		rLoc = 159;
+		rLoc = 186;
 		rType = 0;
 		vrLen = 801;
 		vrLoc = 0;
@@ -450,7 +646,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 19";
 		rLen = 0;
-		rLoc = 608;
+		rLoc = 675;
 		rType = 0;
 		vrLen = 752;
 		vrLoc = 0;
@@ -460,7 +656,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 4";
 		rLen = 0;
-		rLoc = 159;
+		rLoc = 186;
 		rType = 0;
 		vrLen = 849;
 		vrLoc = 0;
@@ -470,7 +666,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 4";
 		rLen = 0;
-		rLoc = 159;
+		rLoc = 186;
 		rType = 0;
 		vrLen = 763;
 		vrLoc = 0;
@@ -480,7 +676,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 4";
 		rLen = 0;
-		rLoc = 159;
+		rLoc = 186;
 		rType = 0;
 		vrLen = 860;
 		vrLoc = 0;
@@ -490,7 +686,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 4";
 		rLen = 0;
-		rLoc = 159;
+		rLoc = 186;
 		rType = 0;
 		vrLen = 762;
 		vrLoc = 0;
@@ -500,7 +696,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 4";
 		rLen = 0;
-		rLoc = 159;
+		rLoc = 186;
 		rType = 0;
 		vrLen = 824;
 		vrLoc = 0;
@@ -510,7 +706,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 32";
 		rLen = 0;
-		rLoc = 1091;
+		rLoc = 1282;
 		rType = 0;
 		vrLen = 676;
 		vrLoc = 372;
@@ -520,7 +716,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 4";
 		rLen = 0;
-		rLoc = 159;
+		rLoc = 186;
 		rType = 0;
 		vrLen = 885;
 		vrLoc = 0;
@@ -530,7 +726,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 48";
 		rLen = 0;
-		rLoc = 2299;
+		rLoc = 2600;
 		rType = 0;
 		vrLen = 676;
 		vrLoc = 372;
@@ -540,7 +736,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 4";
 		rLen = 0;
-		rLoc = 159;
+		rLoc = 186;
 		rType = 0;
 		vrLen = 923;
 		vrLoc = 0;
@@ -550,7 +746,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 49";
 		rLen = 0;
-		rLoc = 2299;
+		rLoc = 2600;
 		rType = 0;
 		vrLen = 668;
 		vrLoc = 372;
@@ -560,7 +756,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 4";
 		rLen = 0;
-		rLoc = 159;
+		rLoc = 186;
 		rType = 0;
 		vrLen = 883;
 		vrLoc = 0;
@@ -570,7 +766,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 40";
 		rLen = 0;
-		rLoc = 2177;
+		rLoc = 2480;
 		rType = 0;
 		vrLen = 631;
 		vrLoc = 372;
@@ -580,7 +776,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 31";
 		rLen = 0;
-		rLoc = 1091;
+		rLoc = 1282;
 		rType = 0;
 		vrLen = 635;
 		vrLoc = 372;
@@ -590,7 +786,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 31";
 		rLen = 0;
-		rLoc = 1091;
+		rLoc = 1282;
 		rType = 0;
 		vrLen = 625;
 		vrLoc = 372;
@@ -600,7 +796,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 31";
 		rLen = 0;
-		rLoc = 1091;
+		rLoc = 1282;
 		rType = 0;
 		vrLen = 634;
 		vrLoc = 372;
@@ -610,7 +806,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 31";
 		rLen = 0;
-		rLoc = 1091;
+		rLoc = 1282;
 		rType = 0;
 		vrLen = 593;
 		vrLoc = 372;
@@ -620,7 +816,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 27";
 		rLen = 0;
-		rLoc = 752;
+		rLoc = 821;
 		rType = 0;
 		vrLen = 787;
 		vrLoc = 0;
@@ -630,7 +826,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 31";
 		rLen = 0;
-		rLoc = 1091;
+		rLoc = 1282;
 		rType = 0;
 		vrLen = 593;
 		vrLoc = 372;
@@ -640,7 +836,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 32";
 		rLen = 0;
-		rLoc = 1091;
+		rLoc = 1282;
 		rType = 0;
 		vrLen = 631;
 		vrLoc = 372;
@@ -650,7 +846,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 48";
 		rLen = 0;
-		rLoc = 2282;
+		rLoc = 2600;
 		rType = 0;
 		vrLen = 627;
 		vrLoc = 374;
@@ -660,7 +856,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 32";
 		rLen = 0;
-		rLoc = 1860;
+		rLoc = 2074;
 		rType = 0;
 		vrLen = 627;
 		vrLoc = 374;
@@ -670,7 +866,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 50";
 		rLen = 0;
-		rLoc = 2282;
+		rLoc = 2600;
 		rType = 0;
 		vrLen = 608;
 		vrLoc = 421;
@@ -680,7 +876,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 54";
 		rLen = 0;
-		rLoc = 2493;
+		rLoc = 2839;
 		rType = 0;
 		vrLen = 631;
 		vrLoc = 426;
@@ -690,7 +886,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 33";
 		rLen = 0;
-		rLoc = 1091;
+		rLoc = 1282;
 		rType = 0;
 		vrLen = 624;
 		vrLoc = 425;
@@ -700,7 +896,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 33";
 		rLen = 0;
-		rLoc = 1091;
+		rLoc = 1282;
 		rType = 0;
 		vrLen = 672;
 		vrLoc = 425;
@@ -710,7 +906,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 31";
 		rLen = 0;
-		rLoc = 1091;
+		rLoc = 1282;
 		rType = 0;
 		vrLen = 627;
 		vrLoc = 358;
@@ -720,7 +916,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 41";
 		rLen = 0;
-		rLoc = 1187;
+		rLoc = 1378;
 		rType = 0;
 		vrLen = 1144;
 		vrLoc = 469;
@@ -730,7 +926,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 66";
 		rLen = 0;
-		rLoc = 2177;
+		rLoc = 2480;
 		rType = 0;
 		vrLen = 991;
 		vrLoc = 755;
@@ -740,7 +936,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 67";
 		rLen = 0;
-		rLoc = 1961;
+		rLoc = 2177;
 		rType = 0;
 		vrLen = 940;
 		vrLoc = 965;
@@ -750,7 +946,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 68";
 		rLen = 0;
-		rLoc = 1972;
+		rLoc = 2188;
 		rType = 0;
 		vrLen = 893;
 		vrLoc = 1086;
@@ -760,7 +956,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 80";
 		rLen = 0;
-		rLoc = 2492;
+		rLoc = 2838;
 		rType = 0;
 		vrLen = 1022;
 		vrLoc = 991;
@@ -770,7 +966,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 79";
 		rLen = 0;
-		rLoc = 2492;
+		rLoc = 2838;
 		rType = 0;
 		vrLen = 920;
 		vrLoc = 1086;
@@ -780,7 +976,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 78";
 		rLen = 0;
-		rLoc = 2399;
+		rLoc = 2724;
 		rType = 0;
 		vrLen = 751;
 		vrLoc = 1303;
@@ -790,7 +986,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 78";
 		rLen = 0;
-		rLoc = 2344;
+		rLoc = 2669;
 		rType = 0;
 		vrLen = 710;
 		vrLoc = 1303;
@@ -800,7 +996,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 79";
 		rLen = 0;
-		rLoc = 2397;
+		rLoc = 2722;
 		rType = 0;
 		vrLen = 716;
 		vrLoc = 1303;
@@ -810,7 +1006,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 79";
 		rLen = 0;
-		rLoc = 2397;
+		rLoc = 2722;
 		rType = 0;
 		vrLen = 714;
 		vrLoc = 1303;
@@ -820,7 +1016,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 69";
 		rLen = 0;
-		rLoc = 2177;
+		rLoc = 2480;
 		rType = 0;
 		vrLen = 783;
 		vrLoc = 1303;
@@ -830,7 +1026,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 78";
 		rLen = 0;
-		rLoc = 2344;
+		rLoc = 2669;
 		rType = 0;
 		vrLen = 731;
 		vrLoc = 1303;
@@ -840,7 +1036,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 34";
 		rLen = 0;
-		rLoc = 898;
+		rLoc = 1002;
 		rType = 0;
 		vrLen = 1185;
 		vrLoc = 469;
@@ -850,7 +1046,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 69";
 		rLen = 0;
-		rLoc = 1958;
+		rLoc = 2174;
 		rType = 0;
 		vrLen = 712;
 		vrLoc = 1375;
@@ -860,7 +1056,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 79";
 		rLen = 0;
-		rLoc = 2344;
+		rLoc = 2669;
 		rType = 0;
 		vrLen = 709;
 		vrLoc = 1375;
@@ -870,7 +1066,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 70";
 		rLen = 0;
-		rLoc = 2177;
+		rLoc = 2480;
 		rType = 0;
 		vrLen = 707;
 		vrLoc = 1375;
@@ -880,7 +1076,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 34";
 		rLen = 0;
-		rLoc = 898;
+		rLoc = 1002;
 		rType = 0;
 		vrLen = 1133;
 		vrLoc = 443;
@@ -890,7 +1086,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 77";
 		rLen = 0;
-		rLoc = 2247;
+		rLoc = 2550;
 		rType = 0;
 		vrLen = 709;
 		vrLoc = 1375;
@@ -900,23 +1096,23 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 70";
 		rLen = 0;
-		rLoc = 2143;
+		rLoc = 2446;
 		rType = 0;
 		vrLen = 714;
 		vrLoc = 1375;
 	};
 	CBF09A071467018200088D6A /* Particle.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {967, 613}}";
-			sepNavSelRange = "{481, 0}";
-			sepNavVisRange = "{0, 727}";
+			sepNavIntBoundsRect = "{{0, 0}, {967, 624}}";
+			sepNavSelRange = "{793, 0}";
+			sepNavVisRange = "{143, 717}";
 		};
 	};
 	CBF09A081467018200088D6A /* Particle.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {967, 637}}";
-			sepNavSelRange = "{613, 0}";
-			sepNavVisRange = "{0, 799}";
+			sepNavIntBoundsRect = "{{0, 0}, {967, 793}}";
+			sepNavSelRange = "{939, 0}";
+			sepNavVisRange = "{0, 815}";
 			sepNavWindowFrame = "{{38, 326}, {1058, 706}}";
 		};
 	};
@@ -925,7 +1121,7 @@
 		fRef = CBF09A071467018200088D6A /* Particle.h */;
 		name = "Particle.h: 28";
 		rLen = 0;
-		rLoc = 727;
+		rLoc = 860;
 		rType = 0;
 		vrLen = 394;
 		vrLoc = 0;
@@ -935,7 +1131,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 70";
 		rLen = 0;
-		rLoc = 2177;
+		rLoc = 2480;
 		rType = 0;
 		vrLen = 784;
 		vrLoc = 1305;
@@ -949,23 +1145,24 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 12";
 		rLen = 0;
-		rLoc = 799;
+		rLoc = 1124;
 		rType = 0;
 		vrLen = 168;
 		vrLoc = 0;
 	};
 	CBF09A0E1467023900088D6A /* ParticleController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {967, 613}}";
-			sepNavSelRange = "{613, 0}";
-			sepNavVisRange = "{0, 642}";
+			sepNavIntBoundsRect = "{{0, 0}, {967, 504}}";
+			sepNavSelRange = "{646, 0}";
+			sepNavVisRange = "{0, 726}";
 		};
 	};
 	CBF09A0F1467023900088D6A /* ParticleController.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {967, 897}}";
-			sepNavSelRange = "{538, 0}";
-			sepNavVisRange = "{401, 961}";
+			sepNavIntBoundsRect = "{{0, 0}, {967, 1027}}";
+			sepNavSelRange = "{1367, 0}";
+			sepNavVisRange = "{0, 821}";
+			sepNavWindowFrame = "{{61, 305}, {1058, 706}}";
 		};
 	};
 	CBF09A111467026000088D6A /* PBXTextBookmark */ = {
@@ -973,7 +1170,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 70";
 		rLen = 0;
-		rLoc = 2177;
+		rLoc = 2480;
 		rType = 0;
 		vrLen = 784;
 		vrLoc = 1305;
@@ -983,7 +1180,7 @@
 		fRef = CBF09A0E1467023900088D6A /* ParticleController.h */;
 		name = "ParticleController.h: 54";
 		rLen = 0;
-		rLoc = 642;
+		rLoc = 726;
 		rType = 0;
 		vrLen = 710;
 		vrLoc = 291;
@@ -993,7 +1190,7 @@
 		fRef = CBF09A071467018200088D6A /* Particle.h */;
 		name = "Particle.h: 28";
 		rLen = 0;
-		rLoc = 727;
+		rLoc = 860;
 		rType = 0;
 		vrLen = 394;
 		vrLoc = 0;
@@ -1003,7 +1200,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 13";
 		rLen = 0;
-		rLoc = 228;
+		rLoc = 253;
 		rType = 0;
 		vrLen = 516;
 		vrLoc = 0;
@@ -1033,7 +1230,7 @@
 		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
 		name = "ParticleController.cpp: 56";
 		rLen = 0;
-		rLoc = 1362;
+		rLoc = 1492;
 		rType = 0;
 		vrLen = 692;
 		vrLoc = 344;
@@ -1043,7 +1240,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 70";
 		rLen = 0;
-		rLoc = 2177;
+		rLoc = 2480;
 		rType = 0;
 		vrLen = 714;
 		vrLoc = 1375;
@@ -1053,7 +1250,7 @@
 		fRef = CBF09A0E1467023900088D6A /* ParticleController.h */;
 		name = "ParticleController.h: 23";
 		rLen = 0;
-		rLoc = 642;
+		rLoc = 726;
 		rType = 0;
 		vrLen = 395;
 		vrLoc = 0;
@@ -1063,7 +1260,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 13";
 		rLen = 0;
-		rLoc = 228;
+		rLoc = 253;
 		rType = 0;
 		vrLen = 516;
 		vrLoc = 0;
@@ -1073,7 +1270,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 13";
 		rLen = 0;
-		rLoc = 228;
+		rLoc = 253;
 		rType = 0;
 		vrLen = 516;
 		vrLoc = 0;
@@ -1083,7 +1280,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 13";
 		rLen = 0;
-		rLoc = 228;
+		rLoc = 253;
 		rType = 0;
 		vrLen = 516;
 		vrLoc = 0;
@@ -1093,7 +1290,7 @@
 		fRef = CBF09A071467018200088D6A /* Particle.h */;
 		name = "Particle.h: 28";
 		rLen = 0;
-		rLoc = 727;
+		rLoc = 860;
 		rType = 0;
 		vrLen = 394;
 		vrLoc = 0;
@@ -1113,7 +1310,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 80";
 		rLen = 0;
-		rLoc = 2349;
+		rLoc = 2674;
 		rType = 0;
 		vrLen = 784;
 		vrLoc = 1305;
@@ -1123,7 +1320,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 23";
 		rLen = 0;
-		rLoc = 608;
+		rLoc = 675;
 		rType = 0;
 		vrLen = 865;
 		vrLoc = 0;
@@ -1133,7 +1330,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 92";
 		rLen = 0;
-		rLoc = 2492;
+		rLoc = 2838;
 		rType = 0;
 		vrLen = 675;
 		vrLoc = 1604;
@@ -1163,7 +1360,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 14";
 		rLen = 0;
-		rLoc = 282;
+		rLoc = 307;
 		rType = 0;
 		vrLen = 513;
 		vrLoc = 3;
@@ -1173,7 +1370,7 @@
 		fRef = CBF09A071467018200088D6A /* Particle.h */;
 		name = "Particle.h: 28";
 		rLen = 0;
-		rLoc = 727;
+		rLoc = 860;
 		rType = 0;
 		vrLen = 394;
 		vrLoc = 0;
@@ -1193,7 +1390,7 @@
 		fRef = CBF09A071467018200088D6A /* Particle.h */;
 		name = "Particle.h: 33";
 		rLen = 0;
-		rLoc = 705;
+		rLoc = 838;
 		rType = 0;
 		vrLen = 588;
 		vrLoc = 0;
@@ -1203,7 +1400,7 @@
 		fRef = CBF09A071467018200088D6A /* Particle.h */;
 		name = "Particle.h: 33";
 		rLen = 0;
-		rLoc = 705;
+		rLoc = 838;
 		rType = 0;
 		vrLen = 586;
 		vrLoc = 0;
@@ -1213,7 +1410,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 28";
 		rLen = 0;
-		rLoc = 517;
+		rLoc = 725;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 20;
@@ -1223,7 +1420,7 @@
 		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
 		name = "ParticleController.cpp: 44";
 		rLen = 0;
-		rLoc = 1234;
+		rLoc = 1175;
 		rType = 0;
 		vrLen = 709;
 		vrLoc = 326;
@@ -1233,7 +1430,7 @@
 		fRef = CBF09A071467018200088D6A /* Particle.h */;
 		name = "Particle.h: 34";
 		rLen = 0;
-		rLoc = 707;
+		rLoc = 840;
 		rType = 0;
 		vrLen = 588;
 		vrLoc = 0;
@@ -1243,7 +1440,7 @@
 		fRef = CBF09A0E1467023900088D6A /* ParticleController.h */;
 		name = "ParticleController.h: 23";
 		rLen = 0;
-		rLoc = 642;
+		rLoc = 726;
 		rType = 0;
 		vrLen = 395;
 		vrLoc = 0;
@@ -1263,7 +1460,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 42";
 		rLen = 0;
-		rLoc = 1091;
+		rLoc = 1282;
 		rType = 0;
 		vrLen = 858;
 		vrLoc = 0;
@@ -1273,7 +1470,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 42";
 		rLen = 0;
-		rLoc = 1091;
+		rLoc = 1282;
 		rType = 0;
 		vrLen = 1126;
 		vrLoc = 573;
@@ -1303,7 +1500,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 12";
 		rLen = 25;
-		rLoc = 192;
+		rLoc = 217;
 		rType = 0;
 		vrLen = 536;
 		vrLoc = 36;
@@ -1313,7 +1510,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 35";
 		rLen = 0;
-		rLoc = 809;
+		rLoc = 878;
 		rType = 0;
 		vrLen = 664;
 		vrLoc = 1663;
@@ -1323,7 +1520,7 @@
 		fRef = CBF09A0E1467023900088D6A /* ParticleController.h */;
 		name = "ParticleController.h: 24";
 		rLen = 0;
-		rLoc = 639;
+		rLoc = 723;
 		rType = 0;
 		vrLen = 423;
 		vrLoc = 0;
@@ -1353,7 +1550,7 @@
 		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
 		name = "ParticleController.cpp: 46";
 		rLen = 0;
-		rLoc = 1239;
+		rLoc = 1175;
 		rType = 0;
 		vrLen = 674;
 		vrLoc = 411;
@@ -1363,7 +1560,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 12";
 		rLen = 25;
-		rLoc = 192;
+		rLoc = 217;
 		rType = 0;
 		vrLen = 539;
 		vrLoc = 33;
@@ -1373,7 +1570,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 22";
 		rLen = 0;
-		rLoc = 389;
+		rLoc = 414;
 		rType = 0;
 		vrLen = 536;
 		vrLoc = 36;
@@ -1383,7 +1580,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 22";
 		rLen = 0;
-		rLoc = 389;
+		rLoc = 414;
 		rType = 0;
 		vrLen = 536;
 		vrLoc = 36;
@@ -1393,7 +1590,7 @@
 		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
 		name = "ParticleController.cpp: 46";
 		rLen = 0;
-		rLoc = 1239;
+		rLoc = 1175;
 		rType = 0;
 		vrLen = 715;
 		vrLoc = 370;
@@ -1403,7 +1600,7 @@
 		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
 		name = "ParticleController.cpp: 46";
 		rLen = 0;
-		rLoc = 1239;
+		rLoc = 1175;
 		rType = 0;
 		vrLen = 716;
 		vrLoc = 0;
@@ -1413,7 +1610,7 @@
 		fRef = CBF09A0E1467023900088D6A /* ParticleController.h */;
 		name = "ParticleController.h: 24";
 		rLen = 0;
-		rLoc = 639;
+		rLoc = 723;
 		rType = 0;
 		vrLen = 423;
 		vrLoc = 0;
@@ -1433,7 +1630,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 20";
 		rLen = 0;
-		rLoc = 474;
+		rLoc = 501;
 		rType = 0;
 		vrLen = 858;
 		vrLoc = 0;
@@ -1443,7 +1640,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 26";
 		rLen = 0;
-		rLoc = 517;
+		rLoc = 725;
 		rType = 0;
 		vrLen = 527;
 		vrLoc = 20;
@@ -1463,7 +1660,7 @@
 		fRef = CBF09A071467018200088D6A /* Particle.h */;
 		name = "Particle.h: 36";
 		rLen = 0;
-		rLoc = 684;
+		rLoc = 817;
 		rType = 0;
 		vrLen = 621;
 		vrLoc = 18;
@@ -1483,7 +1680,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 26";
 		rLen = 0;
-		rLoc = 517;
+		rLoc = 725;
 		rType = 0;
 		vrLen = 544;
 		vrLoc = 3;
@@ -1493,7 +1690,7 @@
 		fRef = CBF09A071467018200088D6A /* Particle.h */;
 		name = "Particle.h: 36";
 		rLen = 0;
-		rLoc = 684;
+		rLoc = 817;
 		rType = 0;
 		vrLen = 621;
 		vrLoc = 18;
@@ -1533,7 +1730,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 27";
 		rLen = 0;
-		rLoc = 517;
+		rLoc = 725;
 		rType = 0;
 		vrLen = 592;
 		vrLoc = 0;
@@ -1563,7 +1760,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 20";
 		rLen = 0;
-		rLoc = 474;
+		rLoc = 501;
 		rType = 0;
 		vrLen = 858;
 		vrLoc = 0;
@@ -1573,7 +1770,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 21";
 		rLen = 0;
-		rLoc = 500;
+		rLoc = 527;
 		rType = 0;
 		vrLen = 875;
 		vrLoc = 181;
@@ -1583,7 +1780,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 24";
 		rLen = 0;
-		rLoc = 608;
+		rLoc = 675;
 		rType = 0;
 		vrLen = 850;
 		vrLoc = 160;
@@ -1593,7 +1790,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 24";
 		rLen = 0;
-		rLoc = 414;
+		rLoc = 470;
 		rType = 0;
 		vrLen = 547;
 		vrLoc = 0;
@@ -1603,7 +1800,7 @@
 		fRef = CBF09A071467018200088D6A /* Particle.h */;
 		name = "Particle.h: 38";
 		rLen = 0;
-		rLoc = 683;
+		rLoc = 816;
 		rType = 0;
 		vrLen = 665;
 		vrLoc = 0;
@@ -1614,7 +1811,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 10;
+		rLoc = 11;
 		rType = 1;
 	};
 	CBF09A7F14670D2200088D6A /* PBXTextBookmark */ = {
@@ -1622,7 +1819,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 11";
 		rLen = 0;
-		rLoc = 228;
+		rLoc = 255;
 		rType = 0;
 		vrLen = 920;
 		vrLoc = 92;
@@ -1632,7 +1829,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 14";
 		rLen = 0;
-		rLoc = 334;
+		rLoc = 361;
 		rType = 0;
 		vrLen = 709;
 		vrLoc = 0;
@@ -1642,7 +1839,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 14";
 		rLen = 0;
-		rLoc = 334;
+		rLoc = 361;
 		rType = 0;
 		vrLen = 709;
 		vrLoc = 0;
@@ -1662,7 +1859,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 89";
 		rLen = 0;
-		rLoc = 2349;
+		rLoc = 2674;
 		rType = 0;
 		vrLen = 647;
 		vrLoc = 1735;
@@ -1672,7 +1869,7 @@
 		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
 		name = "ParticleController.cpp: 43";
 		rLen = 0;
-		rLoc = 982;
+		rLoc = 965;
 		rType = 0;
 		vrLen = 765;
 		vrLoc = 400;
@@ -1682,7 +1879,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 27";
 		rLen = 0;
-		rLoc = 517;
+		rLoc = 725;
 		rType = 0;
 		vrLen = 562;
 		vrLoc = 33;
@@ -1692,7 +1889,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 38";
 		rLen = 0;
-		rLoc = 787;
+		rLoc = 1112;
 		rType = 0;
 		vrLen = 605;
 		vrLoc = 33;
@@ -1702,7 +1899,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 38";
 		rLen = 0;
-		rLoc = 787;
+		rLoc = 1112;
 		rType = 0;
 		vrLen = 571;
 		vrLoc = 76;
@@ -1712,7 +1909,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 38";
 		rLen = 0;
-		rLoc = 787;
+		rLoc = 1112;
 		rType = 0;
 		vrLen = 552;
 		vrLoc = 137;
@@ -1722,7 +1919,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 89";
 		rLen = 0;
-		rLoc = 2349;
+		rLoc = 2674;
 		rType = 0;
 		vrLen = 1215;
 		vrLoc = 1167;
@@ -1732,7 +1929,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 22";
 		rLen = 0;
-		rLoc = 389;
+		rLoc = 414;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1762,7 +1959,7 @@
 		fRef = CBF09A0E1467023900088D6A /* ParticleController.h */;
 		name = "ParticleController.h: 30";
 		rLen = 0;
-		rLoc = 566;
+		rLoc = 650;
 		rType = 0;
 		vrLen = 611;
 		vrLoc = 0;
@@ -1782,7 +1979,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 22";
 		rLen = 0;
-		rLoc = 389;
+		rLoc = 414;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 0;
@@ -1792,7 +1989,7 @@
 		fRef = CBF09A0E1467023900088D6A /* ParticleController.h */;
 		name = "ParticleController.h: 31";
 		rLen = 0;
-		rLoc = 597;
+		rLoc = 681;
 		rType = 0;
 		vrLen = 676;
 		vrLoc = 0;
@@ -1802,7 +1999,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 89";
 		rLen = 0;
-		rLoc = 2349;
+		rLoc = 2674;
 		rType = 0;
 		vrLen = 1218;
 		vrLoc = 1164;
@@ -1832,7 +2029,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 76";
 		rLen = 0;
-		rLoc = 2117;
+		rLoc = 2333;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 0;
@@ -1842,7 +2039,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 33";
 		rLen = 0;
-		rLoc = 590;
+		rLoc = 881;
 		rType = 0;
 		vrLen = 739;
 		vrLoc = 0;
@@ -1862,7 +2059,7 @@
 		fRef = CBF09A071467018200088D6A /* Particle.h */;
 		name = "Particle.h: 37";
 		rLen = 0;
-		rLoc = 680;
+		rLoc = 813;
 		rType = 0;
 		vrLen = 712;
 		vrLoc = 0;
@@ -1872,7 +2069,7 @@
 		fRef = CBF09A0E1467023900088D6A /* ParticleController.h */;
 		name = "ParticleController.h: 32";
 		rLen = 0;
-		rLoc = 613;
+		rLoc = 697;
 		rType = 0;
 		vrLen = 642;
 		vrLoc = 0;
@@ -1882,7 +2079,7 @@
 		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
 		name = "ParticleController.cpp: 56";
 		rLen = 0;
-		rLoc = 1179;
+		rLoc = 1175;
 		rType = 0;
 		vrLen = 1036;
 		vrLoc = 273;
@@ -1902,7 +2099,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 76";
 		rLen = 0;
-		rLoc = 2117;
+		rLoc = 2333;
 		rType = 0;
 		vrLen = 1242;
 		vrLoc = 1126;
@@ -1912,7 +2109,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 33";
 		rLen = 0;
-		rLoc = 590;
+		rLoc = 881;
 		rType = 0;
 		vrLen = 739;
 		vrLoc = 0;
@@ -1942,7 +2139,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 28";
 		rLen = 0;
-		rLoc = 511;
+		rLoc = 567;
 		rType = 0;
 		vrLen = 739;
 		vrLoc = 0;
@@ -1962,7 +2159,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 79";
 		rLen = 0;
-		rLoc = 2047;
+		rLoc = 2263;
 		rType = 0;
 		vrLen = 1258;
 		vrLoc = 1124;
@@ -1972,7 +2169,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 44";
 		rLen = 0;
-		rLoc = 1008;
+		rLoc = 1178;
 		rType = 0;
 		vrLen = 1326;
 		vrLoc = 527;
@@ -1982,7 +2179,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 81";
 		rLen = 0;
-		rLoc = 2116;
+		rLoc = 2332;
 		rType = 0;
 		vrLen = 1258;
 		vrLoc = 1204;
@@ -1992,7 +2189,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 84";
 		rLen = 0;
-		rLoc = 2146;
+		rLoc = 2449;
 		rType = 0;
 		vrLen = 1281;
 		vrLoc = 672;
@@ -2002,7 +2199,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 77";
 		rLen = 0;
-		rLoc = 1942;
+		rLoc = 2158;
 		rType = 0;
 		vrLen = 1243;
 		vrLoc = 938;
@@ -2012,7 +2209,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 33";
 		rLen = 0;
-		rLoc = 549;
+		rLoc = 842;
 		rType = 0;
 		vrLen = 769;
 		vrLoc = 0;
@@ -2022,7 +2219,7 @@
 		fRef = CBF09A071467018200088D6A /* Particle.h */;
 		name = "Particle.h: 37";
 		rLen = 0;
-		rLoc = 680;
+		rLoc = 813;
 		rType = 0;
 		vrLen = 712;
 		vrLoc = 0;
@@ -2032,7 +2229,7 @@
 		fRef = CBF09A071467018200088D6A /* Particle.h */;
 		name = "Particle.h: 27";
 		rLen = 0;
-		rLoc = 481;
+		rLoc = 528;
 		rType = 0;
 		vrLen = 727;
 		vrLoc = 0;
@@ -2042,7 +2239,7 @@
 		fRef = CBF09A071467018200088D6A /* Particle.h */;
 		name = "Particle.h: 27";
 		rLen = 0;
-		rLoc = 481;
+		rLoc = 528;
 		rType = 0;
 		vrLen = 727;
 		vrLoc = 0;
@@ -2062,7 +2259,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 33";
 		rLen = 0;
-		rLoc = 549;
+		rLoc = 842;
 		rType = 0;
 		vrLen = 769;
 		vrLoc = 0;
@@ -2072,7 +2269,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 81";
 		rLen = 0;
-		rLoc = 2116;
+		rLoc = 2332;
 		rType = 0;
 		vrLen = 1252;
 		vrLoc = 897;
@@ -2082,7 +2279,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 44";
 		rLen = 0;
-		rLoc = 1013;
+		rLoc = 1183;
 		rType = 0;
 		vrLen = 1021;
 		vrLoc = 181;
@@ -2092,7 +2289,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 81";
 		rLen = 0;
-		rLoc = 2116;
+		rLoc = 2332;
 		rType = 0;
 		vrLen = 945;
 		vrLoc = 1587;
@@ -2102,7 +2299,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 99";
 		rLen = 0;
-		rLoc = 2442;
+		rLoc = 2767;
 		rType = 0;
 		vrLen = 949;
 		vrLoc = 1587;
@@ -2112,7 +2309,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 99";
 		rLen = 0;
-		rLoc = 2442;
+		rLoc = 2767;
 		rType = 0;
 		vrLen = 1087;
 		vrLoc = 1449;
@@ -2132,7 +2329,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 33";
 		rLen = 0;
-		rLoc = 549;
+		rLoc = 842;
 		rType = 0;
 		vrLen = 769;
 		vrLoc = 0;
@@ -2142,7 +2339,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 46";
 		rLen = 0;
-		rLoc = 795;
+		rLoc = 1120;
 		rType = 0;
 		vrLen = 788;
 		vrLoc = 3;
@@ -2152,7 +2349,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 37";
 		rLen = 0;
-		rLoc = 613;
+		rLoc = 883;
 		rType = 0;
 		vrLen = 796;
 		vrLoc = 3;
@@ -2172,7 +2369,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 64";
 		rLen = 0;
-		rLoc = 1758;
+		rLoc = 1949;
 		rType = 0;
 		vrLen = 1315;
 		vrLoc = 546;
@@ -2182,7 +2379,7 @@
 		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
 		name = "Particle.cpp: 37";
 		rLen = 0;
-		rLoc = 613;
+		rLoc = 883;
 		rType = 0;
 		vrLen = 799;
 		vrLoc = 0;
@@ -2202,7 +2399,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 87";
 		rLen = 0;
-		rLoc = 2180;
+		rLoc = 2483;
 		rType = 0;
 		vrLen = 1093;
 		vrLoc = 0;
@@ -2212,9 +2409,1706 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 82";
 		rLen = 0;
-		rLoc = 2139;
+		rLoc = 2355;
 		rType = 0;
 		vrLen = 1311;
 		vrLoc = 1153;
+	};
+	CBF09B0A1467222300088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 85";
+		rLen = 0;
+		rLoc = 2480;
+		rType = 0;
+		vrLen = 1311;
+		vrLoc = 1153;
+	};
+	CBF09B0B1467222300088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 33";
+		rLen = 0;
+		rLoc = 757;
+		rType = 0;
+		vrLen = 798;
+		vrLoc = 3;
+	};
+	CBF09B0C1467222300088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A071467018200088D6A /* Particle.h */;
+		name = "Particle.h: 27";
+		rLen = 0;
+		rLoc = 528;
+		rType = 0;
+		vrLen = 727;
+		vrLoc = 0;
+	};
+	CBF09B0D1467222300088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A071467018200088D6A /* Particle.h */;
+		name = "Particle.h: 26";
+		rLen = 0;
+		rLoc = 499;
+		rType = 0;
+		vrLen = 774;
+		vrLoc = 0;
+	};
+	CBF09B0E1467228500088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A071467018200088D6A /* Particle.h */;
+		name = "Particle.h: 26";
+		rLen = 0;
+		rLoc = 499;
+		rType = 0;
+		vrLen = 774;
+		vrLoc = 0;
+	};
+	CBF09B0F1467228500088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 33";
+		rLen = 0;
+		rLoc = 757;
+		rType = 0;
+		vrLen = 847;
+		vrLoc = 36;
+	};
+	CBF09B101467228500088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 4";
+		rLen = 0;
+		rLoc = 45;
+		rType = 0;
+		vrLen = 914;
+		vrLoc = 383;
+	};
+	CBF09B1D14672F5400088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 33";
+		rLen = 0;
+		rLoc = 757;
+		rType = 0;
+		vrLen = 847;
+		vrLoc = 36;
+	};
+	CBF09B1E14672F5400088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 49";
+		rLen = 0;
+		rLoc = 965;
+		rType = 0;
+		vrLen = 981;
+		vrLoc = 0;
+	};
+	CBF09B1F14672F5400088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 85";
+		rLen = 0;
+		rLoc = 2480;
+		rType = 0;
+		vrLen = 1309;
+		vrLoc = 1155;
+	};
+	CBF09B2014672F5400088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 41";
+		rLen = 0;
+		rLoc = 1002;
+		rType = 0;
+		vrLen = 1256;
+		vrLoc = 750;
+	};
+	CBF09B2414672F8900088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 49";
+		rLen = 0;
+		rLoc = 965;
+		rType = 0;
+		vrLen = 981;
+		vrLoc = 0;
+	};
+	CBF09B2514672F8900088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 94";
+		rLen = 0;
+		rLoc = 2600;
+		rType = 0;
+		vrLen = 1093;
+		vrLoc = 0;
+	};
+	CBF09B2614672F8900088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A071467018200088D6A /* Particle.h */;
+		name = "Particle.h: 26";
+		rLen = 0;
+		rLoc = 499;
+		rType = 0;
+		vrLen = 774;
+		vrLoc = 0;
+	};
+	CBF09B2714672F8900088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A071467018200088D6A /* Particle.h */;
+		name = "Particle.h: 26";
+		rLen = 0;
+		rLoc = 499;
+		rType = 0;
+		vrLen = 774;
+		vrLoc = 0;
+	};
+	CBF09B2B14672FC900088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A071467018200088D6A /* Particle.h */;
+		name = "Particle.h: 26";
+		rLen = 0;
+		rLoc = 499;
+		rType = 0;
+		vrLen = 774;
+		vrLoc = 0;
+	};
+	CBF09B2C14672FC900088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 49";
+		rLen = 0;
+		rLoc = 965;
+		rType = 0;
+		vrLen = 897;
+		vrLoc = 400;
+	};
+	CBF09B2D14672FC900088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 42";
+		rLen = 0;
+		rLoc = 883;
+		rType = 0;
+		vrLen = 740;
+		vrLoc = 144;
+	};
+	CBF09B3114672FF300088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 42";
+		rLen = 0;
+		rLoc = 883;
+		rType = 0;
+		vrLen = 740;
+		vrLoc = 144;
+	};
+	CBF09B351467301700088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 42";
+		rLen = 0;
+		rLoc = 883;
+		rType = 0;
+		vrLen = 740;
+		vrLoc = 144;
+	};
+	CBF09B381467302600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		rLen = 1;
+		rLoc = 26;
+		rType = 1;
+	};
+	CBF09B3A1467303200088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 14";
+		rLen = 0;
+		rLoc = 361;
+		rType = 0;
+		vrLen = 720;
+		vrLoc = 0;
+	};
+	CBF09B3D1467303A00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 18";
+		rLen = 0;
+		rLoc = 349;
+		rType = 0;
+		vrLen = 783;
+		vrLoc = 0;
+	};
+	CBF09B401467325600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 43";
+		rLen = 0;
+		rLoc = 940;
+		rType = 0;
+		vrLen = 783;
+		vrLoc = 0;
+	};
+	CBF09B411467325600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 49";
+		rLen = 0;
+		rLoc = 965;
+		rType = 0;
+		vrLen = 934;
+		vrLoc = 363;
+	};
+	CBF09B421467325600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 94";
+		rLen = 0;
+		rLoc = 2600;
+		rType = 0;
+		vrLen = 1063;
+		vrLoc = 92;
+	};
+	CBF09B431467325600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 46";
+		rLen = 0;
+		rLoc = 1002;
+		rType = 0;
+		vrLen = 1341;
+		vrLoc = 502;
+	};
+	CBF09B491467328F00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 25";
+		rLen = 5;
+		rLoc = 561;
+		rType = 0;
+		vrLen = 1232;
+		vrLoc = 363;
+	};
+	CBF09B4A146732DE00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 25";
+		rLen = 0;
+		rLoc = 572;
+		rType = 0;
+		vrLen = 1366;
+		vrLoc = 478;
+	};
+	CBF09B4F1467335A00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 44";
+		rLen = 0;
+		rLoc = 965;
+		rType = 0;
+		vrLen = 1366;
+		vrLoc = 480;
+	};
+	CBF09B5C146733E200088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 83";
+		rLen = 0;
+		rLoc = 2158;
+		rType = 0;
+		vrLen = 1265;
+		vrLoc = 1275;
+	};
+	CBF09B601467340600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 83";
+		rLen = 0;
+		rLoc = 2158;
+		rType = 0;
+		vrLen = 1326;
+		vrLoc = 1275;
+	};
+	CBF09B611467340600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 49";
+		rLen = 0;
+		rLoc = 965;
+		rType = 0;
+		vrLen = 981;
+		vrLoc = 0;
+	};
+	CBF09B621467340600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 35";
+		rLen = 0;
+		rLoc = 759;
+		rType = 0;
+		vrLen = 740;
+		vrLoc = 144;
+	};
+	CBF09B661467347900088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 26";
+		rLen = 0;
+		rLoc = 520;
+		rType = 0;
+		vrLen = 747;
+		vrLoc = 137;
+	};
+	CBF09B671467347900088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 83";
+		rLen = 0;
+		rLoc = 2158;
+		rType = 0;
+		vrLen = 1326;
+		vrLoc = 1275;
+	};
+	CBF09B681467347900088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 45";
+		rLen = 0;
+		rLoc = 1002;
+		rType = 0;
+		vrLen = 1425;
+		vrLoc = 594;
+	};
+	CBF09B6B146734AD00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 45";
+		rLen = 0;
+		rLoc = 981;
+		rType = 0;
+		vrLen = 1405;
+		vrLoc = 659;
+	};
+	CBF09B6D146734D300088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 44";
+		rLen = 0;
+		rLoc = 981;
+		rType = 0;
+		vrLen = 1229;
+		vrLoc = 303;
+	};
+	CBF09B70146734FA00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 44";
+		rLen = 0;
+		rLoc = 993;
+		rType = 0;
+		vrLen = 1171;
+		vrLoc = 363;
+	};
+	CBF09B79146735C700088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 51";
+		rLen = 0;
+		rLoc = 984;
+		rType = 0;
+		vrLen = 914;
+		vrLoc = 383;
+	};
+	CBF09B7A146735C700088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 82";
+		rLen = 0;
+		rLoc = 2158;
+		rType = 0;
+		vrLen = 1365;
+		vrLoc = 663;
+	};
+	CBF09B7B146735C700088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 82";
+		rLen = 0;
+		rLoc = 2158;
+		rType = 0;
+		vrLen = 1380;
+		vrLoc = 614;
+	};
+	CBF09B7E1467392E00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 82";
+		rLen = 0;
+		rLoc = 2158;
+		rType = 0;
+		vrLen = 1339;
+		vrLoc = 478;
+	};
+	CBF09B7F1467392E00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 51";
+		rLen = 0;
+		rLoc = 984;
+		rType = 0;
+		vrLen = 897;
+		vrLoc = 401;
+	};
+	CBF09B801467392E00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 52";
+		rLen = 0;
+		rLoc = 1057;
+		rType = 0;
+		vrLen = 786;
+		vrLoc = 167;
+	};
+	CBF09B8814673A5C00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 31";
+		rLen = 0;
+		rLoc = 663;
+		rType = 0;
+		vrLen = 878;
+		vrLoc = 145;
+	};
+	CBF09B8914673A5C00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A071467018200088D6A /* Particle.h */;
+		name = "Particle.h: 26";
+		rLen = 0;
+		rLoc = 499;
+		rType = 0;
+		vrLen = 774;
+		vrLoc = 0;
+	};
+	CBF09B8A14673A5C00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A071467018200088D6A /* Particle.h */;
+		name = "Particle.h: 34";
+		rLen = 0;
+		rLoc = 625;
+		rType = 0;
+		vrLen = 816;
+		vrLoc = 0;
+	};
+	CBF09B9314673ABB00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A071467018200088D6A /* Particle.h */;
+		name = "Particle.h: 41";
+		rLen = 0;
+		rLoc = 813;
+		rType = 0;
+		vrLen = 818;
+		vrLoc = 0;
+	};
+	CBF09B9414673ABB00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 82";
+		rLen = 0;
+		rLoc = 2158;
+		rType = 0;
+		vrLen = 1100;
+		vrLoc = 0;
+	};
+	CBF09B9514673ABB00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 51";
+		rLen = 0;
+		rLoc = 984;
+		rType = 0;
+		vrLen = 897;
+		vrLoc = 401;
+	};
+	CBF09B9614673ABB00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 55";
+		rLen = 0;
+		rLoc = 1091;
+		rType = 0;
+		vrLen = 787;
+		vrLoc = 243;
+	};
+	CBF09B9A14673AEE00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 47";
+		rLen = 0;
+		rLoc = 939;
+		rType = 0;
+		vrLen = 785;
+		vrLoc = 243;
+	};
+	CBF09B9E14673B2200088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 47";
+		rLen = 0;
+		rLoc = 939;
+		rType = 0;
+		vrLen = 836;
+		vrLoc = 192;
+	};
+	CBF09B9F14673B2200088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 82";
+		rLen = 0;
+		rLoc = 2158;
+		rType = 0;
+		vrLen = 1100;
+		vrLoc = 0;
+	};
+	CBF09BA014673B2200088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 46";
+		rLen = 0;
+		rLoc = 1106;
+		rType = 0;
+		vrLen = 1426;
+		vrLoc = 575;
+	};
+	CBF09BA214673BE000088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 47";
+		rLen = 0;
+		rLoc = 939;
+		rType = 0;
+		vrLen = 836;
+		vrLoc = 192;
+	};
+	CBF09BA314673BE000088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 51";
+		rLen = 0;
+		rLoc = 984;
+		rType = 0;
+		vrLen = 915;
+		vrLoc = 383;
+	};
+	CBF09BA414673BE000088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 46";
+		rLen = 0;
+		rLoc = 1106;
+		rType = 0;
+		vrLen = 1409;
+		vrLoc = 594;
+	};
+	CBF09BA514673BE000088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 73";
+		rLen = 0;
+		rLoc = 1949;
+		rType = 0;
+		vrLen = 1380;
+		vrLoc = 966;
+	};
+	CBF09BA6146742C700088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 79";
+		rLen = 0;
+		rLoc = 2074;
+		rType = 0;
+		vrLen = 1085;
+		vrLoc = 1702;
+	};
+	CBF09BA714676B3100088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 51";
+		rLen = 0;
+		rLoc = 984;
+		rType = 0;
+		vrLen = 981;
+		vrLoc = 0;
+	};
+	CBF09BA814676B3100088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 48";
+		rLen = 0;
+		rLoc = 942;
+		rType = 0;
+		vrLen = 699;
+		vrLoc = 329;
+	};
+	CBF09BA914676B3100088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 86";
+		rLen = 0;
+		rLoc = 2158;
+		rType = 0;
+		vrLen = 983;
+		vrLoc = 1702;
+	};
+	CBF09BAA14676B3100088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 57";
+		rLen = 0;
+		rLoc = 1284;
+		rType = 0;
+		vrLen = 1263;
+		vrLoc = 817;
+	};
+	CBF09BAD14676B8C00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 45";
+		rLen = 0;
+		rLoc = 993;
+		rType = 0;
+		vrLen = 1267;
+		vrLoc = 616;
+	};
+	CBF09BB314676BD400088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 47";
+		rLen = 0;
+		rLoc = 1088;
+		rType = 0;
+		vrLen = 1259;
+		vrLoc = 635;
+	};
+	CBF09BB714676C1700088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 30";
+		rLen = 0;
+		rLoc = 650;
+		rType = 0;
+		vrLen = 717;
+		vrLoc = 0;
+	};
+	CBF09BB814676C1700088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 51";
+		rLen = 0;
+		rLoc = 984;
+		rType = 0;
+		vrLen = 758;
+		vrLoc = 540;
+	};
+	CBF09BB914676C1700088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 47";
+		rLen = 0;
+		rLoc = 1088;
+		rType = 0;
+		vrLen = 833;
+		vrLoc = 1963;
+	};
+	CBF09BBA14676C1700088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 46";
+		rLen = 0;
+		rLoc = 1006;
+		rType = 0;
+		vrLen = 1359;
+		vrLoc = 681;
+	};
+	CBF09BBD14676C4C00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 45";
+		rLen = 0;
+		rLoc = 993;
+		rType = 0;
+		vrLen = 1222;
+		vrLoc = 817;
+	};
+	CBF09BC314676D0200088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 75";
+		rLen = 0;
+		rLoc = 1991;
+		rType = 0;
+		vrLen = 1124;
+		vrLoc = 1485;
+	};
+	CBF09BC614676DE900088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 48";
+		rLen = 0;
+		rLoc = 1088;
+		rType = 0;
+		vrLen = 1281;
+		vrLoc = 678;
+	};
+	CBF09BC814676E8000088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 30";
+		rLen = 0;
+		rLoc = 650;
+		rType = 0;
+		vrLen = 660;
+		vrLoc = 137;
+	};
+	CBF09BC914676E8000088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 51";
+		rLen = 0;
+		rLoc = 984;
+		rType = 0;
+		vrLen = 846;
+		vrLoc = 188;
+	};
+	CBF09BCA14676E8000088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 55";
+		rLen = 0;
+		rLoc = 1281;
+		rType = 0;
+		vrLen = 1334;
+		vrLoc = 739;
+	};
+	CBF09BCB14676E8000088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 55";
+		rLen = 0;
+		rLoc = 1281;
+		rType = 0;
+		vrLen = 1334;
+		vrLoc = 739;
+	};
+	CBF09BCC14676EAA00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 55";
+		rLen = 0;
+		rLoc = 1281;
+		rType = 0;
+		vrLen = 1204;
+		vrLoc = 1185;
+	};
+	CBF09BCD14676EAA00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 51";
+		rLen = 0;
+		rLoc = 984;
+		rType = 0;
+		vrLen = 846;
+		vrLoc = 188;
+	};
+	CBF09BCE14676EAA00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 51";
+		rLen = 0;
+		rLoc = 967;
+		rType = 0;
+		vrLen = 659;
+		vrLoc = 328;
+	};
+	CBF09BCF14676F1100088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 38";
+		rLen = 0;
+		rLoc = 758;
+		rType = 0;
+		vrLen = 708;
+		vrLoc = 276;
+	};
+	CBF09BD014676F1100088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 95";
+		rLen = 0;
+		rLoc = 2446;
+		rType = 0;
+		vrLen = 1215;
+		vrLoc = 1396;
+	};
+	CBF09BD114676F1100088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 51";
+		rLen = 0;
+		rLoc = 984;
+		rType = 0;
+		vrLen = 845;
+		vrLoc = 331;
+	};
+	CBF09BD214676F1100088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 62";
+		rLen = 0;
+		rLoc = 1252;
+		rType = 0;
+		vrLen = 848;
+		vrLoc = 516;
+	};
+	CBF09BD714676F7500088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 63";
+		rLen = 0;
+		rLoc = 1367;
+		rType = 0;
+		vrLen = 811;
+		vrLoc = 681;
+	};
+	CBF09BD814676F7500088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0E1467023900088D6A /* ParticleController.h */;
+		name = "ParticleController.h: 32";
+		rLen = 0;
+		rLoc = 697;
+		rType = 0;
+		vrLen = 642;
+		vrLoc = 0;
+	};
+	CBF09BD914676F7500088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0E1467023900088D6A /* ParticleController.h */;
+		name = "ParticleController.h: 26";
+		rLen = 0;
+		rLoc = 515;
+		rType = 0;
+		vrLen = 691;
+		vrLoc = 0;
+	};
+	CBF09BDC14676FE600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0E1467023900088D6A /* ParticleController.h */;
+		name = "ParticleController.h: 26";
+		rLen = 0;
+		rLoc = 515;
+		rType = 0;
+		vrLen = 691;
+		vrLoc = 0;
+	};
+	CBF09BDD14676FE600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 51";
+		rLen = 0;
+		rLoc = 1183;
+		rType = 0;
+		vrLen = 1317;
+		vrLoc = 682;
+	};
+	CBF09BDE14676FE600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 63";
+		rLen = 0;
+		rLoc = 1367;
+		rType = 0;
+		vrLen = 810;
+		vrLoc = 681;
+	};
+	CBF09BDF14676FE600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 31";
+		rLen = 0;
+		rLoc = 672;
+		rType = 0;
+		vrLen = 637;
+		vrLoc = 350;
+	};
+	CBF09BE014676FE600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 54";
+		rLen = 0;
+		rLoc = 1091;
+		rType = 0;
+		vrLen = 663;
+		vrLoc = 328;
+	};
+	CBF09BE31467704F00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 54";
+		rLen = 0;
+		rLoc = 1091;
+		rType = 0;
+		vrLen = 662;
+		vrLoc = 328;
+	};
+	CBF09BE6146770F600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 51";
+		rLen = 0;
+		rLoc = 1183;
+		rType = 0;
+		vrLen = 1314;
+		vrLoc = 682;
+	};
+	CBF09BE7146770F600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 54";
+		rLen = 0;
+		rLoc = 1091;
+		rType = 0;
+		vrLen = 640;
+		vrLoc = 350;
+	};
+	CBF09BE8146770F600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 54";
+		rLen = 0;
+		rLoc = 1091;
+		rType = 0;
+		vrLen = 642;
+		vrLoc = 350;
+	};
+	CBF09BEC1467711B00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 54";
+		rLen = 0;
+		rLoc = 1091;
+		rType = 0;
+		vrLen = 664;
+		vrLoc = 328;
+	};
+	CBF09BED1467711B00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 51";
+		rLen = 0;
+		rLoc = 1183;
+		rType = 0;
+		vrLen = 1318;
+		vrLoc = 681;
+	};
+	CBF09BEE1467711B00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 46";
+		rLen = 0;
+		rLoc = 997;
+		rType = 0;
+		vrLen = 1320;
+		vrLoc = 633;
+	};
+	CBF09BF11467717F00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 107";
+		rLen = 0;
+		rLoc = 2647;
+		rType = 0;
+		vrLen = 845;
+		vrLoc = 2078;
+	};
+	CBF09BF31467732000088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 63";
+		rLen = 0;
+		rLoc = 1367;
+		rType = 0;
+		vrLen = 898;
+		vrLoc = 594;
+	};
+	CBF09BF41467732000088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 105";
+		rLen = 0;
+		rLoc = 2600;
+		rType = 0;
+		vrLen = 822;
+		vrLoc = 0;
+	};
+	CBF09BF51467732000088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 108";
+		rLen = 0;
+		rLoc = 2647;
+		rType = 0;
+		vrLen = 896;
+		vrLoc = 2076;
+	};
+	CBF09BF81467738A00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 108";
+		rLen = 0;
+		rLoc = 2647;
+		rType = 0;
+		vrLen = 894;
+		vrLoc = 2078;
+	};
+	CBF09BF91467738A00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 63";
+		rLen = 0;
+		rLoc = 1367;
+		rType = 0;
+		vrLen = 811;
+		vrLoc = 681;
+	};
+	CBF09BFA1467738A00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 54";
+		rLen = 0;
+		rLoc = 1091;
+		rType = 0;
+		vrLen = 685;
+		vrLoc = 307;
+	};
+	CBF09BFB1467738A00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 46";
+		rLen = 0;
+		rLoc = 883;
+		rType = 0;
+		vrLen = 628;
+		vrLoc = 192;
+	};
+	CBF09BFF146773F400088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0E1467023900088D6A /* ParticleController.h */;
+		name = "ParticleController.h: 26";
+		rLen = 0;
+		rLoc = 515;
+		rType = 0;
+		vrLen = 691;
+		vrLoc = 0;
+	};
+	CBF09C00146773F400088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A071467018200088D6A /* Particle.h */;
+		name = "Particle.h: 42";
+		rLen = 0;
+		rLoc = 813;
+		rType = 0;
+		vrLen = 785;
+		vrLoc = 34;
+	};
+	CBF09C01146773F400088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 47";
+		rLen = 0;
+		rLoc = 883;
+		rType = 0;
+		vrLen = 712;
+		vrLoc = 329;
+	};
+	CBF09C02146773F400088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 108";
+		rLen = 0;
+		rLoc = 2647;
+		rType = 0;
+		vrLen = 896;
+		vrLoc = 2076;
+	};
+	CBF09C03146773F400088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 51";
+		rLen = 0;
+		rLoc = 1183;
+		rType = 0;
+		vrLen = 1256;
+		vrLoc = 817;
+	};
+	CBF09C071467742600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 72";
+		rLen = 0;
+		rLoc = 1949;
+		rType = 0;
+		vrLen = 1217;
+		vrLoc = 911;
+	};
+	CBF09C091467744900088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 115";
+		rLen = 0;
+		rLoc = 2805;
+		rType = 0;
+		vrLen = 820;
+		vrLoc = 2123;
+	};
+	CBF09C0E146774F600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 115";
+		rLen = 0;
+		rLoc = 2805;
+		rType = 0;
+		vrLen = 859;
+		vrLoc = 2127;
+	};
+	CBF09C121467751C00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 105";
+		rLen = 0;
+		rLoc = 2600;
+		rType = 0;
+		vrLen = 862;
+		vrLoc = 2127;
+	};
+	CBF09C161467778F00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A071467018200088D6A /* Particle.h */;
+		name = "Particle.h: 42";
+		rLen = 0;
+		rLoc = 813;
+		rType = 0;
+		vrLen = 703;
+		vrLoc = 135;
+	};
+	CBF09C171467778F00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 47";
+		rLen = 0;
+		rLoc = 871;
+		rType = 0;
+		vrLen = 729;
+		vrLoc = 329;
+	};
+	CBF09C181467778F00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 105";
+		rLen = 0;
+		rLoc = 2600;
+		rType = 0;
+		vrLen = 866;
+		vrLoc = 2123;
+	};
+	CBF09C191467778F00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 105";
+		rLen = 0;
+		rLoc = 2600;
+		rType = 0;
+		vrLen = 796;
+		vrLoc = 2074;
+	};
+	CBF09C1C146777EB00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 105";
+		rLen = 0;
+		rLoc = 2600;
+		rType = 0;
+		vrLen = 796;
+		vrLoc = 2074;
+	};
+	CBF09C1D146777EB00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 47";
+		rLen = 0;
+		rLoc = 871;
+		rType = 0;
+		vrLen = 730;
+		vrLoc = 328;
+	};
+	CBF09C1E146777EB00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 57";
+		rLen = 0;
+		rLoc = 1117;
+		rType = 0;
+		vrLen = 708;
+		vrLoc = 350;
+	};
+	CBF09C201467780A00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 33";
+		rLen = 0;
+		rLoc = 725;
+		rType = 0;
+		vrLen = 693;
+		vrLoc = 350;
+	};
+	CBF09C2314677CCF00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 105";
+		rLen = 0;
+		rLoc = 2600;
+		rType = 0;
+		vrLen = 798;
+		vrLoc = 2072;
+	};
+	CBF09C2414677CCF00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A071467018200088D6A /* Particle.h */;
+		name = "Particle.h: 42";
+		rLen = 0;
+		rLoc = 793;
+		rType = 0;
+		vrLen = 723;
+		vrLoc = 135;
+	};
+	CBF09C2514677CCF00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 63";
+		rLen = 0;
+		rLoc = 1367;
+		rType = 0;
+		vrLen = 898;
+		vrLoc = 594;
+	};
+	CBF09C2614677CCF00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 26";
+		rLen = 0;
+		rLoc = 448;
+		rType = 0;
+		vrLen = 741;
+		vrLoc = 308;
+	};
+	CBF09C2714677CCF00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 33";
+		rLen = 0;
+		rLoc = 682;
+		rType = 0;
+		vrLen = 786;
+		vrLoc = 352;
+	};
+	CBF09C2C14677D6700088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 57";
+		rLen = 0;
+		rLoc = 1112;
+		rType = 0;
+		vrLen = 768;
+		vrLoc = 352;
+	};
+	CBF09C2F14677DB000088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 31";
+		rLen = 0;
+		rLoc = 590;
+		rType = 0;
+		vrLen = 765;
+		vrLoc = 355;
+	};
+	CBF09C3014677DB000088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 63";
+		rLen = 0;
+		rLoc = 1367;
+		rType = 0;
+		vrLen = 797;
+		vrLoc = 187;
+	};
+	CBF09C3114677DB000088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 51";
+		rLen = 0;
+		rLoc = 1183;
+		rType = 0;
+		vrLen = 1256;
+		vrLoc = 635;
+	};
+	CBF09C3314677F4700088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 106";
+		rLen = 0;
+		rLoc = 2640;
+		rType = 0;
+		vrLen = 816;
+		vrLoc = 2074;
+	};
+	CBF09C3A1467816900088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 106";
+		rLen = 0;
+		rLoc = 2640;
+		rType = 0;
+		vrLen = 816;
+		vrLoc = 2074;
+	};
+	CBF09C3B1467816900088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 63";
+		rLen = 0;
+		rLoc = 1367;
+		rType = 0;
+		vrLen = 829;
+		vrLoc = 155;
+	};
+	CBF09C3C1467816900088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 59";
+		rLen = 0;
+		rLoc = 1122;
+		rType = 0;
+		vrLen = 768;
+		vrLoc = 352;
+	};
+	CBF09C3D1467816900088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 57";
+		rLen = 0;
+		rLoc = 1024;
+		rType = 0;
+		vrLen = 783;
+		vrLoc = 355;
+	};
+	CBF09C411467819600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 57";
+		rLen = 0;
+		rLoc = 1024;
+		rType = 0;
+		vrLen = 784;
+		vrLoc = 354;
+	};
+	CBF09C421467819600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 106";
+		rLen = 0;
+		rLoc = 2640;
+		rType = 0;
+		vrLen = 818;
+		vrLoc = 2072;
+	};
+	CBF09C431467819600088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 106";
+		rLen = 0;
+		rLoc = 2639;
+		rType = 0;
+		vrLen = 747;
+		vrLoc = 2123;
+	};
+	CBF09C47146781B800088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 115";
+		rLen = 0;
+		rLoc = 2836;
+		rType = 0;
+		vrLen = 813;
+		vrLoc = 2074;
+	};
+	CBF09C48146781B800088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 57";
+		rLen = 0;
+		rLoc = 1024;
+		rType = 0;
+		vrLen = 786;
+		vrLoc = 352;
+	};
+	CBF09C49146781B800088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 56";
+		rLen = 0;
+		rLoc = 1024;
+		rType = 0;
+		vrLen = 766;
+		vrLoc = 354;
+	};
+	CBF09C4D1467820800088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 31";
+		rLen = 0;
+		rLoc = 590;
+		rType = 0;
+		vrLen = 767;
+		vrLoc = 352;
+	};
+	CBF09C4E1467820800088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 115";
+		rLen = 0;
+		rLoc = 2836;
+		rType = 0;
+		vrLen = 813;
+		vrLoc = 2074;
+	};
+	CBF09C4F1467820800088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 51";
+		rLen = 0;
+		rLoc = 1183;
+		rType = 0;
+		vrLen = 1256;
+		vrLoc = 817;
+	};
+	CBF09C551467826B00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 31";
+		rLen = 0;
+		rLoc = 589;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 329;
+	};
+	CBF09C561467826B00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 113";
+		rLen = 0;
+		rLoc = 2805;
+		rType = 0;
+		vrLen = 813;
+		vrLoc = 2075;
+	};
+	CBF09C571467826B00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 51";
+		rLen = 0;
+		rLoc = 1183;
+		rType = 0;
+		vrLen = 1297;
+		vrLoc = 678;
+	};
+	CBF09C591467827D00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 113";
+		rLen = 0;
+		rLoc = 2805;
+		rType = 0;
+		vrLen = 812;
+		vrLoc = 2075;
+	};
+	CBF09C5E146786BD00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 112";
+		rLen = 0;
+		rLoc = 2805;
+		rType = 0;
+		vrLen = 796;
+		vrLoc = 2074;
+	};
+	CBF09C631467876B00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A071467018200088D6A /* Particle.h */;
+		name = "Particle.h: 42";
+		rLen = 0;
+		rLoc = 793;
+		rType = 0;
+		vrLen = 716;
+		vrLoc = 142;
+	};
+	CBF09C641467876B00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 50";
+		rLen = 0;
+		rLoc = 939;
+		rType = 0;
+		vrLen = 772;
+		vrLoc = 352;
+	};
+	CBF09C651467876B00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 112";
+		rLen = 0;
+		rLoc = 2805;
+		rType = 0;
+		vrLen = 796;
+		vrLoc = 2074;
+	};
+	CBF09C661467876B00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 113";
+		rLen = 0;
+		rLoc = 2805;
+		rType = 0;
+		vrLen = 812;
+		vrLoc = 2075;
+	};
+	CBF09C6A146787BD00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 113";
+		rLen = 0;
+		rLoc = 2805;
+		rType = 0;
+		vrLen = 812;
+		vrLoc = 2075;
+	};
+	CBF09C6B146787BD00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A071467018200088D6A /* Particle.h */;
+		name = "Particle.h: 42";
+		rLen = 0;
+		rLoc = 793;
+		rType = 0;
+		vrLen = 717;
+		vrLoc = 143;
+	};
+	CBF09C6C146787BD00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 63";
+		rLen = 0;
+		rLoc = 1367;
+		rType = 0;
+		vrLen = 796;
+		vrLoc = 187;
+	};
+	CBF09C6D146787BD00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 50";
+		rLen = 0;
+		rLoc = 927;
+		rType = 0;
+		vrLen = 769;
+		vrLoc = 355;
+	};
+	CBF09C731467886B00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 63";
+		rLen = 0;
+		rLoc = 1367;
+		rType = 0;
+		vrLen = 830;
+		vrLoc = 154;
+	};
+	CBF09C741467886B00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0E1467023900088D6A /* ParticleController.h */;
+		name = "ParticleController.h: 26";
+		rLen = 0;
+		rLoc = 515;
+		rType = 0;
+		vrLen = 691;
+		vrLoc = 0;
+	};
+	CBF09C751467886B00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 51";
+		rLen = 0;
+		rLoc = 1183;
+		rType = 0;
+		vrLen = 916;
+		vrLoc = 480;
+	};
+	CBF09C761467886B00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 22";
+		rLen = 0;
+		rLoc = 354;
+		rType = 0;
+		vrLen = 795;
+		vrLoc = 145;
+	};
+	CBF09C771467886B00088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 50";
+		rLen = 0;
+		rLoc = 939;
+		rType = 0;
+		vrLen = 769;
+		vrLoc = 355;
+	};
+	CBF09C7D146789D500088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 50";
+		rLen = 0;
+		rLoc = 939;
+		rType = 0;
+		vrLen = 815;
+		vrLoc = 0;
+	};
+	CBF09C7E146789D500088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 63";
+		rLen = 0;
+		rLoc = 1367;
+		rType = 0;
+		vrLen = 821;
+		vrLoc = 0;
+	};
+	CBF09C7F146789D500088D6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0E1467023900088D6A /* ParticleController.h */;
+		name = "ParticleController.h: 30";
+		rLen = 0;
+		rLoc = 646;
+		rType = 0;
+		vrLen = 726;
+		vrLoc = 0;
 	};
 }

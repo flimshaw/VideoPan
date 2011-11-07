@@ -23,6 +23,7 @@ public:
 	Particle();
 	Particle( gl::Texture newTexture, int frameNumber );
 	void update();
+	void updateTexture( gl::Texture newTexture );
 	void draw();
 	void setup();
 	
@@ -36,6 +37,10 @@ public:
 	float		lensAngle;
 	float		frameSkip;
 	float		mFrameNumber;
+	ci::Vec2f	topLeft;
+	ci::Vec2f	bottomRight;
+	ci::Vec2f	frameSize;
+	float		sliceWidth;
 	
 	gl::Texture mTexture;
 	

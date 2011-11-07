@@ -3,6 +3,7 @@
 #include "cinder/gl/Texture.h"
 #include "cinder/qtime/QuickTime.h"
 #include "ParticleController.h"
+#include "cinder/Camera.h"
 
 using namespace ci;
 using namespace ci::app;
@@ -21,8 +22,12 @@ class VideoPanApp : public AppBasic {
 	gl::Texture mMovieFrame;
 	qtime::MovieGl mMovie;
 	
+	CameraOrtho mCam;
+	
 	int maxParticles;
 	int particleCount;
+	
+	int startFrame;
 	
 	ParticleController mParticleController;
 	
@@ -31,20 +36,23 @@ class VideoPanApp : public AppBasic {
 void VideoPanApp::prepareSettings( Settings *settings ){
     settings->setWindowSize( 800, 600 );
     settings->setFrameRate( 60.0f );
+	
 }
 
 void VideoPanApp::setup()
 {
 	Url url( "http://libcinder.org/media/tutorial/paris.jpg" );
 	myImage = gl::Texture( loadImage( loadUrl( url ) ) );
-	
-	string moviePath = getOpenFilePath();
+	mCam.setOrtho(-1, 1, -1, 1, -1, 1);
+	//string moviePath = getOpenFilePath();
+	string moviePath = "/Volumes/320gb to Dover/desert_right.mov";
 	if( ! moviePath.empty() )
 		loadMovieFile( moviePath );
-	maxParticles = 10;
+	maxParticles = 38;
 	particleCount = 0;
-	mParticleController = ParticleController( myImage );
+	startFrame = 10000;
 	
+	mParticleController = ParticleController( myImage );
 }
 
 void VideoPanApp::loadMovieFile( const string &moviePath )
@@ -62,6 +70,7 @@ void VideoPanApp::loadMovieFile( const string &moviePath )
 		
 		mMovie.setLoop( true, true );
 		mMovie.seekToFrame(10000);
+		mMovie.setVolume(0);
 		mMovie.play();
 	}
 	catch( ... ) {
@@ -75,11 +84,14 @@ void VideoPanApp::mouseDown( MouseEvent event )
 
 void VideoPanApp::update()
 {
+	
 	if( mMovie ) {
 		mMovieFrame = gl::Texture(mMovie.getTexture());
 		if( particleCount < maxParticles ) {
 			mParticleController.addParticle( gl::Texture(mMovie.getTexture()) );
 			particleCount++;
+		} else {
+			mParticleController.updateParticles( gl::Texture(mMovie.getTexture()) );
 		}
 	}
 	mParticleController.update();
@@ -90,14 +102,18 @@ void VideoPanApp::draw()
 	// clear out the window with black
 	
 	gl::clear( Color( 0, 0, 0 ) ); 
-	//gl::draw( myImage, getWindowBounds() );	
+	//gl::rotate(90);
+	gl::setMatricesWindow(getWindowSize(), true);
 	if ( mMovieFrame ) {
 		//gl::draw( mMovieFrame, Rectf( 200, 200, 600, 500 ) );
 	}
 	
 	//glDisable( GL_TEXTURE_2D );
 	//glColor3f( 1, 1, 1 );
+	gl::rotate(90);
 	mParticleController.draw();
+	
+	
 }
 
 
