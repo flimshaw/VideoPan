@@ -4,6 +4,10 @@
 #include "cinder/qtime/QuickTime.h"
 #include "ParticleController.h"
 #include "cinder/Camera.h"
+#include "cinder/params/Params.h"
+
+params::InterfaceGl mParams;
+
 
 using namespace ci;
 using namespace ci::app;
@@ -31,6 +35,8 @@ class VideoPanApp : public AppBasic {
 	
 	ParticleController mParticleController;
 	
+	float mParticleWidth;
+	
 };
 
 void VideoPanApp::prepareSettings( Settings *settings ){
@@ -44,13 +50,17 @@ void VideoPanApp::setup()
 	Url url( "http://libcinder.org/media/tutorial/paris.jpg" );
 	myImage = gl::Texture( loadImage( loadUrl( url ) ) );
 	mCam.setOrtho(-1, 1, -1, 1, -1, 1);
-	//string moviePath = getOpenFilePath();
+	
 	string moviePath = "/Volumes/SPEEDY/desert_right.mov";
 	if( ! moviePath.empty() )
 		loadMovieFile( moviePath );
 	maxParticles = 50;
 	particleCount = 0;
 	startFrame = 10000;
+	
+	mParticleWidth = 10;
+	mParams = params::InterfaceGl( "Particle Width", Vec2i( 225, 200 ) );
+	mParams.addParam( "Thinger", &mParticleWidth);
 	
 	mParticleController = ParticleController( myImage );
 }
@@ -98,6 +108,7 @@ void VideoPanApp::update()
 			particleCount++;
 		}
 		mParticleController.update();
+		mParticleController.setWidth(mParticleWidth);
 		mMovie.stepForward();
 	}
 }
