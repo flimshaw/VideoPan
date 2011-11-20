@@ -25,6 +25,7 @@ public:
 	void update();
 	void updateTexture( gl::Texture * newTexture );
 	void setWidth( float newWidth );
+	void setPixelOffset( float pixelOffset );
 	void draw();
 	void setup();
 	
@@ -38,6 +39,7 @@ public:
 	float		lensAngle;
 	float		frameSkip;
 	float		mFrameNumber;
+	float		mPixelOffset;
 	ci::Vec2f	topLeft;
 	ci::Vec2f	bottomRight;
 	ci::Vec2f	frameSize;

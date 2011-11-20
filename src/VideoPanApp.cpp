@@ -2,11 +2,10 @@
 #include "cinder/ImageIO.h"
 #include "cinder/gl/Texture.h"
 #include "cinder/qtime/QuickTime.h"
+#include "cinder/Utilities.h"
 #include "ParticleController.h"
 #include "cinder/Camera.h"
 #include "cinder/params/Params.h"
-
-params::InterfaceGl mParams;
 
 
 using namespace ci;
@@ -33,9 +32,12 @@ class VideoPanApp : public AppBasic {
 	
 	int startFrame;
 	
+	params::InterfaceGl mParams;
+	
 	ParticleController mParticleController;
 	
 	float mParticleWidth;
+	float mPixelOffset;
 	
 };
 
@@ -54,13 +56,15 @@ void VideoPanApp::setup()
 	string moviePath = "/Volumes/SPEEDY/desert_right.mov";
 	if( ! moviePath.empty() )
 		loadMovieFile( moviePath );
-	maxParticles = 50;
+	maxParticles = 200;
 	particleCount = 0;
 	startFrame = 10000;
 	
-	mParticleWidth = 10;
+	mParticleWidth = 20;
+	mPixelOffset = 0;
 	mParams = params::InterfaceGl( "Particle Width", Vec2i( 225, 200 ) );
-	mParams.addParam( "Thinger", &mParticleWidth);
+	mParams.addParam( "Slice Width", &mParticleWidth, "min=1.0 max=100.0 step=.1 keyIncr=s keyDecr=w");
+	mParams.addParam( "Slice Offset", &mPixelOffset, "min=-400.0 max=400.0 step=1 keyIncr=x keyDecr=z");
 	
 	mParticleController = ParticleController( myImage );
 }
@@ -79,7 +83,7 @@ void VideoPanApp::loadMovieFile( const string &moviePath )
 		
 		
 		mMovie.setLoop( true, true );
-		mMovie.seekToFrame(12000);
+		mMovie.seekToFrame(24000);
 		mMovie.setVolume(0);
 		mMovie.play();
 		mMovie.stop();
@@ -93,9 +97,9 @@ void VideoPanApp::mouseWheel( MouseEvent event )
 {
 	if( !event.isShiftDown() )
 	{
-		mParticleController.setWidth( event.getWheelIncrement() );
+		//mParticleController.setWidth( event.getWheelIncrement() );
 	} else {
-		mMovie.stepForward();
+		//mMovie.stepForward();
 	}
 }
 
@@ -106,10 +110,12 @@ void VideoPanApp::update()
 		if( particleCount < maxParticles ) {
 			mParticleController.addParticle( gl::Texture(mMovie.getTexture()) );
 			particleCount++;
+			mMovie.stepForward();
 		}
-		mParticleController.update();
+	} else {
 		mParticleController.setWidth(mParticleWidth);
-		mMovie.stepForward();
+		mParticleController.setPixelOffset(mPixelOffset);
+		mParticleController.update();
 	}
 }
 
@@ -118,16 +124,12 @@ void VideoPanApp::draw()
 	// clear out the window with black
 	
 	gl::clear( Color( 0, 0, 0 ) ); 
-	//gl::rotate(90);
-	gl::setMatricesWindow(getWindowSize(), true);
-	if ( mMovieFrame ) {
-		//gl::draw( mMovieFrame, Rectf( 200, 200, 600, 500 ) );
-	}
 	
-	//glDisable( GL_TEXTURE_2D );
-	//glColor3f( 1, 1, 1 );
+	gl::setMatricesWindow(getWindowSize(), true);
+
 	gl::rotate(90);
 	mParticleController.draw();
+	params::InterfaceGl::draw();
 }
 
 

@@ -29,7 +29,8 @@ ParticleController::ParticleController( gl::Texture newTexture )
 {
 	mTexture = newTexture;
 	frameCount = 0;
-	sliceWidth = 10;
+	mSliceWidth = 20;
+	mPixelOffset = 0;
 }
 
 void ParticleController::update()
@@ -46,11 +47,19 @@ void ParticleController::draw()
 	}
 }
 
-void ParticleController::setWidth( float widthDelta )
+void ParticleController::setWidth( float sliceWidth )
 {
-	sliceWidth += widthDelta;
+	mSliceWidth = sliceWidth;
 	for( list<Particle>::iterator p = mParticles.begin(); p != mParticles.end(); ++p ){
 		p->setWidth( sliceWidth );
+	}
+}
+
+void ParticleController::setPixelOffset( float pixelOffset )
+{
+	mPixelOffset = pixelOffset;
+	for( list<Particle>::iterator p = mParticles.begin(); p != mParticles.end(); ++p ){
+		p->setPixelOffset( mPixelOffset );
 	}
 }
 

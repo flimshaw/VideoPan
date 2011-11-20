@@ -15,6 +15,7 @@
 #include "cinder/gl/Texture.h"
 
 using namespace ci;
+using namespace ci::app;
 
 Particle::Particle()
 {
@@ -28,7 +29,8 @@ Particle::Particle( gl::Texture * newTexture, int frameNumber )
 	mRadius	= 3.0f;
 	mTexture = newTexture;
 	mFrameNumber = frameNumber;
-	sliceWidth = 10;
+	mPixelOffset = 0;
+	sliceWidth = 20;
 	topLeft = Vec2f(0, (frameSize.y / 2) - (sliceWidth / 2));
 	bottomRight = Vec2f(frameSize.x, (frameSize.y / 2) + (sliceWidth / 2) );
 }
@@ -45,15 +47,20 @@ void Particle::updateTexture( gl::Texture * newTexture )
 void Particle::setWidth( float newWidth )
 {
 	sliceWidth = newWidth;
-	topLeft = Vec2f(0, (frameSize.y / 2) - (sliceWidth / 2));
-	bottomRight = Vec2f(frameSize.x, (frameSize.y / 2) + (sliceWidth / 2) );
+	topLeft = Vec2f(0, ((frameSize.y / 2) - (sliceWidth / 2)) + mPixelOffset);
+	bottomRight = Vec2f(frameSize.x, ((frameSize.y / 2) + (sliceWidth / 2)) + mPixelOffset);
+	console() << "Top Left:" << topLeft << std::endl;
+}
+
+void Particle::setPixelOffset( float pixelOffset ) {
+	mPixelOffset = pixelOffset;
+	
 }
 
 void Particle::update()
 {
-	
 	mLoc.x = 0;
-	mLoc.y = - ((mFrameNumber * sliceWidth) - sliceWidth);
+	mLoc.y = (((mFrameNumber * sliceWidth) + sliceWidth) + 100) * -1;
 }
 
 void Particle::draw()

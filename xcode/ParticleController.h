@@ -26,7 +26,8 @@ public:
 	void addParticle( gl::Texture newTexture );
 	void updateParticles( gl::Texture newTexture );
 	void removeParticles( int amt );
-	void setWidth( float widthDelta );
+	void setWidth( float sliceWidth );
+	void setPixelOffset( float pixelOffset );
 	
 	std::list<Particle>	mParticles;
 	std::deque<gl::Texture> mTextures;
@@ -34,7 +35,8 @@ public:
 	int frameCount;
 	int maxFrames;
 	int startFrame;
-	float sliceWidth;
+	float mSliceWidth;
+	float mPixelOffset;
 	
 	gl::Texture mTexture;
 };
