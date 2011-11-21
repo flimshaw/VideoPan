@@ -19,6 +19,8 @@
 		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
 		53E3CDFC0E86099300238D2B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E3CDFB0E86099300238D2B /* Carbon.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		CB02D360147998B3003E515E /* FrameSlice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB02D35F147998B3003E515E /* FrameSlice.cpp */; };
+		CB02D3721479A8A5003E515E /* FrameController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB02D3711479A8A5003E515E /* FrameController.cpp */; };
 		CBF09A091467018200088D6A /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBF09A081467018200088D6A /* Particle.cpp */; };
 		CBF09A101467023900088D6A /* ParticleController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */; };
 /* End PBXBuildFile section */
@@ -42,6 +44,10 @@
 		53E3CDFB0E86099300238D2B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* VideoPan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoPan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB02D35E147998B3003E515E /* FrameSlice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameSlice.h; sourceTree = "<group>"; };
+		CB02D35F147998B3003E515E /* FrameSlice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FrameSlice.cpp; sourceTree = "<group>"; };
+		CB02D3701479A8A5003E515E /* FrameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameController.h; sourceTree = "<group>"; };
+		CB02D3711479A8A5003E515E /* FrameController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FrameController.cpp; sourceTree = "<group>"; };
 		CBF09A071467018200088D6A /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
 		CBF09A081467018200088D6A /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
 		CBF09A0E1467023900088D6A /* ParticleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleController.h; sourceTree = "<group>"; };
@@ -75,6 +81,8 @@
 				00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */,
 				CBF09A0F1467023900088D6A /* ParticleController.cpp */,
 				CBF09A081467018200088D6A /* Particle.cpp */,
+				CB02D35F147998B3003E515E /* FrameSlice.cpp */,
+				CB02D3711479A8A5003E515E /* FrameController.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -132,6 +140,8 @@
 				CBF09A071467018200088D6A /* Particle.h */,
 				CBF09A0E1467023900088D6A /* ParticleController.h */,
 				32CA4F630368D1EE00C91783 /* VideoPan_Prefix.pch */,
+				CB02D3701479A8A5003E515E /* FrameController.h */,
+				CB02D35E147998B3003E515E /* FrameSlice.h */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -218,6 +228,8 @@
 				00BAE65A0E7ED9C10018A608 /* VideoPanApp.cpp in Sources */,
 				CBF09A091467018200088D6A /* Particle.cpp in Sources */,
 				CBF09A101467023900088D6A /* ParticleController.cpp in Sources */,
+				CB02D360147998B3003E515E /* FrameSlice.cpp in Sources */,
+				CB02D3721479A8A5003E515E /* FrameController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

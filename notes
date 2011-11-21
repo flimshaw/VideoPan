@@ -1,0 +1,63 @@
+%%% Sun Nov 20 12:25:20 PST 2011
+
+Staying on track here, what needs to happen:
+
+I need to make a FrameSlice class that has certain methods that it reqires.  So what is the responsibility of the FrameSlice, and what's the responsibility of the FrameSet?  Do we have a frame set?  No I guess we just have a bunch of frames.  What's the user telling the program:
+
+- Starting Frame
+- Distance from Lens
+- Speed of car
+
+So the user doesn't care, it just puts those in.  Now, for the time being, let's just plan on the .update() method only handling changes to the last two.  No, ugh, the only one you can change is distance from lens, and even that not neccessarily.
+
+OK.  We need to have particle positioning and texture loading be completely agnostic of each other.  We'll spawn particles and calculated their positions in GL, and then have some queue waiting that applies textures to them one at a time.  So, we need a texturing queue I guess?  Maybe the particles are just completely agnostic about whether they are textured or not, they will just appear as white blocks for the time being.  This means we have to pre-allocate texture memory in GL.  OK.  So what traits does a frame slice need to have?
+
+- texture
+- textureOffset
+- frameNumber
+- speed
+- focalDistance
+- position(x, y) GL position (notes: is this self-calculated, or should an outside manager decide this? do the particles need to anything about each other? If we are skipping frames, we're going to need to probably offset the following frame by a fixed amount.  That being the case, who's in charge of maintaining that as variables are changed?  We're going to need a manager that does that, since particles should not have to know who's before or after them.  They will need to have their positions updated though. So I guess the manager should keep track of which frame each represents, and smartly rearrange them.
+
+This brings up another idea.  The positioning of particles could be easily given some nice transitional elements by having the position be more of a gravitational point that each slice is drawn to, so as things are expanded or contracted, and frames are deleted or expanded, their positions, sizes, offsets etc could be modified, and let the update function handle the actual positioning of the elements. and what methods should it have?
+
+- void:setTexture( glTexture )
+- void:setSpeed( float )
+- void:setFocalDistance( float )
+- float:getTrueWidth( )
+- float:getTextureOffset( )
+
+%%% Sun Nov 20 14:04:37 PST 2011
+
+OK, particle roughed out, and did a little test of the frame offset, and it looks like it'll work.  One of the main issues now is that they seem to load in in somewhat random order.
+
+SO, what's the frameController gonna look like?  Let's map this out, and then take a walk and get some coffee or something.  The frame controller is the one that's gonna actually handle pulling textures from the video file and providing them to the correct FrameSlice in GL.  This can be a threaded process, as outlined in the earlier dealie.  So, properties the FrameController should have:
+
+- videoFile
+- startFrame
+- focalDistance
+- carSpeed
+- maxFrameSlices
+- <vector>FrameSlices
+- trueWidth
+- distancePerFrame
+- frameWidth
+- lensAngle
+
+Methods it should have:
+
+- setFocalDistance
+- setCarSpeed
+- setStartFrame
+- setMaxFrames
+- setFrameOffset
+- getTrueWidth
+- distancePerFrame
+
+- loadFrameTexture( int frameNumber )
+
+%%% Sun Nov 20 15:36:33 PST 2011
+
+Back from coffee.  Didn't really get a lot of thinking done, but it's good to get up and go outside.  I really should figure out some kinda excercise schedule.  One of these days.
+
+OK.  Let's build out our mathematical functions in the FrameController, we'll store them in a local variable to be passed off to each frame.
