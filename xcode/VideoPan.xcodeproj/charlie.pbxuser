@@ -2,9 +2,9 @@
 {
 	00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {789, 1131}}";
-			sepNavSelRange = "{1898, 0}";
-			sepNavVisRange = "{776, 1244}";
+			sepNavIntBoundsRect = "{{0, 0}, {894, 1105}}";
+			sepNavSelRange = "{1487, 0}";
+			sepNavVisRange = "{776, 1115}";
 			sepNavWindowFrame = "{{83, 249}, {1058, 706}}";
 		};
 	};
@@ -120,6 +120,37 @@
 			CB02D3D21479F4AE003E515E /* PBXTextBookmark */ = CB02D3D21479F4AE003E515E /* PBXTextBookmark */;
 			CB02D3D51479F4AE003E515E /* PBXTextBookmark */ = CB02D3D51479F4AE003E515E /* PBXTextBookmark */;
 			CB02D3D61479F4AE003E515E /* PBXTextBookmark */ = CB02D3D61479F4AE003E515E /* PBXTextBookmark */;
+			CB02D3D71479F573003E515E /* PBXTextBookmark */ = CB02D3D71479F573003E515E /* PBXTextBookmark */;
+			CB02D3D81479F573003E515E /* PBXTextBookmark */ = CB02D3D81479F573003E515E /* PBXTextBookmark */;
+			CB02D3D91479F573003E515E /* PBXTextBookmark */ = CB02D3D91479F573003E515E /* PBXTextBookmark */;
+			CB02D3DA1479F956003E515E /* PBXTextBookmark */ = CB02D3DA1479F956003E515E /* PBXTextBookmark */;
+			CB02D3DB1479F956003E515E /* PBXTextBookmark */ = CB02D3DB1479F956003E515E /* PBXTextBookmark */;
+			CB02D3DC1479F956003E515E /* PBXTextBookmark */ = CB02D3DC1479F956003E515E /* PBXTextBookmark */;
+			CB02D3E11479FAC4003E515E /* PBXTextBookmark */ = CB02D3E11479FAC4003E515E /* PBXTextBookmark */;
+			CB02D3E21479FAC4003E515E /* PBXTextBookmark */ = CB02D3E21479FAC4003E515E /* PBXTextBookmark */;
+			CB02D3E31479FAC4003E515E /* PBXTextBookmark */ = CB02D3E31479FAC4003E515E /* PBXTextBookmark */;
+			CB02D3E41479FAC4003E515E /* PBXTextBookmark */ = CB02D3E41479FAC4003E515E /* PBXTextBookmark */;
+			CB02D3E51479FAC4003E515E /* PBXTextBookmark */ = CB02D3E51479FAC4003E515E /* PBXTextBookmark */;
+			CB02D3E61479FAC4003E515E /* PBXTextBookmark */ = CB02D3E61479FAC4003E515E /* PBXTextBookmark */;
+			CB02D3E71479FAC4003E515E /* PBXTextBookmark */ = CB02D3E71479FAC4003E515E /* PBXTextBookmark */;
+			CB02D3E81479FAC4003E515E /* PBXTextBookmark */ = CB02D3E81479FAC4003E515E /* PBXTextBookmark */;
+			CB02D3F9147A0093003E515E /* PBXTextBookmark */ = CB02D3F9147A0093003E515E /* PBXTextBookmark */;
+			CB02D3FA147A0093003E515E /* PBXTextBookmark */ = CB02D3FA147A0093003E515E /* PBXTextBookmark */;
+			CB02D3FB147A0093003E515E /* PBXTextBookmark */ = CB02D3FB147A0093003E515E /* PBXTextBookmark */;
+			CB02D3FC147A0093003E515E /* PBXTextBookmark */ = CB02D3FC147A0093003E515E /* PBXTextBookmark */;
+			CB02D3FD147A0093003E515E /* PBXTextBookmark */ = CB02D3FD147A0093003E515E /* PBXTextBookmark */;
+			CB02D3FE147A0093003E515E /* PBXTextBookmark */ = CB02D3FE147A0093003E515E /* PBXTextBookmark */;
+			CB02D3FF147A0093003E515E /* PBXTextBookmark */ = CB02D3FF147A0093003E515E /* PBXTextBookmark */;
+			CB02D400147A0093003E515E /* PBXTextBookmark */ = CB02D400147A0093003E515E /* PBXTextBookmark */;
+			CB02D401147A0093003E515E /* PBXTextBookmark */ = CB02D401147A0093003E515E /* PBXTextBookmark */;
+			CB02D404147A00D8003E515E /* PBXTextBookmark */ = CB02D404147A00D8003E515E /* PBXTextBookmark */;
+			CB02D405147A00D8003E515E /* XCBuildMessageTextBookmark */ = CB02D405147A00D8003E515E /* XCBuildMessageTextBookmark */;
+			CB02D406147A00D8003E515E /* PBXTextBookmark */ = CB02D406147A00D8003E515E /* PBXTextBookmark */;
+			CB02D407147A00D8003E515E /* PBXTextBookmark */ = CB02D407147A00D8003E515E /* PBXTextBookmark */;
+			CB02D408147A00D8003E515E /* PBXTextBookmark */ = CB02D408147A00D8003E515E /* PBXTextBookmark */;
+			CB02D40B147A00F8003E515E /* PBXTextBookmark */ = CB02D40B147A00F8003E515E /* PBXTextBookmark */;
+			CB02D40C147A00F8003E515E /* PBXTextBookmark */ = CB02D40C147A00F8003E515E /* PBXTextBookmark */;
+			CB02D40D147A00F8003E515E /* PBXTextBookmark */ = CB02D40D147A00F8003E515E /* PBXTextBookmark */;
 			CB860CC8146B7758000FB8A4 = CB860CC8146B7758000FB8A4 /* PBXTextBookmark */;
 			CB860CC9146B7758000FB8A4 = CB860CC9146B7758000FB8A4 /* PBXTextBookmark */;
 			CB860CCA146B7758000FB8A4 = CB860CCA146B7758000FB8A4 /* PBXTextBookmark */;
@@ -147,17 +178,17 @@
 	};
 	CB02D35E147998B3003E515E /* FrameSlice.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {691, 616}}";
-			sepNavSelRange = "{590, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {691, 611}}";
+			sepNavSelRange = "{592, 0}";
 			sepNavVisRange = "{0, 969}";
 			sepNavWindowFrame = "{{15, 347}, {1058, 706}}";
 		};
 	};
 	CB02D35F147998B3003E515E /* FrameSlice.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {753, 767}}";
+			sepNavIntBoundsRect = "{{0, 0}, {753, 793}}";
 			sepNavSelRange = "{359, 0}";
-			sepNavVisRange = "{0, 918}";
+			sepNavVisRange = "{248, 907}";
 			sepNavWindowFrame = "{{61, 267}, {720, 744}}";
 		};
 	};
@@ -167,17 +198,17 @@
 	};
 	CB02D3701479A8A5003E515E /* FrameController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {661, 616}}";
-			sepNavSelRange = "{497, 0}";
-			sepNavVisRange = "{0, 784}";
+			sepNavIntBoundsRect = "{{0, 0}, {999, 754}}";
+			sepNavSelRange = "{410, 0}";
+			sepNavVisRange = "{82, 1150}";
 			sepNavWindowFrame = "{{84, 246}, {720, 744}}";
 		};
 	};
 	CB02D3711479A8A5003E515E /* FrameController.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {796, 1053}}";
-			sepNavSelRange = "{1677, 0}";
-			sepNavVisRange = "{641, 1321}";
+			sepNavIntBoundsRect = "{{0, 0}, {1083, 1820}}";
+			sepNavSelRange = "{778, 9}";
+			sepNavVisRange = "{2318, 813}";
 			sepNavWindowFrame = "{{39, 288}, {720, 744}}";
 		};
 	};
@@ -187,7 +218,7 @@
 		fRef = CB02D3701479A8A5003E515E /* FrameController.h */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 20;
+		rLoc = 22;
 		rType = 1;
 	};
 	CB02D3901479C892003E515E /* PBXTextBookmark */ = {
@@ -195,7 +226,7 @@
 		fRef = CB02D3701479A8A5003E515E /* FrameController.h */;
 		name = "FrameController.h: 21";
 		rLen = 0;
-		rLoc = 336;
+		rLoc = 392;
 		rType = 0;
 		vrLen = 578;
 		vrLoc = 0;
@@ -216,7 +247,7 @@
 		fRef = CB02D3701479A8A5003E515E /* FrameController.h */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 24;
+		rLoc = 26;
 		rType = 1;
 	};
 	CB02D3961479C8C0003E515E /* PBXTextBookmark */ = {
@@ -224,7 +255,7 @@
 		fRef = CB02D3701479A8A5003E515E /* FrameController.h */;
 		name = "FrameController.h: 25";
 		rLen = 0;
-		rLoc = 426;
+		rLoc = 576;
 		rType = 0;
 		vrLen = 576;
 		vrLoc = 0;
@@ -314,7 +345,7 @@
 		fRef = CB02D3701479A8A5003E515E /* FrameController.h */;
 		name = "FrameController.h: 29";
 		rLen = 0;
-		rLoc = 548;
+		rLoc = 1034;
 		rType = 0;
 		vrLen = 707;
 		vrLoc = 0;
@@ -324,7 +355,7 @@
 		fRef = CB02D3711479A8A5003E515E /* FrameController.cpp */;
 		name = "FrameController.cpp: 28";
 		rLen = 0;
-		rLoc = 572;
+		rLoc = 1042;
 		rType = 0;
 		vrLen = 1246;
 		vrLoc = 148;
@@ -344,7 +375,7 @@
 		fRef = CB02D35E147998B3003E515E /* FrameSlice.h */;
 		name = "FrameSlice.h: 39";
 		rLen = 0;
-		rLoc = 821;
+		rLoc = 823;
 		rType = 0;
 		vrLen = 969;
 		vrLoc = 0;
@@ -354,7 +385,7 @@
 		fRef = CB02D3701479A8A5003E515E /* FrameController.h */;
 		name = "FrameController.h: 29";
 		rLen = 0;
-		rLoc = 548;
+		rLoc = 1034;
 		rType = 0;
 		vrLen = 707;
 		vrLoc = 0;
@@ -404,7 +435,7 @@
 		fRef = CB02D3711479A8A5003E515E /* FrameController.cpp */;
 		name = "FrameController.cpp: 34";
 		rLen = 0;
-		rLoc = 722;
+		rLoc = 1192;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 0;
@@ -434,7 +465,7 @@
 		fRef = CB02D35E147998B3003E515E /* FrameSlice.h */;
 		name = "FrameSlice.h: 39";
 		rLen = 0;
-		rLoc = 821;
+		rLoc = 823;
 		rType = 0;
 		vrLen = 969;
 		vrLoc = 0;
@@ -444,7 +475,7 @@
 		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
 		name = "VideoPanApp.cpp: 79";
 		rLen = 0;
-		rLoc = 1898;
+		rLoc = 1794;
 		rType = 0;
 		vrLen = 1244;
 		vrLoc = 776;
@@ -454,7 +485,7 @@
 		fRef = CB02D3701479A8A5003E515E /* FrameController.h */;
 		name = "FrameController.h: 29";
 		rLen = 0;
-		rLoc = 548;
+		rLoc = 1034;
 		rType = 0;
 		vrLen = 707;
 		vrLoc = 0;
@@ -474,7 +505,7 @@
 		fRef = CB02D3711479A8A5003E515E /* FrameController.cpp */;
 		name = "FrameController.cpp: 58";
 		rLen = 0;
-		rLoc = 1825;
+		rLoc = 2989;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 0;
@@ -494,7 +525,7 @@
 		fRef = CB02D35E147998B3003E515E /* FrameSlice.h */;
 		name = "FrameSlice.h: 35";
 		rLen = 0;
-		rLoc = 743;
+		rLoc = 744;
 		rType = 0;
 		vrLen = 969;
 		vrLoc = 0;
@@ -504,7 +535,7 @@
 		fRef = CB02D35E147998B3003E515E /* FrameSlice.h */;
 		name = "FrameSlice.h: 39";
 		rLen = 0;
-		rLoc = 821;
+		rLoc = 823;
 		rType = 0;
 		vrLen = 969;
 		vrLoc = 0;
@@ -544,7 +575,7 @@
 		fRef = CB02D3701479A8A5003E515E /* FrameController.h */;
 		name = "FrameController.h: 29";
 		rLen = 12;
-		rLoc = 548;
+		rLoc = 1034;
 		rType = 0;
 		vrLen = 707;
 		vrLoc = 0;
@@ -554,7 +585,7 @@
 		fRef = CB02D3711479A8A5003E515E /* FrameController.cpp */;
 		name = "FrameController.cpp: 58";
 		rLen = 0;
-		rLoc = 1825;
+		rLoc = 2989;
 		rType = 0;
 		vrLen = 1314;
 		vrLoc = 214;
@@ -564,7 +595,7 @@
 		fRef = CB02D3711479A8A5003E515E /* FrameController.cpp */;
 		name = "FrameController.cpp: 54";
 		rLen = 0;
-		rLoc = 1714;
+		rLoc = 2878;
 		rType = 0;
 		vrLen = 1253;
 		vrLoc = 424;
@@ -574,7 +605,7 @@
 		fRef = CB02D35E147998B3003E515E /* FrameSlice.h */;
 		name = "FrameSlice.h: 39";
 		rLen = 0;
-		rLoc = 821;
+		rLoc = 823;
 		rType = 0;
 		vrLen = 969;
 		vrLoc = 0;
@@ -598,7 +629,7 @@
 		fRef = CB02D3701479A8A5003E515E /* FrameController.h */;
 		name = "FrameController.h: 40";
 		rLen = 19;
-		rLoc = 715;
+		rLoc = 1264;
 		rType = 0;
 		vrLen = 779;
 		vrLoc = 0;
@@ -608,7 +639,7 @@
 		fRef = CB02D3711479A8A5003E515E /* FrameController.cpp */;
 		name = "FrameController.cpp: 58";
 		rLen = 0;
-		rLoc = 1527;
+		rLoc = 2048;
 		rType = 0;
 		vrLen = 1217;
 		vrLoc = 639;
@@ -618,7 +649,7 @@
 		fRef = CB02D3711479A8A5003E515E /* FrameController.cpp */;
 		name = "FrameController.cpp: 65";
 		rLen = 0;
-		rLoc = 1677;
+		rLoc = 2220;
 		rType = 0;
 		vrLen = 1321;
 		vrLoc = 641;
@@ -628,7 +659,7 @@
 		fRef = CB02D3701479A8A5003E515E /* FrameController.h */;
 		name = "FrameController.h: 26";
 		rLen = 0;
-		rLoc = 497;
+		rLoc = 647;
 		rType = 0;
 		vrLen = 784;
 		vrLoc = 0;
@@ -638,7 +669,316 @@
 		fRef = CB02D35E147998B3003E515E /* FrameSlice.h */;
 		name = "FrameSlice.h: 27";
 		rLen = 0;
-		rLoc = 590;
+		rLoc = 592;
+		rType = 0;
+		vrLen = 969;
+		vrLoc = 0;
+	};
+	CB02D3D71479F573003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D3711479A8A5003E515E /* FrameController.cpp */;
+		name = "FrameController.cpp: 47";
+		rLen = 0;
+		rLoc = 1806;
+		rType = 0;
+		vrLen = 1208;
+		vrLoc = 639;
+	};
+	CB02D3D81479F573003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D35E147998B3003E515E /* FrameSlice.h */;
+		name = "FrameSlice.h: 39";
+		rLen = 0;
+		rLoc = 821;
+		rType = 0;
+		vrLen = 998;
+		vrLoc = 0;
+	};
+	CB02D3D91479F573003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D3701479A8A5003E515E /* FrameController.h */;
+		name = "FrameController.h: 26";
+		rLen = 0;
+		rLoc = 647;
+		rType = 0;
+		vrLen = 784;
+		vrLoc = 0;
+	};
+	CB02D3DA1479F956003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D3711479A8A5003E515E /* FrameController.cpp */;
+		name = "FrameController.cpp: 91";
+		rLen = 0;
+		rLoc = 2498;
+		rType = 0;
+		vrLen = 839;
+		vrLoc = 1737;
+	};
+	CB02D3DB1479F956003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D3701479A8A5003E515E /* FrameController.h */;
+		name = "FrameController.h: 35";
+		rLen = 0;
+		rLoc = 1006;
+		rType = 0;
+		vrLen = 993;
+		vrLoc = 0;
+	};
+	CB02D3DC1479F956003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D35E147998B3003E515E /* FrameSlice.h */;
+		name = "FrameSlice.h: 28";
+		rLen = 0;
+		rLoc = 592;
+		rType = 0;
+		vrLen = 971;
+		vrLoc = 0;
+	};
+	CB02D3E11479FAC4003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D3701479A8A5003E515E /* FrameController.h */;
+		name = "FrameController.h: 51";
+		rLen = 19;
+		rLoc = 1264;
+		rType = 0;
+		vrLen = 1000;
+		vrLoc = 0;
+	};
+	CB02D3E21479FAC4003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 22";
+		rLen = 0;
+		rLoc = 434;
+		rType = 0;
+		vrLen = 911;
+		vrLoc = 0;
+	};
+	CB02D3E31479FAC4003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D35F147998B3003E515E /* FrameSlice.cpp */;
+		name = "FrameSlice.cpp: 20";
+		rLen = 0;
+		rLoc = 359;
+		rType = 0;
+		vrLen = 918;
+		vrLoc = 0;
+	};
+	CB02D3E41479FAC4003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 4";
+		rLen = 35;
+		rLoc = 92;
+		rType = 0;
+		vrLen = 943;
+		vrLoc = 0;
+	};
+	CB02D3E51479FAC4003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D3711479A8A5003E515E /* FrameController.cpp */;
+		name = "FrameController.cpp: 34";
+		rLen = 0;
+		rLoc = 904;
+		rType = 0;
+		vrLen = 1114;
+		vrLoc = 0;
+	};
+	CB02D3E61479FAC4003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D3711479A8A5003E515E /* FrameController.cpp */;
+		name = "FrameController.cpp: 82";
+		rLen = 0;
+		rLoc = 2239;
+		rType = 0;
+		vrLen = 864;
+		vrLoc = 1927;
+	};
+	CB02D3E71479FAC4003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D3701479A8A5003E515E /* FrameController.h */;
+		name = "FrameController.h: 48";
+		rLen = 0;
+		rLoc = 1219;
+		rType = 0;
+		vrLen = 989;
+		vrLoc = 143;
+	};
+	CB02D3E81479FAC4003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D35E147998B3003E515E /* FrameSlice.h */;
+		name = "FrameSlice.h: 28";
+		rLen = 0;
+		rLoc = 592;
+		rType = 0;
+		vrLen = 971;
+		vrLoc = 0;
+	};
+	CB02D3F9147A0093003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A081467018200088D6A /* Particle.cpp */;
+		name = "Particle.cpp: 18";
+		rLen = 0;
+		rLoc = 347;
+		rType = 0;
+		vrLen = 933;
+		vrLoc = 0;
+	};
+	CB02D3FA147A0093003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D3701479A8A5003E515E /* FrameController.h */;
+		name = "FrameController.h: 22";
+		rLen = 0;
+		rLoc = 391;
+		rType = 0;
+		vrLen = 1068;
+		vrLoc = 164;
+	};
+	CB02D3FB147A0093003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D35F147998B3003E515E /* FrameSlice.cpp */;
+		name = "FrameSlice.cpp: 20";
+		rLen = 0;
+		rLoc = 359;
+		rType = 0;
+		vrLen = 907;
+		vrLoc = 248;
+	};
+	CB02D3FC147A0093003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */;
+		name = "ParticleController.cpp: 22";
+		rLen = 0;
+		rLoc = 434;
+		rType = 0;
+		vrLen = 911;
+		vrLoc = 0;
+	};
+	CB02D3FD147A0093003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 62";
+		rLen = 0;
+		rLoc = 1607;
+		rType = 0;
+		vrLen = 1094;
+		vrLoc = 773;
+	};
+	CB02D3FE147A0093003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D3711479A8A5003E515E /* FrameController.cpp */;
+		name = "FrameController.cpp: 27";
+		rLen = 0;
+		rLoc = 573;
+		rType = 0;
+		vrLen = 836;
+		vrLoc = 2146;
+	};
+	CB02D3FF147A0093003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D3711479A8A5003E515E /* FrameController.cpp */;
+		name = "FrameController.cpp: 97";
+		rLen = 0;
+		rLoc = 2382;
+		rType = 0;
+		vrLen = 859;
+		vrLoc = 1688;
+	};
+	CB02D400147A0093003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D3701479A8A5003E515E /* FrameController.h */;
+		name = "FrameController.h: 30";
+		rLen = 0;
+		rLoc = 752;
+		rType = 0;
+		vrLen = 1079;
+		vrLoc = 82;
+	};
+	CB02D401147A0093003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D35E147998B3003E515E /* FrameSlice.h */;
+		name = "FrameSlice.h: 28";
+		rLen = 0;
+		rLoc = 592;
+		rType = 0;
+		vrLen = 971;
+		vrLoc = 0;
+	};
+	CB02D404147A00D8003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D3711479A8A5003E515E /* FrameController.cpp */;
+		name = "FrameController.cpp: 35";
+		rLen = 9;
+		rLoc = 778;
+		rType = 0;
+		vrLen = 813;
+		vrLoc = 2318;
+	};
+	CB02D405147A00D8003E515E /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "No matching function for call to 'FrameController::FrameController(int&, float&, float&, float&)'";
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 61;
+		rType = 1;
+	};
+	CB02D406147A00D8003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 62";
+		rLen = 0;
+		rLoc = 1487;
+		rType = 0;
+		vrLen = 1123;
+		vrLoc = 756;
+	};
+	CB02D407147A00D8003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D3701479A8A5003E515E /* FrameController.h */;
+		name = "FrameController.h: 23";
+		rLen = 0;
+		rLoc = 410;
+		rType = 0;
+		vrLen = 1173;
+		vrLoc = 82;
+	};
+	CB02D408147A00D8003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D35E147998B3003E515E /* FrameSlice.h */;
+		name = "FrameSlice.h: 28";
+		rLen = 0;
+		rLoc = 592;
+		rType = 0;
+		vrLen = 971;
+		vrLoc = 0;
+	};
+	CB02D40B147A00F8003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */;
+		name = "VideoPanApp.cpp: 62";
+		rLen = 0;
+		rLoc = 1487;
+		rType = 0;
+		vrLen = 1115;
+		vrLoc = 776;
+	};
+	CB02D40C147A00F8003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D3701479A8A5003E515E /* FrameController.h */;
+		name = "FrameController.h: 23";
+		rLen = 0;
+		rLoc = 410;
+		rType = 0;
+		vrLen = 1150;
+		vrLoc = 82;
+	};
+	CB02D40D147A00F8003E515E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CB02D35E147998B3003E515E /* FrameSlice.h */;
+		name = "FrameSlice.h: 28";
+		rLen = 0;
+		rLoc = 592;
 		rType = 0;
 		vrLen = 969;
 		vrLoc = 0;
@@ -736,9 +1076,9 @@
 	};
 	CBF09A081467018200088D6A /* Particle.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {753, 962}}";
+			sepNavIntBoundsRect = "{{0, 0}, {753, 988}}";
 			sepNavSelRange = "{347, 0}";
-			sepNavVisRange = "{446, 1110}";
+			sepNavVisRange = "{0, 933}";
 			sepNavWindowFrame = "{{38, 326}, {1058, 706}}";
 		};
 	};

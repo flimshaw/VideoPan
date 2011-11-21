@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>CB02D3D51479F4AE003E515E</string>
+						<string>CB02D40C147A00F8003E515E</string>
 						<key>history</key>
 						<array>
 							<string>CB02D3CE1479F48D003E515E</string>
@@ -256,7 +256,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>CB02D3D61479F4AE003E515E</string>
+						<string>CB02D40D147A00F8003E515E</string>
 						<key>history</key>
 						<array>
 							<string>CB02D36F1479A571003E515E</string>
@@ -352,8 +352,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
-									<integer>1</integer>
+									<integer>12</integer>
+									<integer>7</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -377,7 +377,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>724 139 1022 915 0 0 1920 1058 </string>
+						<string>350 134 1022 915 0 0 1920 1058 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -395,7 +395,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>FrameController.cpp</string>
+								<string>VideoPanApp.cpp</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -403,23 +403,23 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>FrameController.cpp</string>
+										<string>VideoPanApp.cpp</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>CB02D3D21479F4AE003E515E</string>
+										<string>CB02D40B147A00F8003E515E</string>
 										<key>history</key>
 										<array>
 											<string>CB02D3A31479C9EC003E515E</string>
 											<string>CB02D3A51479C9EC003E515E</string>
-											<string>CB02D3B71479E504003E515E</string>
-											<string>CB02D3B81479E504003E515E</string>
-											<string>CB02D3BF1479E6F8003E515E</string>
 											<string>CB02D3C61479E809003E515E</string>
-											<string>CB02D3C81479E809003E515E</string>
 											<string>CB02D3CF1479F4AE003E515E</string>
-											<string>CB02D3D01479F4AE003E515E</string>
-											<string>CB02D3D11479F4AE003E515E</string>
+											<string>CB02D3F9147A0093003E515E</string>
+											<string>CB02D3FA147A0093003E515E</string>
+											<string>CB02D3FB147A0093003E515E</string>
+											<string>CB02D3FC147A0093003E515E</string>
+											<string>CB02D404147A00D8003E515E</string>
+											<string>CB02D405147A00D8003E515E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -433,7 +433,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {814, 665}}</string>
 								<key>RubberWindowFrame</key>
-								<string>724 139 1022 915 0 0 1920 1058 </string>
+								<string>350 134 1022 915 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -453,7 +453,7 @@
 								<key>Frame</key>
 								<string>{{0, 670}, {814, 204}}</string>
 								<key>RubberWindowFrame</key>
-								<string>724 139 1022 915 0 0 1920 1058 </string>
+								<string>350 134 1022 915 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -617,18 +617,19 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>CB02D40E147A00F8003E515E</string>
 		<string>CB02D3B31479C9EC003E515E</string>
 		<string>CB02D3B41479C9EC003E515E</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>CB02D36D1479A30E003E515E</string>
-		<string>CBE32C8E14610FD900A7C656</string>
 		<string>CB02D3B01479C9EC003E515E</string>
-		<string>CB02D3D31479F4AE003E515E</string>
 		<string>/Users/charlie/Documents/projects/videopan/VideoPan/xcode/VideoPan.xcodeproj</string>
+		<string>CB02D3D31479F4AE003E515E</string>
+		<string>CBE32C8E14610FD900A7C656</string>
 	</array>
 	<key>WindowString</key>
-	<string>724 139 1022 915 0 0 1920 1058 </string>
+	<string>350 134 1022 915 0 0 1920 1058 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -644,12 +645,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>FrameController.h</string>
+								<string>VideoPanApp.cpp</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -666,8 +669,6 @@
 							<string>421pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -720,7 +721,7 @@
 			<key>WindowToolGUID</key>
 			<string>CBE32C8E14610FD900A7C656</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

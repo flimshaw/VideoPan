@@ -61,3 +61,7 @@ Methods it should have:
 Back from coffee.  Didn't really get a lot of thinking done, but it's good to get up and go outside.  I really should figure out some kinda excercise schedule.  One of these days.
 
 OK.  Let's build out our mathematical functions in the FrameController, we'll store them in a local variable to be passed off to each frame.
+
+%%% Sun Nov 20 19:13:29 PST 2011
+
+OK, so I've got the basics of the focal distance calculation methods in the class, but now I have to figure out how to combine them.  Let's just hard-set a few things for now to get it working roughly, and then we'll iterate from there to bring in dynamic features.

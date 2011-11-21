@@ -25,7 +25,7 @@ public:
 	void setPosition( ci::Vec2f newPos);
 	void setFrameTexture( gl::Texture newTexture );
 	void setFrameOffset( float pixelOffset );
-
+	
 	
 	// Texture specific variables
 	gl::Texture mFrameTexture;
@@ -36,6 +36,7 @@ public:
 	float		mFrameTrueWidth;
 	float		mFrameLensAngle;
 	float		mFrameMaxWidth;
+
 	
 	// Particle specific variables
 	ci::Vec2f	mCurrentPosition;

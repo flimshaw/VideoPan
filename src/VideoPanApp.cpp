@@ -34,7 +34,7 @@ class VideoPanApp : public AppBasic {
 	
 	float mFrameFocalDistance;
 	float mFrameSpeed;
-	float mPixelOffset;
+	float mFrameOffset;
 	int mMaxFrames;
 };
 
@@ -59,14 +59,12 @@ void VideoPanApp::setup()
 	mParams.addParam( "Camera Speed", &mFrameSpeed, "min=20.0 max=75.0 step=1 keyIncr=x keyDecr=z");
 	mParams.addParam( "Max Frames", &mMaxFrames, "min=10 max=50 step=1 keyIncr=x keyDecr=z");
 	
-	mFrameController = FrameController( mStartFrame, mFrameOffset, mFrameSpeed, mFrameFocalDistance );
+	mFrameController = FrameController( mMoviePath, mStartFrame, mFrameOffset, mFrameSpeed, mFrameFocalDistance, mMaxFrames );
 }
 
 void VideoPanApp::update()
 {
-	mParticleController.setWidth(mParticleWidth);
-	mParticleController.setPixelOffset(mPixelOffset);
-	mParticleController.update();
+
 }
 
 void VideoPanApp::draw()
@@ -78,7 +76,7 @@ void VideoPanApp::draw()
 	gl::setMatricesWindow(getWindowSize(), true);
 
 	gl::rotate(90);
-	mFrameController.draw();
+
 	params::InterfaceGl::draw();
 }
 
