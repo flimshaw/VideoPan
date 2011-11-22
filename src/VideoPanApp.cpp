@@ -64,7 +64,7 @@ void VideoPanApp::setup()
 
 void VideoPanApp::update()
 {
-
+	mFrameController.update();
 }
 
 void VideoPanApp::draw()
@@ -76,7 +76,7 @@ void VideoPanApp::draw()
 	gl::setMatricesWindow(getWindowSize(), true);
 
 	gl::rotate(90);
-
+	mFrameController.draw();
 	params::InterfaceGl::draw();
 }
 

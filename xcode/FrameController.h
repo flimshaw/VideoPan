@@ -12,7 +12,10 @@
 #include "cinder/gl/gl.h"
 #include "cinder/gl/Texture.h"
 #include "cinder/qtime/QuickTime.h"
+#include "cinder/ImageIo.h"
 #include <list>
+#include <vector>
+#include <map>
 
 using namespace ci;
 using namespace std;
@@ -38,9 +41,22 @@ public:
 	void buildFrameSlices();
 	void updateFrameSlices();
 	
+	// internal methods for working out shit
+	void processVideoFrames();
 	
-	std::list<FrameSlice>	mFrameSlices;
-	qtime::MovieGl mVideo;
+	// this is our queue of frames we want to load:
+    vector<int> mFrames;
+	
+    // this is our queue of things that are done loading
+    mutex completedLoadsMutex;
+    map<int, Surface> completedLoads;
+	
+	// this is the function that will be loaded in a thread
+    void threadedLoad(const int &frameNumber);
+	
+	
+	vector<FrameSlice>	mFrameSlices;
+	qtime::MovieSurface mVideo;
 	
 	int			mFrameCount;
 	int			mMaxFrames;

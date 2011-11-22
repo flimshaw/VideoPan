@@ -65,3 +65,13 @@ OK.  Let's build out our mathematical functions in the FrameController, we'll st
 %%% Sun Nov 20 19:13:29 PST 2011
 
 OK, so I've got the basics of the focal distance calculation methods in the class, but now I have to figure out how to combine them.  Let's just hard-set a few things for now to get it working roughly, and then we'll iterate from there to bring in dynamic features.
+
+%%% Sun Nov 20 19:49:01 PST 2011
+
+Ok, we're gonna have to start getting into the functions that actually handle textures.  Part of me wants to get it done immediately in a thread, since it doesn't look _too too_ hard, and it'll save a lot of time.  Let's do it.  Onwards.
+
+%%% Mon Nov 21 20:55:09 PST 2011
+
+That didn't get so far, and now I forget entirely what I was doing.  What the hell.
+
+Do I need to map frame numbers to textures, or could I use some sort of callback system to do it?  Really I need to have a way for threads that are sent off to load textures to return them to GL space and then move on.  This requires the ability to address a particular frame.  Or actually, we don't really need to address it, we can just append it to the list of frameSlices right?  They're going to have their own shit to handle positioning etc.

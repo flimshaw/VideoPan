@@ -17,13 +17,14 @@
 using namespace ci;
 using namespace ci::app;
 
-FrameSlice::FrameSlice( int frameNumber, float frameOffset, float frameSpeed, float frameFocalDistance )
+FrameSlice::FrameSlice( gl::Texture newTexture, int frameNumber, float frameOffset, float frameSpeed, float frameFocalDistance )
 {
 	mFrameNumber = frameNumber;
 	mFrameOffset = frameOffset;
 	mFrameSpeed = frameSpeed;
 	mFrameFocalDistance = frameFocalDistance;
 	mFrameLensAngle = 110;
+	mFrameTexture = newTexture;
 }
 
 void FrameSlice::setPosition( ci::Vec2f newPos)
