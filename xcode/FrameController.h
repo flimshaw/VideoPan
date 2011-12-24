@@ -9,15 +9,18 @@
 
 #pragma once
 #include "FrameSlice.h"
+#include "cinder/app/AppBasic.h"
 #include "cinder/gl/gl.h"
 #include "cinder/gl/Texture.h"
 #include "cinder/qtime/QuickTime.h"
 #include "cinder/ImageIo.h"
+#include "cinder/Thread.h"
 #include <list>
 #include <vector>
 #include <map>
 
 using namespace ci;
+using namespace ci::app;
 using namespace std;
 
 class FrameController {
@@ -46,9 +49,10 @@ public:
 	
 	// this is our queue of frames we want to load:
     vector<int> mFrames;
-	
-    // this is our queue of things that are done loading
-    mutex completedLoadsMutex;
+
+    
+	// this is our queue of things that are done loading
+    //mutex completedLoadsMutex;
     map<int, Surface> completedLoads;
 	
 	// this is the function that will be loaded in a thread

@@ -45,6 +45,7 @@ FrameController::FrameController( const string &moviePath, int startFrame, float
 	mFrameFocalDistance = frameFocalDistance;
 	mFrameSpeed = frameSpeed;
 	mPixelOffset = 0;
+	
 
 	loadMovieFile( moviePath );
 }
@@ -100,8 +101,9 @@ void FrameController::clearFrameSlices()
 
 void FrameController::buildFrameSlices()
 {
-	for(int i = 1; i < maxFrames; i++) {
-		
+	for(int i = 0; i < mMaxFrames; i++) {
+		console() << getElapsedSeconds() << " queued frame " << i << std::endl;
+		mFrames.push_back(mStartFrame + i);
 	}
 }
 		
@@ -130,57 +132,60 @@ void FrameController::processVideoFrames()
 	if ( ! mFrames.empty() ) {
         int frameNumber = mFrames.back();
         mFrames.pop_back();
-        thread frameLoader(&CinderThreadsApp::threadedLoad, this, frameNumber);
+		console() << getElapsedSeconds() << " thread created for frame " << frameNumber << std::endl;
+        thread frameLoader(&FrameController::threadedLoad, this, frameNumber);
     }
     
-    completedLoadsMutex.lock();
-    if (completedLoads.size() > 0) {
-        Surface surface = completedLoads.back();
-        completedLoads.pop_back();
-        cout << getElapsedSeconds() << " creating texture " << endl;
-        textures.push_back(gl::Texture(surface));    
-    }
-    completedLoadsMutex.unlock();
-    
-    if (textures.size() > 0) {
-        currentTexture = (int)getElapsedSeconds() % textures.size();
-    }
-	
-	completedPreloadsMutex.lock();
-    completedPreloads.push_back( result );
-    completedPreloadsMutex.unlock();  
-	boost::thread::yield();
+    //completedLoadsMutex.lock();
+    if ( !completedLoads.empty() ) {
+		map<int, Surface>::iterator framejob;
+		framejob = completedLoads.begin(); // get the first element
+		completedLoads.erase(framejob); // and delete it from our loads map
+		console() << getElapsedSeconds() << " creating texture " << std::endl;
+		// we've got a frame loaded, it's time to create a frameSlice and append it to our list
+		mFrameSlices.push_back( FrameSlice( gl::Texture(framejob->second), framejob->first, mFrameOffset, mFrameSpeed, mFrameFocalDistance ) );    
+		console() << getElapsedSeconds() << framejob->second << " frameSlice created and appended" << std::endl;
+		//mFrameUpdateFlag = true;
+	}
+    //completedLoadsMutex.unlock();
 	
 }
 
 void FrameController::threadedLoad( const int &frameNumber ) {
-	mMovie.seekToFrame(frameNumber);
+	console() << getElapsedSeconds() << " thread started " << std::endl;
+	mVideo.seekToFrame(frameNumber);
 	while( 1 ) {
-		if( mMovie.checkNewFrame() ) {
-			
-			// we've got a frame loaded, it's time to create a frameSlice and append it to our list
-			mFrameSlices.push_back( frameSlice( frameNumber, mFrameOffset, mFrameSpeed, mFrameFocalDistance ) );
-    Surface surface(mMovie.getSurface());
-    cout << getElapsedSeconds() << url.str() << " load completed" << endl;
-    completedLoadsMutex.lock();
-    completedLoads.push_back(surface);
-    completedLoadsMutex.unlock();
+		if( mVideo.checkNewFrame() ) {
+			Surface surface = mVideo.getSurface();
+			console() << getElapsedSeconds() << " surface created " << std::endl;
+			// don't let the things in this block happen at the same time ever.
+			//completedLoadsMutex.lock();
+			completedLoads[frameNumber] = surface;
+
+			//completedLoadsMutex.unlock();
+			break;
+		}
+	}
+	console() << getElapsedSeconds() << " thread completed " << std::endl;
 }
 
 void FrameController::update()
 {
-	if(mFrameUpdateFlag) {
+	if(mFrames.empty() && mFrameUpdateFlag) {
+		console() << getElapsedSeconds() << " building frames " << std::endl;
+		buildFrameSlices();
 		mFrameUpdateFlag = false;
 	}
 	
-	for( list<FrameSlice>::iterator p = mFrameSlices.begin(); p != mFrameSlices.end(); ++p ){
+	processVideoFrames();
+	for( vector<FrameSlice>::iterator p = mFrameSlices.begin(); p != mFrameSlices.end(); ++p ){
 		p->update();
 	}
 }
 
 void FrameController::draw()
 {
-	for( list<FrameSlice>::iterator p = mFrameSlices.begin(); p != mFrameSlices.end(); ++p ){
+	for( vector<FrameSlice>::iterator p = mFrameSlices.begin(); p != mFrameSlices.end(); ++p ){
 		p->draw();
 	}
 }

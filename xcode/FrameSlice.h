@@ -9,6 +9,7 @@
 #pragma once
 #include "cinder/Channel.h"
 #include "cinder/Vector.h"
+#include "cinder/Area.h"
 #include "cinder/gl/gl.h"
 #include "cinder/gl/Texture.h"
 
@@ -16,7 +17,7 @@ using namespace ci;
 
 class FrameSlice {
 public:
-	FrameSlice( int frameNumber, float frameOffset, float frameSpeed, float frameFocalDistance );
+	FrameSlice( gl::Texture newTexture, int frameNumber, float frameOffset, float frameSpeed, float frameFocalDistance );
 
 	void update();
 	void draw();
@@ -25,7 +26,10 @@ public:
 	void setPosition( ci::Vec2f newPos);
 	void setFrameTexture( gl::Texture newTexture );
 	void setFrameOffset( float pixelOffset );
-	
+	void setFramePosition( float x, float y );
+	void updateCropArea();
+	void translatePosition( Vec2f mPosition );
+
 	
 	// Texture specific variables
 	gl::Texture mFrameTexture;
@@ -36,7 +40,15 @@ public:
 	float		mFrameTrueWidth;
 	float		mFrameLensAngle;
 	float		mFrameMaxWidth;
+	ci::Vec2f	mFrameSize;
+	
 
+	
+	Area		mCropArea;
+
+	// variables to shield humans from our coordinate system
+	ci::Vec2f	mTruePosition; // the actual position in GL
+	ci::Vec2f	mViewPosition; // the position we interact with
 	
 	// Particle specific variables
 	ci::Vec2f	mCurrentPosition;

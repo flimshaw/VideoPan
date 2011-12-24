@@ -23,6 +23,7 @@ class VideoPanApp : public AppBasic {
 	gl::Texture mMovieFrame;
 	qtime::MovieGl mMovie;
 	string mMoviePath;
+		int			mFrameRotation;
 	
 	CameraOrtho mCam;
 	
@@ -52,13 +53,15 @@ void VideoPanApp::setup()
 	mFrameFocalDistance = 10.0;
 	mFrameSpeed = 60.0;
 	mMaxFrames = 10;
+	mStartFrame = 10000;
 	mFrameOffset = 0;
+	mFrameRotation = 0;
 
 	mParams = params::InterfaceGl( "Settings", Vec2i( 225, 200 ) );
 	mParams.addParam( "Focal Distance", &mFrameFocalDistance, "min=1.0 max=100.0 step=.1 keyIncr=s keyDecr=w");
 	mParams.addParam( "Camera Speed", &mFrameSpeed, "min=20.0 max=75.0 step=1 keyIncr=x keyDecr=z");
 	mParams.addParam( "Max Frames", &mMaxFrames, "min=10 max=50 step=1 keyIncr=x keyDecr=z");
-	
+	mParams.addParam( "FrameRotation", &mFrameRotation, "min=0 max=359 step=1");
 	mFrameController = FrameController( mMoviePath, mStartFrame, mFrameOffset, mFrameSpeed, mFrameFocalDistance, mMaxFrames );
 }
 
@@ -75,7 +78,7 @@ void VideoPanApp::draw()
 	
 	gl::setMatricesWindow(getWindowSize(), true);
 
-	gl::rotate(90);
+	gl::rotate(mFrameRotation);
 	mFrameController.draw();
 	params::InterfaceGl::draw();
 }

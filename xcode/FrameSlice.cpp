@@ -25,11 +25,12 @@ FrameSlice::FrameSlice( gl::Texture newTexture, int frameNumber, float frameOffs
 	mFrameFocalDistance = frameFocalDistance;
 	mFrameLensAngle = 110;
 	mFrameTexture = newTexture;
+	mFrameSize = Vec2f(1280, 960); // size of the raw images
 }
 
 void FrameSlice::setPosition( ci::Vec2f newPos)
 {
-	mDestinationPosition = newPos;
+	mViewPosition = newPos;
 }
 
 void FrameSlice::setFrameTexture( gl::Texture newTexture )
@@ -42,6 +43,21 @@ void FrameSlice::setFrameOffset( float frameOffset )
 	mFrameOffset = frameOffset;
 }
 
+// this will translate a standard x, y viewport position to an actual spatial position
+void FrameSlice::translatePosition( Vec2f mPosition )
+{
+	// adjust for the rotation of the GL space
+	mTruePosition = Vec2f(mPosition.y, -mPosition.x);
+}
+
+void FrameSlice::updateCropArea()
+{
+	// updates the rectangle used to crop out the display area of our slice.
+	Vec2f topLeft = Vec2f(0, ((mFrameSize.y/2) - (mWidth/2)) + mFrameOffset);
+	Vec2f bottomRight = Vec2f(mFrameSize.x, (mFrameSize.y / 2) + (mWidth / 2));
+	mCropArea = Area(topLeft, bottomRight);
+}
+
 void FrameSlice::setup() 
 {
 	
@@ -50,12 +66,13 @@ void FrameSlice::setup()
 void FrameSlice::update()
 {
 	// TODO: add some nice physics so we fly toward this instead of snapping to it
-	mCurrentPosition = mDestinationPosition;
+	translatePosition( Vec2f(200, 0) );
+	updateCropArea();
 }
 
 void FrameSlice::draw()
 {
 	if( mFrameTexture ) {
-		gl::draw( mFrameTexture );
+		gl::draw( mFrameTexture, mCropArea, Rectf( 0, 0, 500, 500 ));
 	}
 }

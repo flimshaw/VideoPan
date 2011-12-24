@@ -75,3 +75,19 @@ Ok, we're gonna have to start getting into the functions that actually handle te
 That didn't get so far, and now I forget entirely what I was doing.  What the hell.
 
 Do I need to map frame numbers to textures, or could I use some sort of callback system to do it?  Really I need to have a way for threads that are sent off to load textures to return them to GL space and then move on.  This requires the ability to address a particular frame.  Or actually, we don't really need to address it, we can just append it to the list of frameSlices right?  They're going to have their own shit to handle positioning etc.
+
+%%% Mon Nov 21 21:29:38 PST 2011
+
+git commit -m "Sort of in the middle of something, but might as well drop a breadcrumb.  Working through the thread function that handles loading images from video files.  Using a map structure to store completed frames in an array I can address by frameNumber.  The reason I'm doing this is that it's a graceful way to let frames load in any random order we choose, and still have the correct texture mapped to the appropriate frameSlice.  We ensure that we are applying the texture we think we are applying.  With multiple threads... hmm, I think maybe that's what was happening earlier!  The... hang on.  This is not the journal.  This is still just the commit message.  Signing off."
+
+That's a commit I just made.  What ever.
+
+Anyhow, where was I.  Yes, during the image loading thing.  Well, i was thinking that we were firing off lots of random video seeks at the same time, and then we were catching frames whose frameNumber we actually weren't sure of.  In this case, we need to make sure that the frameAvailable() when we catch it is actually the frame number we requested.  This means that we can only run one thread, and that we should somehow mutex the process of getting a frame from a video file.  Let's stare at the code for a while.
+
+%%% Mon Nov 21 21:41:57 PST 2011
+
+I just had a thought, that I should really not be programming right after a day like this, but in a way, I feel like I'm letting my brain dig into a mode that it is most comfortable being in for a while.  I've had a hard time getting into a groove with Cinder and this project, but right now, even though I might be many programming hours away from producing something that works, I feel like each thing I write is teaching me more pieces of knowledge that will be super useful in working with Cinder or really any other framework like this.  Writing C++ feels like a really powerful tool to have, because it can compile to run SO quickly.
+
+%%% Mon Nov 21 22:36:15 PST 2011
+
+So I've got it pretty much working, but I need to in and remap the functions I'm using to rotate everything.  The best way to do it, both to re-understand how it works, and to ensure I can safely forget soon, is to make a function internal to frameSlice that converts normal 0,0 top left coordinates into the 90 degree rotated gl space we're using in this scenario.  I still think it's the most effcient way, programmatically to display this, as it requires only a single GL call, rather than one for every frameSlice we're rendering.
