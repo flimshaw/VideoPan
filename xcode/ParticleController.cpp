@@ -73,11 +73,7 @@ void ParticleController::addParticle( gl::Texture newTexture ) {
 
 void ParticleController::addParticles( int amt )
 {
-	for( int i=0; i<amt; i++ )
-	{
-		float x = Rand::randFloat( app::getWindowWidth() );
-		float y = Rand::randFloat( app::getWindowHeight() );
-	}
+
 }
 
 void ParticleController::updateParticles( gl::Texture newTexture ) {

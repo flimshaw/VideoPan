@@ -63,6 +63,7 @@ public:
 	qtime::MovieSurface mVideo;
 	
 	int			mFrameCount;
+	int			mFrameIndex;
 	int			mMaxFrames;
 	int			mStartFrame;
 	float		mSliceWidth;

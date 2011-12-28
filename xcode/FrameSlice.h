@@ -17,7 +17,7 @@ using namespace ci;
 
 class FrameSlice {
 public:
-	FrameSlice( gl::Texture newTexture, int frameNumber, float frameOffset, float frameSpeed, float frameFocalDistance );
+	FrameSlice( gl::Texture newTexture, int frameNumber, int frameIndex, float frameOffset, float frameSpeed, float frameFocalDistance );
 
 	void update();
 	void draw();
@@ -35,6 +35,7 @@ public:
 	gl::Texture mFrameTexture;
 	float		mFrameOffset;
 	int			mFrameNumber;
+	int			mFrameIndex;
 	float		mFrameSpeed;
 	float		mFrameFocalDistance;
 	float		mFrameTrueWidth;

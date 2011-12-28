@@ -17,13 +17,15 @@
 using namespace ci;
 using namespace ci::app;
 
-FrameSlice::FrameSlice( gl::Texture newTexture, int frameNumber, float frameOffset, float frameSpeed, float frameFocalDistance )
+FrameSlice::FrameSlice( gl::Texture newTexture, int frameNumber, int frameIndex, float frameOffset, float frameSpeed, float frameFocalDistance )
 {
 	mFrameNumber = frameNumber;
+	mFrameIndex = frameIndex;
 	mFrameOffset = frameOffset;
 	mFrameSpeed = frameSpeed;
 	mFrameFocalDistance = frameFocalDistance;
 	mFrameLensAngle = 110;
+	mWidth = 100;
 	mFrameTexture = newTexture;
 	mFrameSize = Vec2f(1280, 960); // size of the raw images
 }
@@ -66,13 +68,14 @@ void FrameSlice::setup()
 void FrameSlice::update()
 {
 	// TODO: add some nice physics so we fly toward this instead of snapping to it
-	translatePosition( Vec2f(200, 0) );
+	translatePosition( Vec2f((mWidth * mFrameIndex), 0) );
 	updateCropArea();
 }
 
 void FrameSlice::draw()
 {
+	Rectf newPos = Rectf( mTruePosition.x, mTruePosition.y, mTruePosition.x + mFrameSize.x, mTruePosition.y + mWidth );
 	if( mFrameTexture ) {
-		gl::draw( mFrameTexture, mCropArea, Rectf( 0, 0, 500, 500 ));
+		gl::draw( mFrameTexture, mCropArea, newPos );
 	}
 }

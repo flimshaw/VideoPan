@@ -45,7 +45,7 @@ FrameController::FrameController( const string &moviePath, int startFrame, float
 	mFrameFocalDistance = frameFocalDistance;
 	mFrameSpeed = frameSpeed;
 	mPixelOffset = 0;
-	
+	mFrameIndex = 1;
 
 	loadMovieFile( moviePath );
 }
@@ -143,8 +143,9 @@ void FrameController::processVideoFrames()
 		completedLoads.erase(framejob); // and delete it from our loads map
 		console() << getElapsedSeconds() << " creating texture " << std::endl;
 		// we've got a frame loaded, it's time to create a frameSlice and append it to our list
-		mFrameSlices.push_back( FrameSlice( gl::Texture(framejob->second), framejob->first, mFrameOffset, mFrameSpeed, mFrameFocalDistance ) );    
+		mFrameSlices.push_back( FrameSlice( gl::Texture(framejob->second), framejob->first, mFrameIndex, mFrameOffset, mFrameSpeed, mFrameFocalDistance ) );    
 		console() << getElapsedSeconds() << framejob->second << " frameSlice created and appended" << std::endl;
+		mFrameIndex++;
 		//mFrameUpdateFlag = true;
 	}
     //completedLoadsMutex.unlock();
