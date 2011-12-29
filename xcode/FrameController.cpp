@@ -24,7 +24,6 @@
 #define TAN_110 .70020754
 #define SCREEN_WIDTH 960;
 
-
 using namespace ci;
 using namespace ci::app;
 using namespace std;
@@ -46,6 +45,7 @@ FrameController::FrameController( const string &moviePath, int startFrame, float
 	mFrameSpeed = frameSpeed;
 	mPixelOffset = 0;
 	mFrameIndex = 1;
+	mFrameLoading = false; // by default, we're not loading any frames, capish?
 
 	loadMovieFile( moviePath );
 }
@@ -61,7 +61,6 @@ void FrameController::loadMovieFile( const string &moviePath )
 		console() << "Framerate: " << mVideo.getFramerate() << std::endl;
 		console() << "Alpha channel: " << mVideo.hasAlpha() << std::endl;		
 		console() << "Has audio: " << mVideo.hasAudio() << " Has visuals: " << mVideo.hasVisuals() << std::endl;
-		
 		
 		mVideo.setLoop( true, true );
 		mVideo.play();
@@ -103,7 +102,7 @@ void FrameController::buildFrameSlices()
 {
 	for(int i = 0; i < mMaxFrames; i++) {
 		console() << getElapsedSeconds() << " queued frame " << i << std::endl;
-		mFrames.push_back(mStartFrame + i);
+		mFrameQueue.push_back(mStartFrame + i);
 	}
 }
 		
@@ -127,52 +126,54 @@ float FrameController::getFrameSliceWidth()
 	return getDistancePerPixel() / getDistancePerFrame();
 }
 
+
 void FrameController::processVideoFrames()
 {
-	if ( ! mFrames.empty() ) {
-        int frameNumber = mFrames.back();
-        mFrames.pop_back();
-		console() << getElapsedSeconds() << " thread created for frame " << frameNumber << std::endl;
-        thread frameLoader(&FrameController::threadedLoad, this, frameNumber);
+	// if we have frames waiting to be loaded AND we're not currently loading a frame
+	if ( ! mFrameQueue.empty() && !mFrameLoading ) {
+		mFrameLoading = true; // set our flag
+        int frameNumber = mFrameQueue.back(); // i guess we get a frame number? TODO: make this actually function
+        mFrameQueue.pop_back(); // grab a frame off the back of the stack
+		console() << getElapsedSeconds() << " thread created for frame " << frameNumber << std::endl; // debug stuff
+        thread frameLoader(&FrameController::threadedLoad, this, frameNumber); // and spawn our loader thread
     }
     
-    //completedLoadsMutex.lock();
+	// if we have jobs that have been completed by our frameloader thread, deal with them
     if ( !completedLoads.empty() ) {
-		map<int, Surface>::iterator framejob;
-		framejob = completedLoads.begin(); // get the first element
-		completedLoads.erase(framejob); // and delete it from our loads map
-		console() << getElapsedSeconds() << " creating texture " << std::endl;
+		map<int, Surface>::iterator framejob; // make a map just for now
+		framejob = completedLoads.begin(); // get the first element from our completed stack
+		completedLoads.erase(framejob); // and then delete it
+		console() << getElapsedSeconds() << " creating texture " << std::endl; // debug
+		
 		// we've got a frame loaded, it's time to create a frameSlice and append it to our list
 		mFrameSlices.push_back( FrameSlice( gl::Texture(framejob->second), framejob->first, mFrameIndex, mFrameOffset, mFrameSpeed, mFrameFocalDistance ) );    
 		console() << getElapsedSeconds() << framejob->second << " frameSlice created and appended" << std::endl;
-		mFrameIndex++;
-		//mFrameUpdateFlag = true;
+		mFrameIndex++; // TODO: fix this shit, or at least reset it when params change
+		mFrameLoading = false; // finally, get us ready to load the next frame
 	}
-    //completedLoadsMutex.unlock();
-	
 }
 
+// separate threaded function that will be retrieving textures from our video file
 void FrameController::threadedLoad( const int &frameNumber ) {
-	console() << getElapsedSeconds() << " thread started " << std::endl;
-	mVideo.seekToFrame(frameNumber);
-	while( 1 ) {
-		if( mVideo.checkNewFrame() ) {
-			Surface surface = mVideo.getSurface();
-			console() << getElapsedSeconds() << " surface created " << std::endl;
+	console() << getElapsedSeconds() << " thread started " << std::endl; // debug
+	mVideo.seekToFrame(frameNumber); // jump to the frame number specified
+	while( 1 ) { // then loop like mad waiting for a video file to load
+		if( mVideo.checkNewFrame() ) { // if we've arrived at a new frame
+			Surface surface = mVideo.getSurface(); // retrieve it as a surface
+			console() << getElapsedSeconds() << " surface created " << std::endl; // debug
 			// don't let the things in this block happen at the same time ever.
-			//completedLoadsMutex.lock();
-			completedLoads[frameNumber] = surface;
-
-			//completedLoadsMutex.unlock();
+			
+			completedLoads[frameNumber] = surface; // add the surface to our completed loads
+			
 			break;
 		}
 	}
-	console() << getElapsedSeconds() << " thread completed " << std::endl;
+	console() << getElapsedSeconds() << " thread completed " << std::endl; // debug
 }
 
 void FrameController::update()
 {
-	if(mFrames.empty() && mFrameUpdateFlag) {
+	if(mFrameQueue.empty() && mFrameUpdateFlag) {
 		console() << getElapsedSeconds() << " building frames " << std::endl;
 		buildFrameSlices();
 		mFrameUpdateFlag = false;

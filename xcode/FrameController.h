@@ -48,11 +48,13 @@ public:
 	void processVideoFrames();
 	
 	// this is our queue of frames we want to load:
-    vector<int> mFrames;
+    vector<int> mFrameQueue;
 
+	// here's our flag that tells us if we are loading a frame in the background
+	// if we are, we shouldn't spawn any more loader threads
+	bool mFrameLoading;
     
 	// this is our queue of things that are done loading
-    //mutex completedLoadsMutex;
     map<int, Surface> completedLoads;
 	
 	// this is the function that will be loaded in a thread

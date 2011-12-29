@@ -25,7 +25,7 @@ FrameSlice::FrameSlice( gl::Texture newTexture, int frameNumber, int frameIndex,
 	mFrameSpeed = frameSpeed;
 	mFrameFocalDistance = frameFocalDistance;
 	mFrameLensAngle = 110;
-	mWidth = 100;
+	mWidth = 10;
 	mFrameTexture = newTexture;
 	mFrameSize = Vec2f(1280, 960); // size of the raw images
 }

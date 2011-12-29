@@ -23,7 +23,7 @@ class VideoPanApp : public AppBasic {
 	gl::Texture mMovieFrame;
 	qtime::MovieGl mMovie;
 	string mMoviePath;
-		int			mFrameRotation;
+	int	mFrameRotation;
 	
 	CameraOrtho mCam;
 	
@@ -52,7 +52,7 @@ void VideoPanApp::setup()
 	
 	mFrameFocalDistance = 10.0;
 	mFrameSpeed = 60.0;
-	mMaxFrames = 3;
+	mMaxFrames = 70;
 	mStartFrame = 20;
 	mFrameOffset = 0;
 	mFrameRotation = 90;
