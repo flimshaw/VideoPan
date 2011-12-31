@@ -116,9 +116,10 @@ void FrameController::clearFrameSlices()
 
 void FrameController::buildFrameSlices()
 {
+	int frameMultiplier = 1;
 	for(int i = 0; i < mMaxFrames; i++) {
 		console() << getElapsedSeconds() << " queued frame " << i << std::endl;
-		mFrameQueue.push_back(mStartFrame + (i * 4));
+		mFrameQueue.push_back(mStartFrame + (i * frameMultiplier));
 	}
 }
 		

@@ -40,7 +40,7 @@ class VideoPanApp : public AppBasic {
 };
 
 void VideoPanApp::prepareSettings( Settings *settings ){
-    settings->setWindowSize( 800, 900 );
+    settings->setWindowSize( 1200, 850 );
     settings->setFrameRate( 30.0f );
 }
 
@@ -48,18 +48,18 @@ void VideoPanApp::setup()
 {
 	mCam.setOrtho(-1, 1, -1, 1, -1, 1);
 	
-	mMoviePath = "/Users/choey/valiant_files/2011-07-30/RIGHT/video_001.mp4";
+	mMoviePath = "/Users/choey/valiant_files/2011-07-30/RIGHT/video_002.mp4";
 	
 	mFrameFocalDistance = 10.0;
 	mFrameSpeed = 60.0;
-	mMaxFrames = 100;
-	mStartFrame = 26400;
+	mMaxFrames = 120;
+	mStartFrame = 25500;
 	mFrameOffset = 0;
 	mFrameRotation = 90;
 
 	mParams = params::InterfaceGl( "Settings", Vec2i( 225, 200 ) );
-	mParams.addParam( "Focal Distance", &mFrameFocalDistance, "min=1.0 max=5000.0 step=1 keyIncr=s keyDecr=w");
-	mParams.addParam( "Camera Speed", &mFrameSpeed, "min=5.0 max=75.0 step=1 keyIncr=x keyDecr=z");
+	mParams.addParam( "Focal Distance", &mFrameFocalDistance, "min=1.0 max=15000.0 step=1 keyIncr=s keyDecr=w");
+	mParams.addParam( "Camera Speed", &mFrameSpeed, "min=1.0 max=75.0 step=1 keyIncr=x keyDecr=z");
 	mParams.addParam( "Max Frames", &mMaxFrames, "min=10 max=50 step=1 keyIncr=x keyDecr=z");
 	mParams.addParam( "FrameRotation", &mFrameRotation, "min=0 max=359 step=1");
 	mParams.addParam( "FrameOffset", &mFrameOffset, "min=-480 max=480 step=1");

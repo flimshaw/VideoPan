@@ -60,7 +60,7 @@ void FrameSlice::updateCropArea()
 {
 	// updates the rectangle used to crop out the display area of our slice.
 	Vec2f topLeft = Vec2f(0, ((mFrameSize.y/2) - (mWidth/2)) + mFrameOffset);
-	Vec2f bottomRight = Vec2f(mFrameSize.x, (mFrameSize.y / 2) + (mWidth / 2));
+	Vec2f bottomRight = Vec2f(mFrameSize.x, (mFrameSize.y / 2) + (mWidth / 2) + mFrameOffset);
 	mCropArea = Area(topLeft, bottomRight);
 }
 
