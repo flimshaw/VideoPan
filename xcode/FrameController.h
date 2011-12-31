@@ -43,6 +43,9 @@ public:
 	void clearFrameSlices();
 	void buildFrameSlices();
 	void updateFrameSlices();
+	void setFrameSliceWidth( float newWidth );
+	void setFrameSliceOffset( int frameOffset );
+	void setFrameOffset( int frameOffset );
 	
 	// internal methods for working out shit
 	void processVideoFrames();
@@ -77,5 +80,5 @@ public:
 	
 	float mFrameFocalDistance;
 	float mFrameSpeed;
-	float mFrameOffset;
+	int mFrameOffset;
 };

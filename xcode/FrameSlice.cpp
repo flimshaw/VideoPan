@@ -45,6 +45,10 @@ void FrameSlice::setFrameOffset( float frameOffset )
 	mFrameOffset = frameOffset;
 }
 
+void FrameSlice::setFrameWidth( float newWidth ) {
+	mWidth = newWidth;
+}
+
 // this will translate a standard x, y viewport position to an actual spatial position
 void FrameSlice::translatePosition( Vec2f mPosition )
 {

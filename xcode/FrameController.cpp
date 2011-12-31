@@ -77,7 +77,11 @@ void FrameController::loadMovieFile( const string &moviePath )
 void FrameController::setFrameFocalDistance( float focalDistance )
 {
 	mFrameFocalDistance = focalDistance;
-	mFrameUpdateFlag = true;
+	//mFrameUpdateFlag = true;
+	
+	// FOR NOW we will calculate all this stuff in the here and now
+	float frameSliceWidth = getFrameSliceWidth();
+	setFrameSliceWidth( frameSliceWidth );
 }
 
 void FrameController::setStartFrame( int startFrame )
@@ -86,10 +90,22 @@ void FrameController::setStartFrame( int startFrame )
 	mFrameUpdateFlag = true;
 }
 
+void FrameController::setFrameOffset( int frameOffset )
+{
+	mFrameOffset = frameOffset;
+	setFrameSliceOffset( mFrameOffset );
+}
+
+void FrameController::setFrameSliceOffset( int frameOffset ) {
+	for( vector<FrameSlice>::iterator p = mFrameSlices.begin(); p != mFrameSlices.end(); ++p ){
+		p->setFrameOffset( frameOffset );
+	}	
+}
+
 void FrameController::setFrameSpeed( float frameSpeed )
 {
 	mFrameSpeed = frameSpeed;
-	mFrameUpdateFlag = true;
+	//mFrameUpdateFlag = true;
 }
 
 void FrameController::clearFrameSlices() 
@@ -102,7 +118,7 @@ void FrameController::buildFrameSlices()
 {
 	for(int i = 0; i < mMaxFrames; i++) {
 		console() << getElapsedSeconds() << " queued frame " << i << std::endl;
-		mFrameQueue.push_back(mStartFrame + i);
+		mFrameQueue.push_back(mStartFrame + (i * 4));
 	}
 }
 		
@@ -124,6 +140,12 @@ float FrameController::getTrueWidth()
 float FrameController::getFrameSliceWidth()
 {
 	return getDistancePerPixel() / getDistancePerFrame();
+}
+
+void FrameController::setFrameSliceWidth( float newWidth ) {
+	for( vector<FrameSlice>::iterator p = mFrameSlices.begin(); p != mFrameSlices.end(); ++p ){
+		p->setFrameWidth( newWidth );
+	}
 }
 
 
@@ -173,6 +195,7 @@ void FrameController::threadedLoad( const int &frameNumber ) {
 
 void FrameController::update()
 {
+	// if we've finished processing all our slices AND we need an update
 	if(mFrameQueue.empty() && mFrameUpdateFlag) {
 		console() << getElapsedSeconds() << " building frames " << std::endl;
 		buildFrameSlices();

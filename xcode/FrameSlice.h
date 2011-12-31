@@ -29,6 +29,7 @@ public:
 	void setFramePosition( float x, float y );
 	void updateCropArea();
 	void translatePosition( Vec2f mPosition );
+	void setFrameWidth( float newWidth );
 
 	
 	// Texture specific variables

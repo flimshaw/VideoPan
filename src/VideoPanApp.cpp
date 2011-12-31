@@ -35,12 +35,12 @@ class VideoPanApp : public AppBasic {
 	
 	float mFrameFocalDistance;
 	float mFrameSpeed;
-	float mFrameOffset;
+	int mFrameOffset;
 	int mMaxFrames;
 };
 
 void VideoPanApp::prepareSettings( Settings *settings ){
-    settings->setWindowSize( 800, 400 );
+    settings->setWindowSize( 800, 900 );
     settings->setFrameRate( 30.0f );
 }
 
@@ -52,21 +52,25 @@ void VideoPanApp::setup()
 	
 	mFrameFocalDistance = 10.0;
 	mFrameSpeed = 60.0;
-	mMaxFrames = 70;
-	mStartFrame = 20;
+	mMaxFrames = 100;
+	mStartFrame = 26400;
 	mFrameOffset = 0;
 	mFrameRotation = 90;
 
 	mParams = params::InterfaceGl( "Settings", Vec2i( 225, 200 ) );
-	mParams.addParam( "Focal Distance", &mFrameFocalDistance, "min=1.0 max=100.0 step=.1 keyIncr=s keyDecr=w");
-	mParams.addParam( "Camera Speed", &mFrameSpeed, "min=20.0 max=75.0 step=1 keyIncr=x keyDecr=z");
+	mParams.addParam( "Focal Distance", &mFrameFocalDistance, "min=1.0 max=5000.0 step=1 keyIncr=s keyDecr=w");
+	mParams.addParam( "Camera Speed", &mFrameSpeed, "min=5.0 max=75.0 step=1 keyIncr=x keyDecr=z");
 	mParams.addParam( "Max Frames", &mMaxFrames, "min=10 max=50 step=1 keyIncr=x keyDecr=z");
 	mParams.addParam( "FrameRotation", &mFrameRotation, "min=0 max=359 step=1");
+	mParams.addParam( "FrameOffset", &mFrameOffset, "min=-480 max=480 step=1");
 	mFrameController = FrameController( mMoviePath, mStartFrame, mFrameOffset, mFrameSpeed, mFrameFocalDistance, mMaxFrames );
 }
 
 void VideoPanApp::update()
 {
+	mFrameController.setFrameFocalDistance( mFrameFocalDistance );
+	mFrameController.setFrameSpeed( mFrameSpeed );
+	mFrameController.setFrameOffset( mFrameOffset );
 	mFrameController.update();
 }
 
