@@ -86,8 +86,13 @@ void FrameController::setFrameFocalDistance( float focalDistance )
 
 void FrameController::setStartFrame( int startFrame )
 {
-	mStartFrame = startFrame;
-	mFrameUpdateFlag = true;
+	if(startFrame != mStartFrame) {
+		mStartFrame = startFrame;
+		mFrameSlices.clear();
+		mFrameQueue.clear();
+		mFrameUpdateFlag = true;
+		mFrameIndex = 0;
+	}
 }
 
 void FrameController::setFrameOffset( int frameOffset )
@@ -121,6 +126,7 @@ void FrameController::buildFrameSlices()
 		console() << getElapsedSeconds() << " queued frame " << i << std::endl;
 		mFrameQueue.push_back(mStartFrame + (i * frameMultiplier));
 	}
+	mVideo.seekToFrame(mStartFrame);
 }
 		
 float FrameController::getDistancePerFrame()
@@ -179,7 +185,8 @@ void FrameController::processVideoFrames()
 // separate threaded function that will be retrieving textures from our video file
 void FrameController::threadedLoad( const int &frameNumber ) {
 	console() << getElapsedSeconds() << " thread started " << std::endl; // debug
-	mVideo.seekToFrame(frameNumber); // jump to the frame number specified
+	//mVideo.seekToFrame(frameNumber); // jump to the frame number specified
+	mVideo.stepForward();
 	while( 1 ) { // then loop like mad waiting for a video file to load
 		if( mVideo.checkNewFrame() ) { // if we've arrived at a new frame
 			Surface surface = mVideo.getSurface(); // retrieve it as a surface
@@ -195,7 +202,7 @@ void FrameController::threadedLoad( const int &frameNumber ) {
 }
 
 void FrameController::update()
-{
+{	
 	// if we've finished processing all our slices AND we need an update
 	if(mFrameQueue.empty() && mFrameUpdateFlag) {
 		console() << getElapsedSeconds() << " building frames " << std::endl;
