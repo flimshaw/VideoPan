@@ -95,7 +95,7 @@ void FrameController::setStartFrame( int startFrame )
 	}
 }
 
-void FrameController::setFrameOffset( int frameOffset )
+void FrameController::setFrameOffset( float frameOffset )
 {
 	mFrameOffset = frameOffset;
 	setFrameSliceOffset( mFrameOffset );
@@ -175,7 +175,10 @@ void FrameController::processVideoFrames()
 		console() << getElapsedSeconds() << " creating texture " << std::endl; // debug
 		
 		// we've got a frame loaded, it's time to create a frameSlice and append it to our list
-		mFrameSlices.push_back( FrameSlice( gl::Texture(framejob->second), framejob->first, mFrameIndex, mFrameOffset, mFrameSpeed, mFrameFocalDistance ) );    
+		gl::Texture::Format f = gl::Texture::Format();
+		f.setInternalFormat(GL_COMPRESSED_RGB_ARB);
+		
+		mFrameSlices.push_back( FrameSlice( gl::Texture(framejob->second, f), framejob->first, mFrameIndex, mFrameOffset, mFrameSpeed, mFrameFocalDistance ) );    
 		console() << getElapsedSeconds() << framejob->second << " frameSlice created and appended" << std::endl;
 		mFrameIndex++; // TODO: fix this shit, or at least reset it when params change
 		mFrameLoading = false; // finally, get us ready to load the next frame

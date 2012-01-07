@@ -45,7 +45,7 @@ public:
 	void updateFrameSlices();
 	void setFrameSliceWidth( float newWidth );
 	void setFrameSliceOffset( int frameOffset );
-	void setFrameOffset( int frameOffset );
+	void setFrameOffset( float frameOffset );
 	
 	// internal methods for working out shit
 	void processVideoFrames();
