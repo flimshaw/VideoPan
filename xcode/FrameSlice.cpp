@@ -72,7 +72,7 @@ void FrameSlice::setup()
 void FrameSlice::update()
 {
 	// TODO: add some nice physics so we fly toward this instead of snapping to it
-	translatePosition( Vec2f((mWidth * mFrameIndex), 0) );
+	translatePosition( Vec2f((mWidth * (140 - mFrameIndex)), 0) );
 	updateCropArea();
 }
 

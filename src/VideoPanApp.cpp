@@ -48,11 +48,11 @@ void VideoPanApp::setup()
 {
 	mCam.setOrtho(-1, 1, -1, 1, -1, 1);
 	
-	mMoviePath = "/Users/choey/valiant_files/2011-07-30/LEFT/video_002.mp4";
+	mMoviePath = "/Users/choey/Desktop/reno-right.mov";
 	
 	mFrameFocalDistance = 500.0;
 	mFrameSpeed = 5.0;
-	mMaxFrames = 130;
+	mMaxFrames = 140;
 	mStartFrame = 1;
 	mFrameOffset = 0;
 	mFrameRotation = 90;

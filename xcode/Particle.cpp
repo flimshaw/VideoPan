@@ -49,7 +49,6 @@ void Particle::setWidth( float newWidth )
 	sliceWidth = newWidth;
 	topLeft = Vec2f(0, ((frameSize.y / 2) - (sliceWidth / 2)) + mPixelOffset);
 	bottomRight = Vec2f(frameSize.x, ((frameSize.y / 2) + (sliceWidth / 2)) + mPixelOffset);
-	console() << "Top Left:" << topLeft << std::endl;
 }
 
 void Particle::setPixelOffset( float pixelOffset ) {
