@@ -47,8 +47,16 @@ void VideoPanApp::prepareSettings( Settings *settings ){
 void VideoPanApp::setup()
 {
 	mCam.setOrtho(-1, 1, -1, 1, -1, 1);
-	
-	mMoviePath = "/Users/choey/Desktop/reno-right.mov";
+    
+	try {
+		fs::path path = getOpenFilePath( "" );
+		if( ! path.empty() ) {
+			mMoviePath = path.string();
+		}
+	}
+	catch( ... ) {
+		console() << "unable to load the texture file!" << std::endl;
+	}
 	
 	mFrameFocalDistance = 500.0;
 	mFrameSpeed = 5.0;

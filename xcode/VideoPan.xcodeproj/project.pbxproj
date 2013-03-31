@@ -21,8 +21,6 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		CB02D360147998B3003E515E /* FrameSlice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB02D35F147998B3003E515E /* FrameSlice.cpp */; };
 		CB02D3721479A8A5003E515E /* FrameController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB02D3711479A8A5003E515E /* FrameController.cpp */; };
-		CBF09A091467018200088D6A /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBF09A081467018200088D6A /* Particle.cpp */; };
-		CBF09A101467023900088D6A /* ParticleController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBF09A0F1467023900088D6A /* ParticleController.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,9 +47,7 @@
 		CB02D3701479A8A5003E515E /* FrameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameController.h; sourceTree = "<group>"; };
 		CB02D3711479A8A5003E515E /* FrameController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FrameController.cpp; sourceTree = "<group>"; };
 		CBF09A071467018200088D6A /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
-		CBF09A081467018200088D6A /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
 		CBF09A0E1467023900088D6A /* ParticleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleController.h; sourceTree = "<group>"; };
-		CBF09A0F1467023900088D6A /* ParticleController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleController.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				00BAE6590E7ED9C10018A608 /* VideoPanApp.cpp */,
-				CBF09A0F1467023900088D6A /* ParticleController.cpp */,
-				CBF09A081467018200088D6A /* Particle.cpp */,
 				CB02D35F147998B3003E515E /* FrameSlice.cpp */,
 				CB02D3711479A8A5003E515E /* FrameController.cpp */,
 			);
@@ -226,8 +220,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				00BAE65A0E7ED9C10018A608 /* VideoPanApp.cpp in Sources */,
-				CBF09A091467018200088D6A /* Particle.cpp in Sources */,
-				CBF09A101467023900088D6A /* ParticleController.cpp in Sources */,
 				CB02D360147998B3003E515E /* FrameSlice.cpp in Sources */,
 				CB02D3721479A8A5003E515E /* FrameController.cpp in Sources */,
 			);
