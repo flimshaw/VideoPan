@@ -51,7 +51,7 @@ public:
 	void processVideoFrames();
 	
 	// this is our queue of frames we want to load:
-    vector<int> mFrameQueue;
+    std::deque<int> mFrameQueue;
 
 	// here's our flag that tells us if we are loading a frame in the background
 	// if we are, we shouldn't spawn any more loader threads

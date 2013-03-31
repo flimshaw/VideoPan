@@ -56,17 +56,20 @@ void VideoPanApp::prepareSettings( Settings *settings ){
 void VideoPanApp::setup()
 {
 	mCam.setOrtho(-1, 1, -1, 1, -1, 1);
-	
-	mEye        = Vec3f( 0.0f, 0.0f, 0.0f );
-	mCenter     = Vec3f::zero();
-	mUp         = Vec3f::yAxis();
-	
-	//mMoviePath = "/Users/choey/valiant_files/2011-07-30/UP/video_002.mp4";
-	mMoviePath = "/Users/choey/tower-flythrough-desktop.m4v";
+    
+	try {
+		fs::path path = getOpenFilePath( "" );
+		if( ! path.empty() ) {
+			mMoviePath = path.string();
+		}
+	}
+	catch( ... ) {
+		console() << "unable to load the texture file!" << std::endl;
+	}
 	
 	mFrameFocalDistance = 500.0;
 	mFrameSpeed = 5.0;
-	mMaxFrames = 300;
+	mMaxFrames = 140;
 	mStartFrame = 1;
 	mFrameOffset = 0;
 	mFrameRotation = 90;
