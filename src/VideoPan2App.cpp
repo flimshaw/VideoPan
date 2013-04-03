@@ -23,7 +23,7 @@ class VideoPanApp : public AppBasic {
 	void draw();
 	void mouseDrag( MouseEvent event );
 	void mouseDown( MouseEvent event );
-    void mouseUp( MouseEvent event );
+	void mouseWheel( MouseEvent event );
 
 	gl::Texture mMovieFrame;
 	qtime::MovieGl mMovie;
@@ -119,8 +119,9 @@ void VideoPanApp::mouseDown( MouseEvent event ) {
 	mCameraStartX = mCameraPosition;
 }
 
-void VideoPanApp::mouseUp( MouseEvent event ) {
-    console() << event.getPos() << std::endl;
+void VideoPanApp::mouseWheel( MouseEvent event) {
+	float mouseInc = event.getWheelIncrement();
+	mFrameFocalDistance += int(mouseInc);
 }
 
 void VideoPanApp::loopOffset() {
