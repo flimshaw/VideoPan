@@ -84,6 +84,8 @@ void FrameController::setFrameFocalDistance( float focalDistance )
 	setFrameSliceWidth( frameSliceWidth );
 }
 
+
+
 void FrameController::setStartFrame( int startFrame )
 {
 	if(startFrame != mStartFrame) {
@@ -206,7 +208,7 @@ void FrameController::update()
 	
 	processVideoFrames();
 	for( vector<FrameSlice>::iterator p = mFrameSlices.begin(); p != mFrameSlices.end(); ++p ){
-		p->update();
+		p->update(mCameraPosition);
 	}
 }
 

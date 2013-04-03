@@ -25,6 +25,7 @@ FrameSlice::FrameSlice( gl::Texture newTexture, int frameNumber, int frameIndex,
 	mFrameSpeed = frameSpeed;
 	mFrameFocalDistance = frameFocalDistance;
 	mFrameLensAngle = 110;
+	mDeathFlag = false;
 	mWidth = 10;
 	mFrameTexture = newTexture;
 	mFrameSize = Vec2f(1280, 960); // size of the raw images
@@ -69,11 +70,19 @@ void FrameSlice::setup()
 	
 }
 
-void FrameSlice::update()
+void FrameSlice::update(int cameraPosition)
 {
 	// TODO: add some nice physics so we fly toward this instead of snapping to it
 	translatePosition( Vec2f((mWidth * (140 - mFrameIndex)), 0) );
 	updateCropArea();
+
+	if(mTruePosition.x < cameraPosition || cameraPosition > mTruePosition.x + 500) {
+		die();
+	}
+}
+
+void FrameSlice::die() {
+	mDeathFlag = true;
 }
 
 void FrameSlice::draw()

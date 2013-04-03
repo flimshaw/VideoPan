@@ -14,4 +14,5 @@ public:
 	Particle();
 	void update();
 	void setup();
+	void draw();
 };

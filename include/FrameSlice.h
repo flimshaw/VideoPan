@@ -19,7 +19,7 @@ class FrameSlice {
 public:
 	FrameSlice( gl::Texture newTexture, int frameNumber, int frameIndex, float frameOffset, float frameSpeed, float frameFocalDistance );
 
-	void update();
+	void update(int cameraPosition);
 	void draw();
 	void setup();
 
@@ -30,13 +30,13 @@ public:
 	void updateCropArea();
 	void translatePosition( Vec2f mPosition );
 	void setFrameWidth( float newWidth );
-
-	
+	void die();
 	// Texture specific variables
 	gl::Texture mFrameTexture;
 	float		mFrameOffset;
 	int			mFrameNumber;
 	int			mFrameIndex;
+	bool		mDeathFlag;
 	float		mFrameSpeed;
 	float		mFrameFocalDistance;
 	float		mFrameTrueWidth;

@@ -34,7 +34,7 @@ public:
 	void setFrameFocalDistance( float focalDistance );
 	void setFrameSpeed( float frameSpeed );
 	void setStartFrame( int startFrame );
-	
+
 	// internal methods for calculating real world distances
 	float getDistancePerFrame();
 	float getTrueWidth();
@@ -46,6 +46,7 @@ public:
 	void setFrameSliceWidth( float newWidth );
 	void setFrameSliceOffset( int frameOffset );
 	void setFrameOffset( float frameOffset );
+
 	
 	// internal methods for working out shit
 	void processVideoFrames();
@@ -69,6 +70,7 @@ public:
 	
 	int			mFrameCount;
 	int			mFrameIndex;
+	int			mCameraPosition;
 	int			mMaxFrames;
 	int			mStartFrame;
 	float		mSliceWidth;
