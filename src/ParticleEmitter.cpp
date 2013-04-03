@@ -13,10 +13,8 @@ ParticleEmitter::ParticleEmitter() {
 }
 
 ParticleEmitter::ParticleEmitter(int max_particles) {
-	
 	imax_particles = max_particles;
 	setup();
-
 }
 
 void ParticleEmitter::setup() {
