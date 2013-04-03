@@ -34,6 +34,7 @@ public:
 	void setFrameFocalDistance( float focalDistance );
 	void setFrameSpeed( float frameSpeed );
 	void setStartFrame( int startFrame );
+	void setCameraPosition( int cameraPosition );
 
 	// internal methods for calculating real world distances
 	float getDistancePerFrame();

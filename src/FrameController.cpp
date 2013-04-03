@@ -156,6 +156,9 @@ void FrameController::setFrameSliceWidth( float newWidth ) {
 	}
 }
 
+void FrameController::setCameraPosition( int cameraPosition ) {
+	mCameraPosition = cameraPosition;
+}
 
 void FrameController::processVideoFrames()
 {
@@ -184,8 +187,8 @@ void FrameController::processVideoFrames()
 
 // separate threaded function that will be retrieving textures from our video file
 void FrameController::threadedLoad( const int &frameNumber ) {
-	//mVideo.seekToFrame(frameNumber); // jump to the frame number specified
-	mVideo.stepForward();
+	mVideo.seekToFrame(frameNumber); // jump to the frame number specified
+	//mVideo.stepForward();
 	while( 1 ) { // then loop like mad waiting for a video file to load
 		if( mVideo.checkNewFrame() ) { // if we've arrived at a new frame
 			Surface surface = mVideo.getSurface(); // retrieve it as a surface

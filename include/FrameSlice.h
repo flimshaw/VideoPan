@@ -31,6 +31,8 @@ public:
 	void translatePosition( Vec2f mPosition );
 	void setFrameWidth( float newWidth );
 	void die();
+	bool isDead();
+
 	// Texture specific variables
 	gl::Texture mFrameTexture;
 	float		mFrameOffset;

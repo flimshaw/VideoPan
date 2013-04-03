@@ -106,6 +106,7 @@ void VideoPanApp::update()
 	mFrameController.setFrameSpeed( mFrameSpeed );
 	mFrameController.setFrameOffset( mOffsetTicker );
 	mFrameController.setStartFrame( mStartFrame );
+	mFrameController.setCameraPosition( mCameraPosition );
 	mFrameController.update();
 }
 
@@ -137,8 +138,6 @@ void VideoPanApp::draw()
 	
 	gl::clear( Color( 0, 0, 0 ) ); 
 	gl::setMatricesWindow(getWindowSize(), true);
-	
-	
 	
 	mCam.setOrtho(0 + mCameraPosition, 1200 + mCameraPosition, 850, 0, -100, 100);
 	gl::setMatrices( mCam );
