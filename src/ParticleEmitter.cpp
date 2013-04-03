@@ -13,5 +13,12 @@ ParticleEmitter::ParticleEmitter() {
 }
 
 ParticleEmitter::ParticleEmitter(int max_particles) {
-	console() << "TESTING" << std::endl;
+	
+	imax_particles = max_particles;
+	setup();
+
+}
+
+void ParticleEmitter::setup() {
+	
 }
