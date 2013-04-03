@@ -21,7 +21,10 @@ class VideoPanApp : public AppBasic {
 	void loopOffset();
 	void update();
 	void draw();
-	
+	void mouseDrag( MouseEvent event );
+	void mouseDown( MouseEvent event );
+    void mouseUp( MouseEvent event );
+
 	gl::Texture mMovieFrame;
 	qtime::MovieGl mMovie;
 	string mMoviePath;
@@ -49,11 +52,14 @@ class VideoPanApp : public AppBasic {
 	Vec3f mUp;
 
 	int mMaxFrames;
+
+	int mMouseStartX;
+	int mCameraStartX;
 };
 
 void VideoPanApp::prepareSettings( Settings *settings ){
     settings->setWindowSize( 1200, 850 );
-    settings->setFrameRate( 30.0f );
+    settings->setFrameRate( 60.0f );
 }
 
 void VideoPanApp::setup()
@@ -101,6 +107,20 @@ void VideoPanApp::update()
 	mFrameController.setFrameOffset( mOffsetTicker );
 	mFrameController.setStartFrame( mStartFrame );
 	mFrameController.update();
+}
+
+void VideoPanApp::mouseDrag( MouseEvent event ) {
+	int mouseDist = mMouseStartX - event.getPos()[0];
+    mCameraPosition = mCameraStartX + mouseDist;
+}
+
+void VideoPanApp::mouseDown( MouseEvent event ) {
+    mMouseStartX = event.getPos()[0];
+	mCameraStartX = mCameraPosition;
+}
+
+void VideoPanApp::mouseUp( MouseEvent event ) {
+    console() << event.getPos() << std::endl;
 }
 
 void VideoPanApp::loopOffset() {

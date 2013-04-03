@@ -44,8 +44,6 @@ public:
 	float		mFrameMaxWidth;
 	ci::Vec2f	mFrameSize;
 	
-
-	
 	Area		mCropArea;
 
 	// variables to shield humans from our coordinate system

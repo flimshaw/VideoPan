@@ -106,12 +106,14 @@
   <ItemGroup>
     <ClCompile Include="..\src\FrameController.cpp" />
     <ClCompile Include="..\src\FrameSlice.cpp" />
+    <ClCompile Include="..\src\Particle.cpp" />
     <ClCompile Include="..\src\ParticleEmitter.cpp" />
     <ClCompile Include="..\src\VideoPan2App.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\FrameController.h" />
     <ClInclude Include="..\include\FrameSlice.h" />
+    <ClInclude Include="..\include\Particle.h" />
     <ClInclude Include="..\include\ParticleEmitter.h" />
     <ClInclude Include="..\include\Resources.h" />
   </ItemGroup>

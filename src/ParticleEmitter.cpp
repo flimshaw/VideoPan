@@ -1,7 +1,6 @@
 // This is a class that emits particles.
 // What should it look like?
 #include "ParticleEmitter.h";
-#include "stdio.h";
 #include "cinder/app/AppBasic.h"
 
 using namespace std;
@@ -12,8 +11,8 @@ ParticleEmitter::ParticleEmitter() {
 
 }
 
-ParticleEmitter::ParticleEmitter(int max_particles) {
-	imax_particles = max_particles;
+ParticleEmitter::ParticleEmitter(int maxParticles) {
+	mMaxParticles = maxParticles;
 	setup();
 }
 
