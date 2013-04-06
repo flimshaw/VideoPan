@@ -62,6 +62,7 @@ void FrameController::loadMovieFile( const string &moviePath )
 		console() << "Alpha channel: " << mVideo.hasAlpha() << std::endl;		
 		console() << "Has audio: " << mVideo.hasAudio() << " Has visuals: " << mVideo.hasVisuals() << std::endl;
 		
+		// get our movie loaded, then pause it and trigger our frame update flag to start harvesting frames
 		mVideo.setLoop( true, true );
 		mVideo.play();
 		mVideo.seekToFrame(mStartFrame);
@@ -77,14 +78,11 @@ void FrameController::loadMovieFile( const string &moviePath )
 void FrameController::setFrameFocalDistance( float focalDistance )
 {
 	mFrameFocalDistance = focalDistance;
-	//mFrameUpdateFlag = true;
 	
 	// FOR NOW we will calculate all this stuff in the here and now
 	float frameSliceWidth = getFrameSliceWidth();
 	setFrameSliceWidth( frameSliceWidth );
 }
-
-
 
 void FrameController::setStartFrame( int startFrame )
 {
@@ -112,7 +110,6 @@ void FrameController::setFrameSliceOffset( int frameOffset ) {
 void FrameController::setFrameSpeed( float frameSpeed )
 {
 	mFrameSpeed = frameSpeed;
-	//mFrameUpdateFlag = true;
 }
 
 void FrameController::clearFrameSlices() 
