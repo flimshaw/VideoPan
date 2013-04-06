@@ -18,6 +18,7 @@
 #include <list>
 #include <vector>
 #include <map>
+#include <unordered_map>
 
 using namespace ci;
 using namespace ci::app;
@@ -47,7 +48,8 @@ public:
 	void setFrameSliceWidth( float newWidth );
 	void setFrameSliceOffset( int frameOffset );
 	void setFrameOffset( float frameOffset );
-
+	void loadFrame( int frameNumber );
+	int getNextFrame();
 	
 	// internal methods for working out shit
 	void processVideoFrames();
@@ -61,12 +63,15 @@ public:
     
 	// this is our queue of things that are done loading
     map<int, Surface> completedLoads;
+
+	// a list to map frames to their respective slices
+	unordered_map<int, FrameSlice*> mFrameMap;
 	
 	// this is the function that will be loaded in a thread
     void threadedLoad(const int &frameNumber);
 	
-	
 	vector<FrameSlice>	mFrameSlices;
+	
 	qtime::MovieSurface mVideo;
 	
 	int			mFrameCount;
@@ -77,7 +82,10 @@ public:
 	float		mSliceWidth;
 	float		mPixelOffset;
 	int			mFramesPerSecond;
-	bool	mFrameUpdateFlag;
+	int			mMaxSlices;
+	bool		mFrameUpdateFlag;
+	bool		mVideoReady;
+	int			mFrameWidth;
 	
 	gl::Texture mTexture;
 	

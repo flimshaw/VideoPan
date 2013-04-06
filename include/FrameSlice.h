@@ -32,6 +32,7 @@ public:
 	void setFrameWidth( float newWidth );
 	void die();
 	bool isDead();
+	int getFrameNumber();
 
 	// Texture specific variables
 	gl::Texture mFrameTexture;

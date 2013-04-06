@@ -96,7 +96,6 @@ void VideoPanApp::setup()
 	mParams.addParam( "FrameOffset", &mFrameOffset, "min=-480 max=480 step=1");
 	mParams.addParam( "Camera Position", &mCameraPosition, "step=1");
 	mFrameController = FrameController( mMoviePath, mStartFrame, mFrameOffset, mFrameSpeed, mFrameFocalDistance, mMaxFrames );
-	particle_emitter = ParticleEmitter( 50 );
 }
 
 void VideoPanApp::update()

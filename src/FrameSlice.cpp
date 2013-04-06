@@ -50,6 +50,10 @@ void FrameSlice::setFrameWidth( float newWidth ) {
 	mWidth = newWidth;
 }
 
+int FrameSlice::getFrameNumber() {
+	return mFrameNumber;
+}
+
 // this will translate a standard x, y viewport position to an actual spatial position
 void FrameSlice::translatePosition( Vec2f mPosition )
 {
@@ -73,7 +77,7 @@ void FrameSlice::setup()
 void FrameSlice::update(int cameraPosition)
 {
 	// TODO: add some nice physics so we fly toward this instead of snapping to it
-	translatePosition( Vec2f((mWidth * mFrameIndex), 0) );
+	translatePosition( Vec2f((mWidth * mFrameNumber), 0) );
 	updateCropArea();
 
 	if(mTruePosition.x > cameraPosition || cameraPosition < mTruePosition.x + 500) {
@@ -84,8 +88,8 @@ void FrameSlice::update(int cameraPosition)
 }
 
 void FrameSlice::die() {
-	mDeathFlag = true;
-	console() << "I'm DEAD!" << std::endl;
+	//mDeathFlag = true;
+	//console() << "I'm DEAD!" << std::endl;
 }
 
 bool FrameSlice::isDead() {
@@ -94,7 +98,6 @@ bool FrameSlice::isDead() {
 
 void FrameSlice::draw()
 {
-	
 		Rectf newPos = Rectf( mTruePosition.x, mTruePosition.y, mTruePosition.x + mFrameSize.x, mTruePosition.y + mWidth );
 		if( mFrameTexture ) {
 			gl::draw( mFrameTexture, mCropArea, newPos );
