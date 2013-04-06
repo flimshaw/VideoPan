@@ -212,7 +212,7 @@ void FrameController::threadedLoad( const int &frameNumber ) {
 
 // check to see if there is a slot waiting for a new video
 int FrameController::getNextFrame() {
-	// if we shouldn't be loading a frame, return -1 immediately
+	// if we are loading a frame, return -1 immediately and skip some work
 	if(mFrameLoading) {
 		return -1;
 	}
@@ -220,17 +220,17 @@ int FrameController::getNextFrame() {
 	// get the first and last frames that should be visible given our camera position
 	int firstFrame = int(mCameraPosition / getFrameSliceWidth());
 	int lastFrame = int((mCameraPosition + 1200) / getFrameSliceWidth());
-	int frameNumber = -1;
 
-	// find the first unloaded frame available
+	// find the first unloaded frame available and return it
 	for( int i = firstFrame; i < lastFrame; i++ ) {
 		if(mFrameMap.find(i) == mFrameMap.end()) {
-			frameNumber = i;
-			break;
+			return i;
 		}
 	}
 
-	return frameNumber;
+	// otherwise, return -1
+	return -1;
+	
 }
 
 void FrameController::loadFrame(int frameNumber) {
