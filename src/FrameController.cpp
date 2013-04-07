@@ -168,13 +168,23 @@ void FrameController::processVideoFrames()
 {    
 	// if we have jobs that have been completed by our frameloader thread, deal with them
     if ( !completedLoads.empty() ) {
-		map<int, Surface>::iterator framejob; // make a map just for now
-		framejob = completedLoads.begin(); // get the first element from our completed stack
+		// map this for now to get the key value
+		map<int, Surface>::iterator framejob;
+		
+		// get the first element from our completed stack
+		framejob = completedLoads.begin();
 
-		// we've got a frame loaded, it's time to create a frameSlice and append it to our list
-		mFrameSlices.push_back( FrameSlice( gl::Texture(framejob->second), framejob->first, mFrameOffset, mFrameSpeed, mFrameFocalDistance ) );    
+		// create a new slice with the video texture
+		FrameSlice slice = FrameSlice( gl::Texture(framejob->second), framejob->first, mFrameOffset, mFrameSpeed, mFrameFocalDistance );
+		
+		// map the frame number to our slice for future reference
+		mFrameMap[framejob->first] = &slice;
 
-		completedLoads.erase(framejob); // and then delete it
+		// append this to our mFrameSlices list, may it last a thousand years
+		mFrameSlices.push_back( slice );    
+
+		// erase this job from our complete loads list and make way for the next one
+		completedLoads.erase(framejob);
 	}
 }
 
@@ -201,6 +211,7 @@ void FrameController::threadedLoad( const int &frameNumber ) {
 
 // check to see if there is a slot waiting for a new video
 int FrameController::getNextFrame() {
+
 	// if we are loading a frame, return -1 immediately and skip some work
 	if(mFrameLoading || mFrameSlices.size() >= mMaxFrames ) {
 		return -1;
@@ -232,6 +243,9 @@ void FrameController::loadFrame(int frameNumber) {
 void FrameController::update()
 {	
 
+	// see if there are any new particles to ready to draw
+	processVideoFrames();
+
 	// if the video player is ready
 	if(mVideoReady) {
 		// if there is a frame available
@@ -241,9 +255,6 @@ void FrameController::update()
 			loadFrame(nextFrame);
 		}
 	}
-	
-	// see if there are any new particles to ready to draw
-	processVideoFrames();
 
 	// update all the frames that are on our list
 	for( vector<FrameSlice>::iterator p = mFrameSlices.begin(); p != mFrameSlices.end(); ++p ){
