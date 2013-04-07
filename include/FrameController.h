@@ -48,6 +48,7 @@ public:
 	void setFrameSliceWidth( float newWidth );
 	void setFrameSliceOffset( int frameOffset );
 	void setFrameOffset( float frameOffset );
+	void setMaxFrames( int maxFrames );
 	void loadFrame( int frameNumber );
 	int getNextFrame();
 	

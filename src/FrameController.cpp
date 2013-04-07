@@ -38,8 +38,6 @@ FrameController::FrameController()
 
 FrameController::FrameController( const string &moviePath, int startFrame, float frameOffset, float frameSpeed, float frameFocalDistance, int maxFrames )
 {
-	// maximum number of frames we can hold in VRAM
-	mMaxSlices = 400;
 
 	// let's fast track this with some default values here
 	mMaxFrames = maxFrames;
@@ -50,6 +48,7 @@ FrameController::FrameController( const string &moviePath, int startFrame, float
 	mPixelOffset = 0;
 	mFrameIndex = 1;
 	mFrameLoading = false; // by default, we're not loading any frames, capish?
+	mVideoReady = false;
 	
 	loadMovieFile( moviePath );
 }
@@ -69,9 +68,9 @@ void FrameController::loadMovieFile( const string &moviePath )
 		// get our movie loaded, then pause it and trigger our frame update flag to start harvesting frames
 		mVideo.setLoop( true, true );
 		mVideo.play();
-		mVideo.seekToFrame(mStartFrame);
 		mVideo.setVolume(0);
 		mVideo.stop();
+		
 		mVideoReady = true;
 	}
 	catch( ... ) {
@@ -97,6 +96,10 @@ void FrameController::setStartFrame( int startFrame )
 		mFrameUpdateFlag = true;
 		mFrameIndex = 0;
 	}
+}
+
+void FrameController::setMaxFrames( int maxFrames ) {
+	mMaxFrames = maxFrames;
 }
 
 void FrameController::setFrameOffset( float frameOffset )
@@ -162,25 +165,15 @@ void FrameController::setCameraPosition( int cameraPosition ) {
 }
 
 void FrameController::processVideoFrames()
-{
-	// if we have frames waiting to be loaded AND we're not currently loading a frame
-	if ( ! mFrameQueue.empty() && !mFrameLoading ) {
-		mFrameLoading = true; // set our flag
-        int frameNumber = mFrameQueue.back(); // i guess we get a frame number? TODO: make this actually function
-        mFrameQueue.pop_back(); // grab a frame off the back of the stack
-        thread frameLoader(&FrameController::threadedLoad, this, frameNumber); // and spawn our loader thread
-    }
-    
+{    
 	// if we have jobs that have been completed by our frameloader thread, deal with them
     if ( !completedLoads.empty() ) {
 		map<int, Surface>::iterator framejob; // make a map just for now
 		framejob = completedLoads.begin(); // get the first element from our completed stack
 
 		// we've got a frame loaded, it's time to create a frameSlice and append it to our list
-		mFrameSlices.push_back( FrameSlice( gl::Texture(framejob->second), framejob->first, mFrameIndex, mFrameOffset, mFrameSpeed, mFrameFocalDistance ) );    
+		mFrameSlices.push_back( FrameSlice( gl::Texture(framejob->second), framejob->first, mFrameOffset, mFrameSpeed, mFrameFocalDistance ) );    
 
-		mFrameIndex++; // TODO: fix this shit, or at least reset it when params change
-		mFrameLoading = false; // finally, get us ready to load the next frame
 		completedLoads.erase(framejob); // and then delete it
 	}
 }
@@ -189,22 +182,18 @@ void FrameController::processVideoFrames()
 void FrameController::threadedLoad( const int &frameNumber ) {
 	mVideo.seekToFrame(frameNumber); // jump to the frame number specified
 	while( 1 ) { // then loop like mad waiting for a video file to load
-		if( mVideo.checkNewFrame() ) { // if we've arrived at a new frame
+		if( mVideo.checkPlayable() == true && mVideo.checkNewFrame() == true ) { // if we've arrived at a new frame
 
 			// get a surface from our video frame
-			Surface surface = mVideo.getSurface();
+			Surface frameSurface = mVideo.getSurface();
 
-			// create a new frame slice with it and append it to our list
-			mFrameSlices.push_back( FrameSlice( gl::Texture(surface), frameNumber, 0, mFrameOffset, mFrameSpeed, mFrameFocalDistance ) );    
-
-			console() << "Loaded Frame: " << frameNumber << std::endl;
-
-			// add the new frame to our map
-			mFrameMap[frameNumber] = &mFrameSlices.back();
+			// load this onto our object's array, we need to load the texture in our main thread
+			completedLoads[frameNumber] = frameSurface; 
 
 			// lastly set our loading flag to false
 			mFrameLoading = false;
 
+			// and leave the loop, freeing the next update() firing to fire another thread
 			break;
 		}
 	}
@@ -213,13 +202,13 @@ void FrameController::threadedLoad( const int &frameNumber ) {
 // check to see if there is a slot waiting for a new video
 int FrameController::getNextFrame() {
 	// if we are loading a frame, return -1 immediately and skip some work
-	if(mFrameLoading) {
+	if(mFrameLoading || mFrameSlices.size() >= mMaxFrames ) {
 		return -1;
 	}
 
 	// get the first and last frames that should be visible given our camera position
-	int firstFrame = int(mCameraPosition / getFrameSliceWidth());
-	int lastFrame = int((mCameraPosition + 1200) / getFrameSliceWidth());
+	int firstFrame = abs(int(mCameraPosition / getFrameSliceWidth()));
+	int lastFrame = abs(int((mCameraPosition + 1200) / getFrameSliceWidth()));
 
 	// find the first unloaded frame available and return it
 	for( int i = firstFrame; i < lastFrame; i++ ) {
@@ -253,6 +242,9 @@ void FrameController::update()
 		}
 	}
 	
+	// see if there are any new particles to ready to draw
+	processVideoFrames();
+
 	// update all the frames that are on our list
 	for( vector<FrameSlice>::iterator p = mFrameSlices.begin(); p != mFrameSlices.end(); ++p ){
 		p->update(mCameraPosition);

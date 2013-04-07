@@ -78,7 +78,7 @@ void VideoPanApp::setup()
 	
 	mFrameFocalDistance = 500.0;
 	mFrameSpeed = 5.0;
-	mMaxFrames = 400;
+	mMaxFrames = 100;
 	mStartFrame = 1;
 	mFrameOffset = 0;
 	mFrameRotation = 90;
@@ -95,6 +95,7 @@ void VideoPanApp::setup()
 	mParams.addParam( "FrameRotation", &mFrameRotation, "min=0 max=359 step=1");
 	mParams.addParam( "FrameOffset", &mFrameOffset, "min=-480 max=480 step=1");
 	mParams.addParam( "Camera Position", &mCameraPosition, "step=1");
+	mParams.addParam( "Max Frames", &mMaxFrames, "min=1 max=300 step=1");
 	mFrameController = FrameController( mMoviePath, mStartFrame, mFrameOffset, mFrameSpeed, mFrameFocalDistance, mMaxFrames );
 }
 
@@ -105,6 +106,7 @@ void VideoPanApp::update()
 	mFrameController.setFrameSpeed( mFrameSpeed );
 	mFrameController.setFrameOffset( mOffsetTicker );
 	mFrameController.setStartFrame( mStartFrame );
+	mFrameController.setMaxFrames( mMaxFrames );
 	mFrameController.setCameraPosition( mCameraPosition );
 	mFrameController.update();
 }

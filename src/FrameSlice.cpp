@@ -17,10 +17,9 @@
 using namespace ci;
 using namespace ci::app;
 
-FrameSlice::FrameSlice( gl::Texture newTexture, int frameNumber, int frameIndex, float frameOffset, float frameSpeed, float frameFocalDistance )
+FrameSlice::FrameSlice( gl::Texture newTexture, int frameNumber, float frameOffset, float frameSpeed, float frameFocalDistance )
 {
 	mFrameNumber = frameNumber;
-	mFrameIndex = frameIndex;
 	mFrameOffset = frameOffset;
 	mFrameSpeed = frameSpeed;
 	mFrameFocalDistance = frameFocalDistance;
@@ -29,6 +28,8 @@ FrameSlice::FrameSlice( gl::Texture newTexture, int frameNumber, int frameIndex,
 	mWidth = 10;
 	mFrameTexture = newTexture;
 	mFrameSize = Vec2f(1280, 960); // size of the raw images
+
+	// initialize our other info as well
 }
 
 void FrameSlice::setPosition( ci::Vec2f newPos)
@@ -80,7 +81,7 @@ void FrameSlice::update(int cameraPosition)
 	translatePosition( Vec2f((mWidth * mFrameNumber), 0) );
 	updateCropArea();
 
-	if(mTruePosition.x > cameraPosition || cameraPosition < mTruePosition.x + 500) {
+	if(mTruePosition.x > cameraPosition || cameraPosition > mTruePosition.x + 500) {
 		if(!isDead()) {
 			die();
 		}
@@ -89,7 +90,6 @@ void FrameSlice::update(int cameraPosition)
 
 void FrameSlice::die() {
 	//mDeathFlag = true;
-	//console() << "I'm DEAD!" << std::endl;
 }
 
 bool FrameSlice::isDead() {
