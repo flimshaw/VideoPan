@@ -38,7 +38,6 @@ public:
 	gl::Texture mFrameTexture;
 	float		mFrameOffset;
 	int			mFrameNumber;
-	bool		mDeathFlag;
 	float		mFrameSpeed;
 	float		mFrameFocalDistance;
 	float		mFrameLensAngle;
@@ -56,4 +55,6 @@ public:
 	ci::Vec2f	mVel;
 	ci::Vec2f	mSize;
 	float		mWidth;
+private:
+	bool		mDeathFlag;
 };

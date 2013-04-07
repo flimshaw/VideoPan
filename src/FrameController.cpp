@@ -176,7 +176,7 @@ void FrameController::processVideoFrames()
 
 		// create a new slice with the video texture
 		FrameSlice slice = FrameSlice( gl::Texture(framejob->second), framejob->first, mFrameOffset, mFrameSpeed, mFrameFocalDistance );
-		
+		slice.setFrameWidth(getFrameSliceWidth());
 		// map the frame number to our slice for future reference
 		mFrameMap[framejob->first] = &slice;
 
@@ -256,9 +256,18 @@ void FrameController::update()
 		}
 	}
 
-	// update all the frames that are on our list
-	for( vector<FrameSlice>::iterator p = mFrameSlices.begin(); p != mFrameSlices.end(); ++p ){
-		p->update(mCameraPosition);
+	vector<FrameSlice>::iterator p = mFrameSlices.begin();
+	// loop through all the elements on our list
+	for( ; p != mFrameSlices.end(); ){
+		// clear out the dead
+		if(p->isDead()) {
+			mFrameMap.erase(p->getFrameNumber());
+			p = mFrameSlices.erase(p);
+		// and update the living
+		} else {
+			p->update(mCameraPosition);
+			++p;
+		}
 	}
 }
 

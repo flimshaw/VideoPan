@@ -24,7 +24,7 @@ FrameSlice::FrameSlice( gl::Texture newTexture, int frameNumber, float frameOffs
 	mFrameSpeed = frameSpeed;
 	mFrameFocalDistance = frameFocalDistance;
 	mFrameLensAngle = 110;
-	mDeathFlag = false;
+	this->mDeathFlag = false;
 	mWidth = 10;
 	mFrameTexture = newTexture;
 	mFrameSize = Vec2f(1280, 960); // size of the raw images
@@ -81,19 +81,22 @@ void FrameSlice::update(int cameraPosition)
 	translatePosition( Vec2f((mWidth * mFrameNumber), 0) );
 	updateCropArea();
 
-	if(mTruePosition.x > cameraPosition || cameraPosition > mTruePosition.x + 500) {
+	// make our custom x and y positions to deal with rotation
+	int mX = -mTruePosition.y;
+
+	if(mX < (cameraPosition - 100) || mX > (cameraPosition + 1300)) {
 		if(!isDead()) {
-			die();
+			this->die();
 		}
 	}
 }
 
 void FrameSlice::die() {
-	//mDeathFlag = true;
+	this->mDeathFlag = true;
 }
 
 bool FrameSlice::isDead() {
-	return mDeathFlag;
+	return this->mDeathFlag;
 }
 
 void FrameSlice::draw()
