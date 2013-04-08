@@ -87,6 +87,9 @@ public:
 	bool		mFrameUpdateFlag;
 	bool		mVideoReady;
 	int			mFrameWidth;
+
+	// this is so hack, but i can't get the frame lookup thing to work
+	int			mLastFrameNumber;
 	
 	gl::Texture mTexture;
 	

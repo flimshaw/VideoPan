@@ -84,7 +84,7 @@ void FrameSlice::update(int cameraPosition)
 	// make our custom x and y positions to deal with rotation
 	int mX = -mTruePosition.y;
 
-	if(mX < (cameraPosition - 100) || mX > (cameraPosition + 1300)) {
+	if(mX < (cameraPosition - (mWidth * 2)) || mX > (cameraPosition + 1300)) {
 		if(!isDead()) {
 			this->die();
 		}

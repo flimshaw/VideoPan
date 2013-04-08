@@ -47,6 +47,7 @@ FrameController::FrameController( const string &moviePath, int startFrame, float
 	mFrameSpeed = frameSpeed;
 	mPixelOffset = 0;
 	mFrameIndex = 1;
+	mLastFrameNumber = -100;
 	mFrameLoading = false; // by default, we're not loading any frames, capish?
 	mVideoReady = false;
 	
@@ -183,14 +184,23 @@ void FrameController::processVideoFrames()
 		// append this to our mFrameSlices list, may it last a thousand years
 		mFrameSlices.push_back( slice );    
 
+		// set our last frame number flag
+		mLastFrameNumber = framejob->first;
+
 		// erase this job from our complete loads list and make way for the next one
 		completedLoads.erase(framejob);
 	}
 }
 
 // separate threaded function that will be retrieving textures from our video file
-void FrameController::threadedLoad( const int &frameNumber ) {
-	mVideo.seekToFrame(frameNumber); // jump to the frame number specified
+void FrameController::threadedLoad( const int &frameNumber ) {	
+	// if we're loading the frame directly after the previous frame, stepForward, it's faster
+	if(mLastFrameNumber == frameNumber - 1) {
+		mVideo.stepForward();
+	} else {
+		mVideo.seekToFrame(frameNumber); // jump to the frame number specified
+	}
+	
 	while( 1 ) { // then loop like mad waiting for a video file to load
 		if( mVideo.checkPlayable() == true && mVideo.checkNewFrame() == true ) { // if we've arrived at a new frame
 
@@ -219,7 +229,7 @@ int FrameController::getNextFrame() {
 
 	// get the first and last frames that should be visible given our camera position
 	int firstFrame = abs(int(mCameraPosition / getFrameSliceWidth()));
-	int lastFrame = abs(int((mCameraPosition + 1200) / getFrameSliceWidth()));
+	int lastFrame = abs(int((mCameraPosition + 1300 + getFrameSliceWidth()) / getFrameSliceWidth()));
 
 	// find the first unloaded frame available and return it
 	for( int i = firstFrame; i < lastFrame; i++ ) {
