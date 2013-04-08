@@ -114,9 +114,9 @@ void VideoPanApp::setup()
 	mParams.addParam( "Jump to Frame", &mStartFrame, "min=0 max=80000 step=10 keyIncr=x keyDecr=z");
 	mParams.addParam( "Offset Velocity", &mOffsetVelocity, "min=-100.0 max=100.0 step=.1 keyIncr=x keyDecr=z");
 	mParams.addParam( "FrameRotation", &mFrameRotation, "min=0 max=359 step=1");
-	mParams.addParam( "FrameOffset", &mFrameOffset, "min=-480 max=480 step=1");
+	mParams.addParam( "FrameOffset", &mOffsetTicker, "min=-480 max=480 step=1");
 	mParams.addParam( "Camera Position", &mCameraPosition, "step=1");
-	mParams.addParam( "Max Frames", &mMaxFrames, "min=1 max=300 step=1");
+	mParams.addParam( "Max Frames", &mMaxFrames, "min=1 max=400 step=1");
 	mFrameController = FrameController( mMoviePath, mStartFrame, mFrameOffset, mFrameSpeed, mFrameFocalDistance, mMaxFrames );
 }
 
@@ -148,6 +148,7 @@ void VideoPanApp::mouseWheel( MouseEvent event) {
 }
 
 void VideoPanApp::loopOffset() {
+	//mCameraPosition--;
 	mOffsetTicker += mOffsetVelocity;
 	if(mOffsetTicker >= 480 || mOffsetTicker <= -480) {
 		mOffsetVelocity *= -1;
