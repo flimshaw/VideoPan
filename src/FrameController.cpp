@@ -229,7 +229,7 @@ int FrameController::getNextFrame() {
 
 	// get the first and last frames that should be visible given our camera position
 	int firstFrame = abs(int(mCameraPosition / getFrameSliceWidth()));
-	int lastFrame = abs(int((mCameraPosition + 1300 + getFrameSliceWidth()) / getFrameSliceWidth()));
+	int lastFrame = firstFrame + 500;
 
 	// find the first unloaded frame available and return it
 	for( int i = firstFrame; i < lastFrame; i++ ) {

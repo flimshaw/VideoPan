@@ -59,7 +59,7 @@ int FrameSlice::getFrameNumber() {
 void FrameSlice::translatePosition( Vec2f mPosition )
 {
 	// adjust for the rotation of the GL space
-	mTruePosition = Vec2f(mPosition.y, -mPosition.x);
+	mTruePosition = Vec2f(mPosition.y, -mPosition.x - 1280);
 }
 
 void FrameSlice::updateCropArea()
@@ -78,13 +78,13 @@ void FrameSlice::setup()
 void FrameSlice::update(int cameraPosition)
 {
 	// TODO: add some nice physics so we fly toward this instead of snapping to it
-	translatePosition( Vec2f((mWidth * mFrameNumber), 0) );
+	translatePosition( Vec2f(-(mWidth * mFrameNumber), 0) );
 	updateCropArea();
 
 	// make our custom x and y positions to deal with rotation
 	int mX = -mTruePosition.y;
 
-	if(mX < (cameraPosition - (mWidth * 2)) || mX > (cameraPosition + 1300)) {
+	if(mX < cameraPosition - 200 || mX > cameraPosition + 1300) {
 		if(!isDead()) {
 			this->die();
 		}

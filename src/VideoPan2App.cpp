@@ -2,12 +2,15 @@
 #include "cinder/ImageIO.h"
 #include "cinder/gl/Texture.h"
 #include "cinder/qtime/QuickTime.h"
+#include "cinder/qtime/MovieWriter.h"
 #include "cinder/Utilities.h"
 #include "FrameController.h"
 #include "ParticleEmitter.h"
 #include "cinder/Camera.h"
 #include "cinder/params/Params.h"
+#include "cinder/ip/Fill.h"
 
+#include "Resources.h"
 
 using namespace ci;
 using namespace ci::app;
@@ -29,8 +32,11 @@ class VideoPanApp : public AppBasic {
 	qtime::MovieGl mMovie;
 	string mMoviePath;
 	int	mFrameRotation;
-	
+	qtime::MovieWriter mMovieWriter;
 	CameraOrtho mCam;
+
+	bool recordVideo;
+	bool fullScreen;
 	
 	int mStartFrame;
 	
@@ -52,20 +58,35 @@ class VideoPanApp : public AppBasic {
 	Vec3f mUp;
 
 	int mMaxFrames;
-
 	int mMouseStartX;
 	int mCameraStartX;
 };
 
 void VideoPanApp::prepareSettings( Settings *settings ){
-    settings->setWindowSize( 1200, 850 );
+    settings->setWindowSize( 1280, 720 );
     settings->setFrameRate( 60.0f );
 }
 
 void VideoPanApp::setup()
 {
+	recordVideo = false;
+	fullScreen = false;
+
+	setFullScreen( fullScreen );
+
+	if(recordVideo) {
+		fs::path path = getSaveFilePath();
+		if( path.empty() )
+			return; // user cancelled save
+
+		qtime::MovieWriter::Format format;
+		if( qtime::MovieWriter::getUserCompressionSettings( &format, loadImage( loadAsset( "lava.jpg" ) ) ) ) {
+			mMovieWriter = qtime::MovieWriter( path, getWindowWidth(), getWindowHeight(), format );
+		}
+	}
+
+
 	mCam.setOrtho(-1, 1, -1, 1, -1, 1);
-    
 	try {
 		fs::path path = getOpenFilePath( "" );
 		if( ! path.empty() ) {
@@ -82,7 +103,7 @@ void VideoPanApp::setup()
 	mStartFrame = 1;
 	mFrameOffset = 0;
 	mFrameRotation = 90;
-	mCameraPosition = 0.0;
+	mCameraPosition = -1200.0;
 	
 	mOffsetVelocity = 1.0;
 	mOffsetTicker = 0;
@@ -145,6 +166,10 @@ void VideoPanApp::draw()
 	gl::rotate(mFrameRotation);
 	mFrameController.draw();
 	params::InterfaceGl::draw();
+
+	// add this frame to our movie
+	if( mMovieWriter )
+		mMovieWriter.addFrame( copyWindowSurface() );
 }
 
 
