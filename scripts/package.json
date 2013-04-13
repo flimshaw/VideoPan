@@ -1,0 +1,15 @@
+{
+  "name": "testing",
+  "version": "0.0.1",
+  "description": "Scripts for preparing files for VideoPan",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "mkdirp": "~0.3.5"
+  }
+}

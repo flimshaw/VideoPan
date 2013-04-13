@@ -1,2 +1,8 @@
 *~
 xcode/build/*
+node_modules
+REAR
+FRONT
+LEFT
+RIGHT
+UP
