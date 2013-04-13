@@ -27,22 +27,23 @@ mkdirp(videoDir, function(e) {
 });
 
 // TODO: Verify the video file is a video file
-
 try {
-    new ffmpeg(videoFile, function (err, video) {
-        if (!err) {
-            processVideoFile(video);
-        } else {
-            console.log('Error: ' + err);
-        }
+    var vproc = new ffmpeg(process.env.PWD + '/' + videoFile);
+    vproc.then(function (video) {
+        // Callback mode
+        video.addCommand('-q', '2');
+        video.fnExtractFrameToJPG(videoDir, {
+            
+        }, function (error, files) {
+            if (!error)
+                console.log('Frames: ' + files);
+            else
+            	console.log(error)
+        });
+    }, function (err) {
+        console.log('Error: ' + err);
     });
 } catch (e) {
     console.log(e.code);
     console.log(e.msg);
 }
-
-function processVideoFile(video) {
-	console.log(video);
-}
-
-ffmpeg(videoFile);
