@@ -18,7 +18,8 @@
     "commander": "~1.1.1",
     "querystring": "~0.2.0",
     "execSync": "0.0.3",
-    "underscore": "~1.4.4"
+    "underscore": "~1.4.4",
+    "sleep": "~1.1.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1"
