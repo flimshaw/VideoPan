@@ -12,7 +12,8 @@ var _ = require('underscore');
 program
   .version('0.1.0')
   .usage('[options] [srcDir]')
-  .option('-n, --frameNumber <frameNumber>', 'specify the log format string')
+  .option('-n, --startFrame <startFrame>', 'specify the frame to start on')
+  .option('-c, --count <count>', 'specify how many frames to render', 1)
   .option('-t, --template <templateFile>', 'specify a pto template file', 'template.mustache')
   .parse(process.argv);
 
@@ -20,38 +21,52 @@ var srcDir = program.args[0] || process.exit(0)
 
 var templateString = fs.readFileSync(program.template, 'utf8');
 
-var Stitcher = function(templateString, frameNumber, srcDir) {
+var Stitcher = function(templateString, startFrame, count, srcDir) {
 	
 	var self = this;
 
 	this.templateString = templateString;
-	this.frameNumber = frameNumber;
+	this.startFrame = Number(startFrame);
+	this.count = Number(count);
 	this.srcDir = srcDir;
-	this.destDir = path.join(srcDir, 'render', this.frameNumber.toString());
+	this.destDir = path.join(srcDir, 'render');
 
-	// create destination directory
-	mkdirp.sync(this.destDir);
-
-	// generate a pto file for this directory
-	this.ptoFilePath = this.generatePtoFile();
-
-	// run nona
-	console.log("Remapping...");
-	var nonaCmd = sprintf("nona -z NONE -r ldr -m TIFF_m -o %s/ -v %s", this.destDir, this.ptoFilePath);
-	var nona = execSync.code(nonaCmd);
-
-	// run enblend
-	console.log("Enblending...");
-	var enblendCmd = sprintf("enblend -l 9 -v -w -o %s", path.join(this.destDir, this.frameNumber + "_rendered.jpg"));
-	_.each([0, 1, 2], function(file) {
-		enblendCmd += sprintf(" %s/%04d.tif", self.destDir, file);
-	});
-	var enblend = execSync.code(enblendCmd);
-
+	if(count) {
+		for(var i = this.startFrame; i < this.startFrame + this.count; i++) {
+			this.renderFrame(i);
+		}
+	} else {
+		this.renderFrame(this.startFrame);
+	}
 }
 
 Stitcher.prototype.renderFrame = function(frameNumber) {
-	this.generatePtoFile(frameNumber);
+	
+	var self = this;
+
+	// create destination directory
+	mkdirp.sync(this.getDestDir(frameNumber));
+
+	// make a pto file
+	var ptoFilePath = this.generatePtoFile(frameNumber);
+
+	// run nona
+	console.log("Remapping...");
+	var nonaCmd = sprintf("nona -z NONE -r ldr -m TIFF_m -o %s/ -v %s", this.getDestDir(frameNumber), ptoFilePath);
+	var nona = execSync.code(nonaCmd);
+	
+	// run enblend
+	console.log("Enblending...");
+	var enblendCmd = sprintf("enblend -l 9 -v -w -o %s", path.join(this.getDestDir(frameNumber), frameNumber + "_rendered.jpg"));
+	_.each([0, 1, 2], function(file) {
+		enblendCmd += sprintf(" %s/%04d.tif", self.getDestDir(frameNumber), file);
+	});
+	var enblend = execSync.code(enblendCmd);
+
+	// remove tif files
+	_.each([0, 1, 2], function(file) {
+		fs.unlink(sprintf("%s/%04d.tif", self.getDestDir(frameNumber), file));
+	});
 
 }
 
@@ -59,9 +74,9 @@ Stitcher.prototype.getDestDir = function(frameNumber) {
 	return path.join(this.srcDir, 'render', frameNumber.toString());
 }
 
-Stitcher.prototype.getSrcFilePath = function() {
-	var group = Math.floor((this.frameNumber - 1) / 1000);
-	var srcFilePath = path.join(group.toString(), sprintf("%05d.jpg", Number(this.frameNumber)));
+Stitcher.prototype.getSrcFilePath = function(frameNumber) {
+	var group = Math.floor((frameNumber - 1) / 1000);
+	var srcFilePath = path.join(group.toString(), sprintf("%05d.jpg", Number(frameNumber)));
 	return srcFilePath;
 }
 
@@ -69,9 +84,9 @@ Stitcher.prototype.generatePtoFile = function(frameNumber) {
 	var view = {
 		frameNumber: this.frameNumber,
 		srcDir: this.srcDir,
-		srcFilePath: this.getSrcFilePath(),
-		destDir: this.destDir,
-		destFile: this.frameNumber + ".pto"
+		srcFilePath: this.getSrcFilePath(frameNumber),
+		destDir: this.getDestDir(frameNumber),
+		destFile: frameNumber + ".pto"
 	}
 
 	// create a folder for this frame number
@@ -83,4 +98,4 @@ Stitcher.prototype.generatePtoFile = function(frameNumber) {
 	return ptoFilePath;
 }
 
-var stitcher = new Stitcher(templateString, program.frameNumber, srcDir);
+var stitcher = new Stitcher(templateString, program.startFrame, program.count, srcDir);
