@@ -10,7 +10,7 @@ var videoFile = process.argv[2];
 var videoDir = path.basename(videoFile, path.extname(videoFile));
 
 // create our video directory, or exit with an error
-mkdirp(videoDir, function(e) {
+mkdirp.sync(videoDir, function(e) {
 	if(e) {
 		switch(e) {
 			case 'EEXIST':

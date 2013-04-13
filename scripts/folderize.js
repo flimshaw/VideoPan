@@ -2,32 +2,29 @@
 var path = require('path');
 var mkdirp = require('mkdirp');
 var sprintf = require('sprintf');
-var mv = require('mv');
+var fs = require('fs');
+
+// get the starting directory
+var rootDir = process.argv[2];
 
 // how many items do we want to put into each group
 var groupCount = 1000;
 
-// current directory
-var group = 1;
 
-// make sure we have a subfolder for this group
-mkdirp(group.toString(), function(e) {
-	if(e) {
-		switch(e) {
-			case 'EEXIST':
-				console.log("File with same name exists");
-				break;
-			default:
-				console.log("unknown error: " + e);
-				break;
+function processFile(fileName, group, endFrame) {
+	return function(err) {
+		if(err) {
+			console.log(fileName + " not found.");
+			process.exit(0);
+		} else {
+			console.log(fileName + " moved.");
 		}
-		process.exit(1);
-	} else {
-		processDirectory(group);
 	}
-});
+}
 
 function processDirectory(group) {
+
+	console.log("Processing group " + group + "...");
 
 	// always start on frame 1
 	var startFrame = (group * groupCount) + 1;
@@ -36,7 +33,27 @@ function processDirectory(group) {
 	var endFrame = startFrame + (groupCount - 1);
 
 	for(var f = startFrame; f <= endFrame; f++ ) {
-		console.log(sprintf.sprintf("%05d", f));
+		var fileName = sprintf.sprintf("%05d.jpg", f);
+		var srcFilePath = path.normalize(rootDir + "/" + fileName);
+		var destFilePath = path.normalize(rootDir + "/" + group + "/" + fileName);
+		try {
+			fs.renameSync(srcFilePath, destFilePath);
+		} catch(e) {
+			if(e.code == 'ENOENT') {
+				console.log("Couldn't move " + e.path);
+				process.exit(1);
+			} else {
+				console.log(e);
+			}
+		}
+		
 	}
 
+}
+
+for(var group = 0; group < 1000; group++) {
+	// make sure we have a subfolder for this group
+	var newDir = path.normalize(rootDir + "/" + group.toString());
+	mkdirp.sync(newDir);
+	processDirectory(group);
 }
