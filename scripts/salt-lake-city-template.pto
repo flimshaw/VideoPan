@@ -1,0 +1,63 @@
+# hugin project file
+#hugin_ptoversion 2
+p f2 w2688 h1097 v294  E-0.080528 R0 S123,2522,96,1005 n"TIFF_m c:LZW r:CROP"
+m g1 i0 f0 m2 p0.00784314
+
+# image lines
+#-hugin  cropFactor=1
+i w960 h1280 f3 v93.0394645648524 Ra2.26973557472229 Rb-0.569311261177063 Rc0.252042174339294 Rd-0.253826886415482 Re0.0256421845406294 Eev0 Er1 Eb1 r-1.06466976681874 p-2.37039531575137 y-88.9650190070637 TrX0 TrY0 TrZ0 j0 a0 b0.11381230903141 c0 d0 e0 g0 t0 Va1 Vb-0.351712927473626 Vc-0.325583251148141 Vd0.0895364424285343 Vx0 Vy0  Vm5 u10 n"front3.png"
+#-hugin  cropFactor=1
+i w960 h1280 f3 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev0.0142083941336713 Er1 Eb1 r1.10243273043373 p-0.475644026240843 y-5.42653907874417 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  Vm5 u10 n"right3.png"
+#-hugin  cropFactor=1
+i w960 h1280 f3 v=0 Ra=0 Rb=0 Rc=0 Rd=0 Re=0 Eev-0.255792395200855 Er1 Eb1 r-0.996780976736391 p1.35424545501872 y82.3442467449272 TrX0 TrY0 TrZ0 j0 a=0 b=0 c=0 d=0 e=0 g=0 t=0 Va=0 Vb=0 Vc=0 Vd=0 Vx=0 Vy=0  Vm5 u10 n"rear3.png"
+
+
+# specify variables that should be optimized
+v v0
+v b0
+v r1
+v p1
+v y1
+v r2
+v p2
+v y2
+v
+
+
+# control points
+c n0 N1 x850 y495 X10 Y506 t0
+c n0 N1 x902 y634 X55.7246959972883 Y648.343874121789 t0
+c n0 N1 x868 y612 X18.9928552171956 Y627.237597572387 t0
+c n0 N1 x911 y555 X63.9092019202776 Y571.009827340642 t0
+c n0 N1 x843 y776 X58.1062118517592 Y807.980797613425 t0
+c n0 N1 x718 y1099 X33.1524232484831 Y1159.99383442593 t0
+c n0 N1 x755 y1162 X74.6020651588904 Y1239.91351093263 t0
+c n0 N1 x952 y1034 X195.092975662527 Y1003.9048730839 t0
+c n1 N2 x932 y544 X44.0264951709044 Y559.707425642072 t0
+c n1 N2 x908 y534 X20.9152953727164 Y547.086844387305 t0
+c n1 N2 x917 y613 X22.8371602035925 Y627.053456194846 t0
+c n1 N2 x929 y778 X83.2546706857884 Y776.6948144693 t0
+c n1 N2 x942 y1149 X91.0603356171945 Y1179.18046704524 t0
+c n1 N2 x955 y1056 X134.065613160728 Y1095.07638991035 t0
+
+#hugin_optimizeReferenceImage 0
+#hugin_blender enblend
+#hugin_remapper nona
+#hugin_enblendOptions 
+#hugin_enfuseOptions 
+#hugin_hdrmergeOptions -m avg -c
+#hugin_outputLDRBlended true
+#hugin_outputLDRLayers false
+#hugin_outputLDRExposureRemapped false
+#hugin_outputLDRExposureLayers false
+#hugin_outputLDRExposureBlended false
+#hugin_outputLDRExposureLayersFused false
+#hugin_outputHDRBlended false
+#hugin_outputHDRLayers false
+#hugin_outputHDRStacks false
+#hugin_outputLayersCompression LZW
+#hugin_outputImageType jpg
+#hugin_outputImageTypeCompression LZW
+#hugin_outputJPEGQuality 90
+#hugin_outputImageTypeHDR exr
+#hugin_outputImageTypeHDRCompression LZW
