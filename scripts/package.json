@@ -11,7 +11,8 @@
   "license": "BSD",
   "dependencies": {
     "mkdirp": "~0.3.5",
-    "ffmpeg": "0.0.4"
+    "ffmpeg": "0.0.4",
+    "sprintf": "~0.1.1"
   },
   "devDependencies": {
     "grunt": "~0.4.1"

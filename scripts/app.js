@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-var path = require('path')
-var mkdirp = require('mkdirp')
+var path = require('path');
+var mkdirp = require('mkdirp');
 var ffmpeg = require('ffmpeg');
 
 // the video file is the first argument
